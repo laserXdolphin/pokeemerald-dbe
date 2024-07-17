@@ -56,6 +56,7 @@
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "constants/region_map_sections.h"
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_9) ? 160 : 220)
 
@@ -5459,7 +5460,10 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return MUS_VS_TRAINER;
+            if (gMapHeader.regionMapSectionId == MAPSEC_ROUTE_102 || FALSE) // add maps with specific music here - Map Based Trainer Battle Music
+                return MUS_RG_VS_TRAINER;
+            else
+                return MUS_VS_TRAINER;
         }
     }
     else
