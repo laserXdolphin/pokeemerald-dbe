@@ -29,7 +29,7 @@ You are currently on the master branch which should always be a working (at leas
 ### Features from other generations
 - [Remove the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
 - [Make the keyboard auto-switch to lowercase after the first character](https://github.com/pret/pokeemerald/wiki/Automatically-make-the-keyboard-switch-to-lowercase-after-the-first-character/)
-- [Pokemart Items by Badge Count - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10172995&postcount=96)
+- [Pokemart Items by Badge Count - ghoulslash](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
 
 ### pokeemerald Miscellaneous
 - [Disable Bag Use in Battle - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10184292&postcount=122)
