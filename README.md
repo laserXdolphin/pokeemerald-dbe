@@ -15,7 +15,7 @@ You are currently on the master branch which should always be a working (at leas
 ## Pokecommunity Simple Modifications Directory Content
 - [Showing IVs/EVs in Summary Screen - PokemonCrazy](https://www.pokecommunity.com/showpost.php?p=10161688) using L, R and Start
 - [Wrapping Summary Screen - Zeturic](https://www.pokecommunity.com/showpost.php?p=10060875)
-- [Move Item - Zeturic](https://www.pokecommunity.com/showpost.php?p=10120157)
+- [Move Item - Zeturic](https://www.pokecommunity.com/threads/pokeemerald-move-items-in-party-menu.492745/)
 - [DPPt Bike (with L) - Lunos](https://www.pokecommunity.com/showpost.php?p=10217718)
 - [Faster Surfing - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10137446)
 - [Berry Trees No Longer Disappear - Buffel Saft](https://www.pokecommunity.com/showpost.php?p=10142996&postcount=63)
