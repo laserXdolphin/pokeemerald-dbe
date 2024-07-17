@@ -20,7 +20,6 @@ You are currently on the master branch which should always be a working (at leas
 - [Faster Surfing - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10137446)
 - [Item Descriptions On First Obtain - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10126502)
 - [Custom Battle Music Via Scripting - Anon822](https://www.pokecommunity.com/showpost.php?p=10341282)
-- [Power item and Destiny Knot breeding - DarkDown](https://www.pokecommunity.com/showpost.php?p=10488226)
 
 ## Pret Tutorial Content
 
