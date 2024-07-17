@@ -24,8 +24,7 @@ You are currently on the master branch which should always be a working (at leas
 ## Pret Tutorial Content
 
 ### Removing content:
-- Update obedience levels to current standards
-- Disabling Union Room check when entering Pokémon Centers
+- [Disabling Union Room check when entering Pokémon Centers] (https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
 
 ### Features from other generations
 - [Remove the extra save confirmation - Hiroshi Sotomura](https://www.pokecommunity.com/showpost.php?p=10211835)
