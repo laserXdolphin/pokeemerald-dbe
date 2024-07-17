@@ -24,10 +24,10 @@ You are currently on the master branch which should always be a working (at leas
 ## Pret Tutorial Content
 
 ### Removing content:
-- [Disabling Union Room check when entering Pokémon Centers] (https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
+- [Disabling Union Room check when entering Pokémon Centers](https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
 
 ### Features from other generations
-- [Remove the extra save confirmation - Hiroshi Sotomura](https://www.pokecommunity.com/showpost.php?p=10211835)
+- [Remove the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
 - Make the keyboard auto-switch to lowercase after the first character
 - [Pokemart Items by Badge Count - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10172995&postcount=96)
 
