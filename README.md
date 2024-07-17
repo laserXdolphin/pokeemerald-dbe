@@ -32,8 +32,5 @@ You are currently on the master branch which should always be a working (at leas
 - [Pokemart Items by Badge Count - ghoulslash](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
 
 ### pokeemerald Miscellaneous
-- [Disable Bag Use in Battle - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10184292&postcount=122)
-- Speedy Pokecenter Healing
-- Battle music changes depending on the map the player is in
-- Extra save space with two lines of code
-- Enable the Reset RTC Feature
+- [Speedy Pokecenter Healing)](https://github.com/pret/pokeemerald/wiki/Speedy-Nurse-Joy)
+- [Map Based Trainer Battle Music](https://github.com/pret/pokeemerald/wiki/Map-Based-Trainer-Battle-Music)
