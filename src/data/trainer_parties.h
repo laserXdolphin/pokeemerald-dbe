@@ -6455,7 +6455,7 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
     }
 };
 
-static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
+static const struct TrainerMon sParty_BrendanRoute103[] = {
     {
     .lvl = 5,
     .species = SPECIES_TORCHIC,
@@ -6584,7 +6584,7 @@ static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
     }
 };
 
-static const struct TrainerMon sParty_MayRoute103Treecko[] = {
+static const struct TrainerMon sParty_MayRoute103[] = {
     {
     .lvl = 5,
     .species = SPECIES_TORCHIC,
