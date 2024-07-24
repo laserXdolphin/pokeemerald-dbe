@@ -23,6 +23,9 @@ You are currently on the master branch which should always be a working (at leas
 
 ## Pret Tutorial Content
 
+### UI:
+- [Move Pokémon as first PSS option](https://www.pokecommunity.com/showpost.php?p=10065761)
+
 ### Removing content:
 - [Disabling Union Room check when entering Pokémon Centers](https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
 
@@ -32,5 +35,5 @@ You are currently on the master branch which should always be a working (at leas
 - [Pokemart Items by Badge Count - ghoulslash](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
 
 ### pokeemerald Miscellaneous
-- [Speedy Pokecenter Healing)](https://github.com/pret/pokeemerald/wiki/Speedy-Nurse-Joy)
+- [Speedy Pokecenter Healing](https://github.com/pret/pokeemerald/wiki/Speedy-Nurse-Joy)
 - [Map Based Trainer Battle Music](https://github.com/pret/pokeemerald/wiki/Map-Based-Trainer-Battle-Music)
