@@ -23,17 +23,15 @@ You are currently on the master branch which should always be a working (at leas
 
 ## Pret Tutorial Content
 
-### UI:
-- [Move Pokémon as first PSS option](https://www.pokecommunity.com/showpost.php?p=10065761)
-
-### Removing content:
-- [Disabling Union Room check when entering Pokémon Centers](https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
-
-### Features from other generations
-- [Remove the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
-- [Make the keyboard auto-switch to lowercase after the first character](https://github.com/pret/pokeemerald/wiki/Automatically-make-the-keyboard-switch-to-lowercase-after-the-first-character/)
+### UI
 - [Pokemart Items by Badge Count - ghoulslash](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
+- [Remove the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
+- [Move Pokémon as first PSS option](https://www.pokecommunity.com/showpost.php?p=10065761)
+- [Make the keyboard auto-switch to lowercase after the first character](https://github.com/pret/pokeemerald/wiki/Automatically-make-the-keyboard-switch-to-lowercase-after-the-first-character/)
 
-### pokeemerald Miscellaneous
+### Overworld
+- [Disabling Union Room check when entering Pokémon Centers](https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
 - [Speedy Pokecenter Healing](https://github.com/pret/pokeemerald/wiki/Speedy-Nurse-Joy)
+
+### Graphics
 - [Map Based Trainer Battle Music](https://github.com/pret/pokeemerald/wiki/Map-Based-Trainer-Battle-Music)
