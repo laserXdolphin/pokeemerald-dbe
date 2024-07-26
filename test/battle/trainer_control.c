@@ -11,7 +11,7 @@
 #include "constants/trainers.h"
 #include "constants/battle.h"
 
-
+// DEV: Sample Party
 static const struct TrainerMon sTestParty1[] =
 {
     {
