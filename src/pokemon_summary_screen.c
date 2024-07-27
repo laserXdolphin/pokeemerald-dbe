@@ -1636,14 +1636,14 @@ static void Task_HandleInput(u8 taskId)
             BeginCloseSummaryScreen(taskId);
         }
         // show IVs/EVs/stats on button presses
-        else if (JOY_NEW(R_BUTTON))
+        else if (JOY_NEW(R_BUTTON) && FlagGet(FLAG_BADGE02_GET))
         {
             if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
             {
                 BufferIvOrEvStats(0);
             }
         }
-        else if (JOY_NEW(L_BUTTON))
+        else if (JOY_NEW(L_BUTTON) && FlagGet(FLAG_BADGE05_GET))
         {
             if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
             {

@@ -6823,6 +6823,7 @@ static void SetMonMarkings(u8 markings)
 
 static bool8 IsRemovingLastPartyMon(void)
 {
+    // DEV: to enforce 2 pokemon in party change here
     if (sCursorArea == CURSOR_AREA_IN_PARTY && !sIsMonBeingMoved && CountPartyAliveNonEggMonsExcept(sCursorPosition) == 0)
         return TRUE;
     else
