@@ -899,7 +899,7 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 LittlerootTown_EventScript_GiveRunningShoes::
 	msgbox LittlerootTown_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYROGUE
-	givemon SPECIES_TYROGUE, 5, ITEM_LUCKY_EGG
+	givemon SPECIES_TYROGUE, 5, ITEM_BLACK_BELT
 	playfanfare MUS_OBTAIN_ITEM
 	message LittlerootTown_Text_ReceivedMonFromMom
 	waitmessage
