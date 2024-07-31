@@ -153,8 +153,13 @@ SlateportCity_Pokemart_EnergyGuru:
 	.2byte ITEM_CARBOS
 	.2byte ITEM_ZINC
 	.2byte ITEM_CALCIUM
-	.2byte ITEM_HP_UP
-	.2byte ITEM_NONE
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_NONE	
 	release
 	end
 
@@ -504,17 +509,23 @@ SlateportCity_EventScript_DollClerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemartdecoration SlateportCity_PokemartDecor_Dolls
+	pokemart SlateportCity_PokemartDecor_Dolls
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
 SlateportCity_PokemartDecor_Dolls:
-	.2byte DECOR_AZURILL_DOLL
-	.2byte DECOR_MARILL_DOLL
-	.2byte DECOR_SKITTY_DOLL
-	.2byte DECOR_NONE
+	.2byte ITEM_FULL_INCENSE
+	.2byte ITEM_LAX_INCENSE
+	.2byte ITEM_LUCK_INCENSE
+	.2byte ITEM_ODD_INCENSE
+	.2byte ITEM_PURE_INCENSE
+	.2byte ITEM_ROCK_INCENSE
+	.2byte ITEM_ROSE_INCENSE
+	.2byte ITEM_SEA_INCENSE
+	.2byte ITEM_WAVE_INCENSE
+	.2byte ITEM_NONE
 	release
 	end
 
@@ -550,6 +561,9 @@ SlateportCity_PokemartDecor:
 	.2byte DECOR_A_NOTE_MAT
 	.2byte DECOR_B_NOTE_MAT
 	.2byte DECOR_C_HIGH_NOTE_MAT
+	.2byte DECOR_AZURILL_DOLL
+	.2byte DECOR_MARILL_DOLL
+	.2byte DECOR_SKITTY_DOLL
 	.2byte DECOR_NONE
 	release
 	end
