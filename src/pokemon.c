@@ -5546,6 +5546,7 @@ const u32 *GetMonSpritePalFromSpeciesAndPersonality(u16 species, bool32 isShiny,
 
 bool8 IsMoveHM(u16 move)
 {
+    return FALSE;
     int i = 0;
     while (sHMMoves[i] != HM_MOVES_END)
     {
