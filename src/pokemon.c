@@ -5892,7 +5892,6 @@ const u32 *GetMonSpritePalFromSpecies(u16 species, bool32 isShiny, bool32 isFema
 
 bool8 IsMoveHM(u16 move)
 {
-    return FALSE;
     int i = 0;
 
     if (P_CAN_FORGET_HIDDEN_MOVE)
