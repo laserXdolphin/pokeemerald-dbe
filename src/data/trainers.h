@@ -7139,7 +7139,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
-        .party = TRAINER_PARTY(sParty_BrendanRustboroTreecko),
+        .party = TRAINER_PARTY(sParty_BrendanRustboro),
     },
 
     [TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
@@ -9251,7 +9251,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
-        .party = TRAINER_PARTY(sParty_MayRustboroTreecko),
+        .party = TRAINER_PARTY(sParty_MayRustboro),
     },
 
     [TRAINER_MAY_RUSTBORO_TORCHIC] =
