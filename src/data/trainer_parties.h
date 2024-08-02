@@ -3551,7 +3551,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     .heldItem = ITEM_SITRUS_BERRY,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 192, 0),
-    .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_OUT, MOVE_SHOCK_WAVE}
+    .moves = {MOVE_THUNDERBOLT, MOVE_NUZZLE, MOVE_IRON_TAIL, MOVE_SHOCK_WAVE}
     }
 };
 
@@ -9237,7 +9237,7 @@ static const struct TrainerMon sParty_WallyMauville[] = {
     .heldItem = ITEM_LIGHT_BALL,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 128, 0, 0),
-    .moves = {MOVE_ELECTRO_BALL, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_THUNDER_SHOCK}
+    .moves = {MOVE_ELECTRO_BALL, MOVE_NUZZLE, MOVE_QUICK_ATTACK, MOVE_THUNDER_SHOCK}
     },
     {
     .lvl = 20,
