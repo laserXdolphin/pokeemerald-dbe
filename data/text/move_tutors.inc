@@ -27,13 +27,11 @@ MoveTutor_Text_SwaggerTaught:
 MoveTutor_Text_RolloutTeach:
 	.string "Did you know that you can go from\n"
 	.string "here a long way in that direction\l"
-	.string "without changing direction?\p"
+	.string "without changing direction?\n"
 	.string "I might even be able to roll\n"
-	.string "that way.\p"
-	.string "Do you think your POKéMON will\n"
-	.string "want to roll, too?\p"
-	.string "I can teach one the move ROLLOUT\n"
-	.string "if you'd like.$"
+	.string "that way. Anyway.\p"
+	.string "I can teach a POKéMON the move\n"
+	.string "WILL-O-WISP if you'd like.$"
 
 MoveTutor_Text_RolloutDeclined:
 	.string "You don't need to be shy about it.\n"
@@ -48,11 +46,11 @@ MoveTutor_Text_RolloutTaught:
 	.string "happy. Come on, let's roll!$"
 
 MoveTutor_Text_FuryCutterTeach:
-	.string "There's a move that gets stronger\n"
-	.string "when you keep using it in a row.\p"
-	.string "It's a BUG-type move, and it is\n"
-	.string "wickedly cool.\p"
-	.string "It's called FURY CUTTER.\n"
+	.string "There's a move that boosts the power\n"
+	.string "of the ally's attack in a battle.\p"
+	.string "It's a NORMAL-type move,\n"
+	.string "and it is wickedly cool.\p"
+	.string "It's called HELPING HAND.\n"
 	.string "Want me to teach it to a POKéMON?$"
 
 MoveTutor_Text_FuryCutterDeclined:
@@ -63,8 +61,8 @@ MoveTutor_Text_FuryCutterWhichMon:
 	.string "Show me which POKéMON I should teach.$"
 
 MoveTutor_Text_FuryCutterTaught:
-	.string "I get a thrill watching to see if\n"
-	.string "the move keeps hitting in succession!$"
+	.string "I get a thrill watching to see\n"
+	.string "which combinations you will use!$"
 
 MoveTutor_MimicTeach:
 	.string "Ah, young one!\p"
@@ -73,10 +71,10 @@ MoveTutor_MimicTeach:
 	.string "folks of this town.\p"
 	.string "What do you say, young one?\n"
 	.string "Would you agree to it if I were to\l"
-	.string "offer to teach the move MIMIC?$"
+	.string "offer to teach the move ROOST?$"
 
 MoveTutor_MimicDeclined:
-	.string "Oh, boo! I wanted to teach MIMIC\n"
+	.string "Oh, boo! I wanted to teach ROOST\n"
 	.string "to your POKéMON!$"
 
 MoveTutor_Text_MimicWhichMon:
@@ -85,9 +83,8 @@ MoveTutor_Text_MimicWhichMon:
 	.string "you wish me to teach.$"
 
 MoveTutor_Text_MimicTaught:
-	.string "MIMIC is a move of great depth.\p"
-	.string "Could you execute it to perfection\n"
-	.string "as well as me…?$"
+	.string "ROOT is a move of great depth.\p"
+	.string "Could you execute it to perfection?$"
 
 MoveTutor_Text_MetronomeTeach:
 	.string "I want all sorts of things!\n"
@@ -174,7 +171,7 @@ MoveTutor_Text_DynamicPunchTeach:
 	.string "What, don't look at me that way!\n"
 	.string "I'm only hitting the ground!\p"
 	.string "Or do you want me to teach your\n"
-	.string "POKéMON DYNAMICPUNCH?$"
+	.string "POKéMON ICE SPINNER?$"
 
 MoveTutor_Text_DynamicPunchDeclined:
 	.string "Darn! You're even making fun of me?\n"
@@ -186,7 +183,7 @@ MoveTutor_Text_DynamicPunchWhichMon:
 
 MoveTutor_Text_DynamicPunchTaught:
 	.string "I want you to win at the MOSSDEEP GYM\n"
-	.string "using that DYNAMICPUNCH!$"
+	.string "using that ICE SPINNER!$"
 
 MoveTutor_Text_DoubleEdgeTeach:
 	.string "Sigh…\p"
@@ -194,10 +191,10 @@ MoveTutor_Text_DoubleEdgeTeach:
 	.string "lovably admirable.\p"
 	.string "But that also means I have many\n"
 	.string "rivals for his attention.\p"
-	.string "He's got appeal with a DOUBLE-EDGE.\n"
+	.string "He's got appeal with a double-edge.\n"
 	.string "I couldn't even catch his eye.\p"
 	.string "Please, let me teach your POKéMON\n"
-	.string "the move DOUBLE-EDGE!$"
+	.string "the move DRACO METEOR!$"
 
 MoveTutor_Text_DoubleEdgeDeclined:
 	.string "Oh…\n"
@@ -205,7 +202,7 @@ MoveTutor_Text_DoubleEdgeDeclined:
 
 MoveTutor_Text_DoubleEdgeWhichMon:
 	.string "Okay, which POKéMON should I teach\n"
-	.string "DOUBLE-EDGE?$"
+	.string "DRACO METEOR-EDGE?$"
 
 MoveTutor_Text_DoubleEdgeTaught:
 	.string "I won't live for love anymore!\n"

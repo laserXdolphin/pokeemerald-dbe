@@ -67,31 +67,31 @@ BattleFrontier_Lounge7_EventScript_ChooseNewLeftTutorMove::
 
 BattleFrontier_Lounge7_EventScript_Softboiled::
 	setvar VAR_0x8008, 16
-	setvar VAR_0x8005, MOVE_SOFT_BOILED
+	setvar VAR_0x8005, MOVE_GRASSY_GLIDE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_SeismicToss::
 	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_SEISMIC_TOSS
+	setvar VAR_0x8005, MOVE_EXPANDING_FORCE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_DreamEater::
 	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_DREAM_EATER
+	setvar VAR_0x8005, MOVE_DUAL_WINGBEAT
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_MegaPunch::
 	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_MEGA_PUNCH
+	setvar VAR_0x8005, MOVE_SCORCHING_SANDS
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_MegaKick::
 	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_MEGA_KICK
+	setvar VAR_0x8005, MOVE_PSYCHIC_NOISE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
@@ -109,7 +109,7 @@ BattleFrontier_Lounge7_EventScript_RockSlide::
 
 BattleFrontier_Lounge7_EventScript_Counter::
 	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_COUNTER
+	setvar VAR_0x8005, MOVE_TRAILBLAZE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
@@ -191,25 +191,25 @@ BattleFrontier_Lounge7_EventScript_ChooseNewRightTutorMove::
 
 BattleFrontier_Lounge7_EventScript_DefenseCurl::
 	setvar VAR_0x8008, 16
-	setvar VAR_0x8005, MOVE_DEFENSE_CURL
+	setvar VAR_0x8005, MOVE_ICE_FANG
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_Snore::
 	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_SNORE
+	setvar VAR_0x8005, MOVE_THUNDER_FANG
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_MudSlap::
 	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_MUD_SLAP
+	setvar VAR_0x8005, MOVE_FIRE_FANG
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_Swift::
 	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_SWIFT
+	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
@@ -221,13 +221,13 @@ BattleFrontier_Lounge7_EventScript_IcyWind::
 
 BattleFrontier_Lounge7_EventScript_Endure::
 	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_ENDURE
+	setvar VAR_0x8005, MOVE_IRON_HEAD
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_PsychUp::
 	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_PSYCH_UP
+	setvar VAR_0x8005, MOVE_POISON_JAB
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 

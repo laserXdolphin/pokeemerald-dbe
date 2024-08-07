@@ -33,7 +33,7 @@ MauvilleCity_EventScript_RolloutTutor::
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined
 	msgbox MoveTutor_Text_RolloutWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_ROLLOUT
+	setvar VAR_0x8005, MOVE_WILL_O_WISP
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RolloutDeclined
 	setflag FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT
@@ -59,7 +59,7 @@ VerdanturfTown_PokemonCenter_1F_EventScript_FuryCutterTutor::
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FuryCutterDeclined
 	msgbox MoveTutor_Text_FuryCutterWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_FURY_CUTTER
+	setvar VAR_0x8005, MOVE_HELPING_HAND
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_FuryCutterDeclined
 	setflag FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER
@@ -85,7 +85,7 @@ LavaridgeTown_House_EventScript_MimicTutor::
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MimicDeclined
 	msgbox MoveTutor_Text_MimicWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_MIMIC
+	setvar VAR_0x8005, MOVE_ROOST
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_MimicDeclined
 	setflag FLAG_MOVE_TUTOR_TAUGHT_MIMIC
@@ -189,7 +189,7 @@ MossdeepCity_EventScript_DynamicPunchTutor::
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DynamicPunchDeclined
 	msgbox MoveTutor_Text_DynamicPunchWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_DYNAMIC_PUNCH
+	setvar VAR_0x8005, MOVE_ICE_SPINNER
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_DynamicPunchDeclined
 	setflag FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH
@@ -215,7 +215,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_DoubleEdgeTutor::
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DoubleEdgeDeclined
 	msgbox MoveTutor_Text_DoubleEdgeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_DOUBLE_EDGE
+	setvar VAR_0x8005, MOVE_DRACO_METEOR
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_DoubleEdgeDeclined
 	setflag FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE
