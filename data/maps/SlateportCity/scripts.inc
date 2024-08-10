@@ -751,11 +751,22 @@ SlateportCity_EventScript_Man3::
 SlateportCity_EventScript_BerryPowderClerk::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_POWDER_JAR, SlateportCity_EventScript_ReceivedPowderJar
-	msgbox SlateportCity_Text_ExplainBerries, MSGBOX_DEFAULT
-	giveitem ITEM_POWDER_JAR
-	setflag FLAG_RECEIVED_POWDER_JAR
-	msgbox SlateportCity_Text_ExplainBerryPowder, MSGBOX_DEFAULT
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart SlateportCity_PokemartBerry
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_PokemartBerry:
+	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_KELPSY_BERRY
+	.2byte ITEM_QUALOT_BERRY
+	.2byte ITEM_HONDEW_BERRY
+	.2byte ITEM_GREPA_BERRY
+	.2byte ITEM_TAMATO_BERRY
+	.2byte ITEM_NONE
 	release
 	end
 
