@@ -4,7 +4,7 @@ MauvilleCity_BikeShop_MapScripts::
 MauvilleCity_BikeShop_EventScript_Rydel::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_AskSwitchBikes
+	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_ExplainSwitchBikes
 	goto_if_set FLAG_DECLINED_BIKE, MauvilleCity_BikeShop_EventScript_SkipGreeting
 	msgbox MauvilleCity_BikeShop_Text_RydelGreeting, MSGBOX_DEFAULT
 	msgbox MauvilleCity_BikeShop_Text_DidYouComeFromFarAway, MSGBOX_YESNO
@@ -34,8 +34,9 @@ MauvilleCity_BikeShop_EventScript_NotFar::
 	end
 
 MauvilleCity_BikeShop_EventScript_YesFar::
+	message MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne
 	setflag FLAG_RECEIVED_BIKE
-	goto MauvilleCity_BikeShop_EventScript_ChooseBike
+	goto MauvilleCity_BikeShop_EventScript_GetMachBike
 	end
 
 MauvilleCity_BikeShop_EventScript_GetMachBike::
@@ -56,6 +57,10 @@ MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes::
 	msgbox MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes, MSGBOX_DEFAULT
 	special SwapRegisteredBike
 	release
+	end
+
+MauvilleCity_BikeShop_EventScript_ExplainSwitchBikes::
+	msgbox MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes, MSGBOX_NPC
 	end
 
 MauvilleCity_BikeShop_EventScript_AskSwitchBikes::
@@ -204,17 +209,14 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
 	.string "I'll tell you what!\n"
 	.string "I'll give you a BIKE!\p"
 	.string "Oh, wait a second!\p"
-	.string "I forgot to tell you that there are\n"
-	.string "two kinds of BIKES!\p"
+	.string "I forgot to tell you that the BIKE\n"
+	.string "has two modes!\p"
 	.string "They are the MACH BIKE and\n"
 	.string "the ACRO BIKE!\p"
 	.string "The MACH BIKE is for cyclists who want\n"
 	.string "to feel the wind with their bodies!\p"
 	.string "And an ACRO BIKE is for those who\n"
-	.string "prefer technical rides!\p"
-	.string "I'm a real sweetheart, so you can\n"
-	.string "have whichever one you like!\p"
-	.string "Which one will you choose?$"
+	.string "prefer technical rides!$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
 	.string "{PLAYER} chose the MACH BIKE.$"
@@ -223,8 +225,8 @@ MauvilleCity_BikeShop_Text_ChoseAcroBike:
 	.string "{PLAYER} chose the ACRO BIKE.$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes:
-	.string "RYDEL: If you get the urge to switch\n"
-	.string "BIKES, just come see me!$"
+	.string "RYDEL: If you get the urge to switch,\n"
+	.string "just press the R Button while riding it!$"
 
 MauvilleCity_BikeShop_Text_WantToSwitchBikes:
 	.string "RYDEL: Oh? Were you thinking about\n"
