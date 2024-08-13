@@ -1326,10 +1326,10 @@ Route111_Text_DustyPostRematch:
 
 Route111_Text_TravisIntro:
 	.string "I'm full of pep!\n"
-	.string "And my POKéMON is peppy, too!$"
+	.string "And my POKéMON are peppy, too!$"
 
 Route111_Text_TravisDefeat:
-	.string "My POKéMON lost its pep…$"
+	.string "My POKéMON lost their pep…$"
 
 Route111_Text_TravisPostBattle:
 	.string "When I see a TRAINER with a lot of pep,\n"

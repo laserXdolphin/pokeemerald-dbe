@@ -72,7 +72,7 @@ Route113_GlassWorkshop_EventScript_ChooseGlassItem::
 	end
 
 Route113_GlassWorkshop_EventScript_BlueFlute::
-	setvar VAR_0x8008, ITEM_BLUE_FLUTE
+	setvar VAR_0x8008, ITEM_WIDE_LENS
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, BLUE_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -84,76 +84,74 @@ Route113_GlassWorkshop_EventScript_BlueFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_YellowFlute::
-	setvar VAR_0x8008, ITEM_YELLOW_FLUTE
+	setvar VAR_0x8008, ITEM_ZOOM_LENS
+	bufferitemname STR_VAR_1, VAR_0x8008
+	setvar VAR_0x800A, BLUE_FLUTE_PRICE
+	goto_if_lt VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
+	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
+	setvar VAR_GLASS_WORKSHOP_STATE, 11
+	subvar VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE
+	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
+	end
+
+Route113_GlassWorkshop_EventScript_RedFlute::
+	setvar VAR_0x8008, ITEM_SCOPE_LENS
+	bufferitemname STR_VAR_1, VAR_0x8008
+	setvar VAR_0x800A, BLUE_FLUTE_PRICE
+	goto_if_lt VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
+	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
+	setvar VAR_GLASS_WORKSHOP_STATE, 12
+	subvar VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE
+	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
+	end
+
+Route113_GlassWorkshop_EventScript_WhiteFlute::
+	setvar VAR_0x8008, ITEM_CLEAR_AMULET
+	bufferitemname STR_VAR_1, VAR_0x8008
+	setvar VAR_0x800A, BLUE_FLUTE_PRICE
+	goto_if_lt VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
+	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
+	setvar VAR_GLASS_WORKSHOP_STATE, 13
+	subvar VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE
+	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
+	end
+
+Route113_GlassWorkshop_EventScript_BlackFlute::
+	setvar VAR_0x8008, ITEM_METRONOME
+	bufferitemname STR_VAR_1, VAR_0x8008
+	setvar VAR_0x800A, BLUE_FLUTE_PRICE
+	goto_if_lt VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
+	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
+	setvar VAR_GLASS_WORKSHOP_STATE, 14
+	subvar VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE
+	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
+	end
+
+Route113_GlassWorkshop_EventScript_PrettyChair::
+	setvar VAR_0x8008, ITEM_WISE_GLASSES
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, YELLOW_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, YELLOW_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
 	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
-	setvar VAR_GLASS_WORKSHOP_STATE, 11
+	setvar VAR_GLASS_WORKSHOP_STATE, 15
 	subvar VAR_ASH_GATHER_COUNT, YELLOW_FLUTE_PRICE
 	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
 	end
 
-Route113_GlassWorkshop_EventScript_RedFlute::
-	setvar VAR_0x8008, ITEM_RED_FLUTE
-	bufferitemname STR_VAR_1, VAR_0x8008
-	setvar VAR_0x800A, RED_FLUTE_PRICE
-	goto_if_lt VAR_ASH_GATHER_COUNT, RED_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
-	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
-	setvar VAR_GLASS_WORKSHOP_STATE, 12
-	subvar VAR_ASH_GATHER_COUNT, RED_FLUTE_PRICE
-	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
-	end
-
-Route113_GlassWorkshop_EventScript_WhiteFlute::
-	setvar VAR_0x8008, ITEM_WHITE_FLUTE
-	bufferitemname STR_VAR_1, VAR_0x8008
-	setvar VAR_0x800A, WHITE_FLUTE_PRICE
-	goto_if_lt VAR_ASH_GATHER_COUNT, WHITE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
-	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
-	setvar VAR_GLASS_WORKSHOP_STATE, 13
-	subvar VAR_ASH_GATHER_COUNT, WHITE_FLUTE_PRICE
-	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
-	end
-
-Route113_GlassWorkshop_EventScript_BlackFlute::
-	setvar VAR_0x8008, ITEM_BLACK_FLUTE
-	bufferitemname STR_VAR_1, VAR_0x8008
-	setvar VAR_0x800A, BLACK_FLUTE_PRICE
-	goto_if_lt VAR_ASH_GATHER_COUNT, BLACK_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
-	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
-	setvar VAR_GLASS_WORKSHOP_STATE, 14
-	subvar VAR_ASH_GATHER_COUNT, BLACK_FLUTE_PRICE
-	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
-	end
-
-Route113_GlassWorkshop_EventScript_PrettyChair::
-	setvar VAR_0x8009, 1
-	setvar VAR_0x8008, DECOR_PRETTY_CHAIR
-	bufferdecorationname STR_VAR_1, VAR_0x8008
-	setvar VAR_0x800A, PRETTY_CHAIR_PRICE
-	goto_if_lt VAR_ASH_GATHER_COUNT, PRETTY_CHAIR_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
-	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
-	setvar VAR_GLASS_WORKSHOP_STATE, 15
-	subvar VAR_ASH_GATHER_COUNT, PRETTY_CHAIR_PRICE
-	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
-	end
-
 Route113_GlassWorkshop_EventScript_PrettyDesk::
-	setvar VAR_0x8009, 1
-	setvar VAR_0x8008, DECOR_PRETTY_DESK
-	bufferdecorationname STR_VAR_1, VAR_0x8008
-	setvar VAR_0x800A, PRETTY_DESK_PRICE
-	goto_if_lt VAR_ASH_GATHER_COUNT, PRETTY_DESK_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
+	setvar VAR_0x8008, ITEM_LIGHT_CLAY
+	bufferitemname STR_VAR_1, VAR_0x8008
+	setvar VAR_0x800A, YELLOW_FLUTE_PRICE
+	goto_if_lt VAR_ASH_GATHER_COUNT, YELLOW_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
 	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route113_GlassWorkshop_EventScript_ChooseDifferentItem
 	setvar VAR_GLASS_WORKSHOP_STATE, 16
-	subvar VAR_ASH_GATHER_COUNT, PRETTY_DESK_PRICE
+	subvar VAR_ASH_GATHER_COUNT, YELLOW_FLUTE_PRICE
 	goto Route113_GlassWorkshop_EventScript_MakeGlassItem
 	end
 
@@ -233,50 +231,50 @@ Route113_GlassWorkshop_EventScript_GiveItemAfterNoRoom::
 
 Route113_GlassWorkshop_EventScript_GiveBlueFlute::
 	setvar VAR_0x8009, 0
-	setvar VAR_0x8008, ITEM_BLUE_FLUTE
+	setvar VAR_0x8008, ITEM_WIDE_LENS
 	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
 
 Route113_GlassWorkshop_EventScript_GiveYellowFlute::
 	setvar VAR_0x8009, 0
-	setvar VAR_0x8008, ITEM_YELLOW_FLUTE
+	setvar VAR_0x8008, ITEM_ZOOM_LENS
 	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
 
 Route113_GlassWorkshop_EventScript_GiveRedFlute::
 	setvar VAR_0x8009, 0
-	setvar VAR_0x8008, ITEM_RED_FLUTE
+	setvar VAR_0x8008, ITEM_SCOPE_LENS
 	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
 
 Route113_GlassWorkshop_EventScript_GiveWhiteFlute::
 	setvar VAR_0x8009, 0
-	setvar VAR_0x8008, ITEM_WHITE_FLUTE
+	setvar VAR_0x8008, ITEM_CLEAR_AMULET
 	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
 
 Route113_GlassWorkshop_EventScript_GiveBlackFlute::
 	setvar VAR_0x8009, 0
-	setvar VAR_0x8008, ITEM_BLACK_FLUTE
+	setvar VAR_0x8008, ITEM_METRONOME
 	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
 
 Route113_GlassWorkshop_EventScript_GivePrettyChair::
-	setvar VAR_0x8009, 1
-	setvar VAR_0x8008, DECOR_PRETTY_CHAIR
-	bufferdecorationname STR_VAR_1, DECOR_PRETTY_CHAIR
+	setvar VAR_0x8009, 0
+	setvar VAR_0x8008, ITEM_WISE_GLASSES
+	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
 
 Route113_GlassWorkshop_EventScript_GivePrettyDesk::
-	setvar VAR_0x8009, 1
-	setvar VAR_0x8008, DECOR_PRETTY_DESK
-	bufferdecorationname STR_VAR_1, DECOR_PRETTY_DESK
+	setvar VAR_0x8009, 0
+	setvar VAR_0x8008, ITEM_LIGHT_CLAY
+	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
 
