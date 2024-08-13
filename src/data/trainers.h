@@ -5054,17 +5054,17 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Jani),
     },
 
-    [TRAINER_LAO_1] =
-    {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .trainerName = _("LAO"),
-        .items = {},
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
-        .party = TRAINER_PARTY(sParty_Lao1),
-    },
+[TRAINER_LAO_1] =
+{
+    .trainerClass = TRAINER_CLASS_NINJA_BOY,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .trainerPic = TRAINER_PIC_NINJA_BOY,
+    .trainerName = _("LAO"),
+    .items = {},
+    .doubleBattle = TRUE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
+    .party = TRAINER_PARTY(sParty_Lao1),
+},
 
     [TRAINER_LUNG] =
     {
@@ -5078,53 +5078,53 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Lung),
     },
 
-    [TRAINER_LAO_2] =
-    {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .trainerName = _("LAO"),
-        .items = {},
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
-        .party = TRAINER_PARTY(sParty_Lao2),
-    },
+[TRAINER_LAO_2] =
+{
+    .trainerClass = TRAINER_CLASS_NINJA_BOY,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .trainerPic = TRAINER_PIC_NINJA_BOY,
+    .trainerName = _("LAO"),
+    .items = {},
+    .doubleBattle = TRUE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
+    .party = TRAINER_PARTY(sParty_Lao2),
+},
 
-    [TRAINER_LAO_3] =
-    {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .trainerName = _("LAO"),
-        .items = {},
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
-        .party = TRAINER_PARTY(sParty_Lao3),
-    },
+[TRAINER_LAO_3] =
+{
+    .trainerClass = TRAINER_CLASS_NINJA_BOY,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .trainerPic = TRAINER_PIC_NINJA_BOY,
+    .trainerName = _("LAO"),
+    .items = {},
+    .doubleBattle = TRUE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
+    .party = TRAINER_PARTY(sParty_Lao3),
+},
 
-    [TRAINER_LAO_4] =
-    {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .trainerName = _("LAO"),
-        .items = {},
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
-        .party = TRAINER_PARTY(sParty_Lao4),
-    },
+[TRAINER_LAO_4] =
+{
+    .trainerClass = TRAINER_CLASS_NINJA_BOY,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .trainerPic = TRAINER_PIC_NINJA_BOY,
+    .trainerName = _("LAO"),
+    .items = {},
+    .doubleBattle = TRUE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
+    .party = TRAINER_PARTY(sParty_Lao4),
+},
 
-    [TRAINER_LAO_5] =
-    {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .trainerName = _("LAO"),
-        .items = {},
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
-        .party = TRAINER_PARTY(sParty_Lao5),
-    },
+[TRAINER_LAO_5] =
+{
+    .trainerClass = TRAINER_CLASS_NINJA_BOY,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .trainerPic = TRAINER_PIC_NINJA_BOY,
+    .trainerName = _("LAO"),
+    .items = {},
+    .doubleBattle = TRUE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_WILL_SUICIDE,
+    .party = TRAINER_PARTY(sParty_Lao5),
+},
 
     [TRAINER_JOCELYN] =
     {
