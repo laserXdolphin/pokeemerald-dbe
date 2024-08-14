@@ -6266,12 +6266,12 @@
     .party = TRAINER_PARTY(sParty_WallyVR1),
 },
 
-[TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
+[TRAINER_COURTNEY_METEOR_FALLS] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .trainerPic = TRAINER_PIC_BRENDAN,
-    .trainerName = _("BRENDAN"),
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+    .trainerName = _("COURTNEY"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,

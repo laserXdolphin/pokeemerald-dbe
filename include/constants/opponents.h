@@ -523,7 +523,7 @@
 #define TRAINER_EDWIN_4                     517
 #define TRAINER_EDWIN_5                     518
 #define TRAINER_WALLY_VR_1                  519
-#define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520 // DEV: Free Trainer
+#define TRAINER_COURTNEY_METEOR_FALLS       520
 #define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521 // DEV: Free Trainer
 #define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522
 #define TRAINER_BRENDAN_ROUTE_103           523
