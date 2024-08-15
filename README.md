@@ -7,7 +7,7 @@ You are currently on the master branch which should always be a working (at leas
 
 ## What feature branches are included?
 
-- **[RHH's pokeemerald-expansion v1.8.5](https://github.com/rh-hideout/pokeemerald-expansion?tab=readme-ov-file#pokeemerald-expansion)**
+- **[RHH's pokeemerald-expansion v1.9.0](https://github.com/rh-hideout/pokeemerald-expansion?tab=readme-ov-file#pokeemerald-expansion)**
 - **[Prof. Leon Dias' Fully Decapitalized Pokeemerald](https://www.pokecommunity.com/showthread.php?t=451448)**
 - **[Content from Pokecommunity Simple Modifications Directory Content](https://www.pokecommunity.com/showthread.php?t=416647):** IV/EV Stat screens 
 - **[Fixes and content from the pret tutorials](https://github.com/pret/pokeemerald/wiki/Tutorials):** Map dependent Trainer Battle Music
@@ -20,22 +20,17 @@ You are currently on the master branch which should always be a working (at leas
 - [Faster Surfing - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10137446)
 - [Item Descriptions On First Obtain - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10126502)
 - [Custom Battle Music Via Scripting - Anon822](https://www.pokecommunity.com/showpost.php?p=10341282)
-- [Power item and Destiny Knot breeding - DarkDown](https://www.pokecommunity.com/showpost.php?p=10488226)
 
 ## Pret Tutorial Content
 
-### Removing content:
-- Update obedience levels to current standards
-- Disabling Union Room check when entering Pokémon Centers
+### UI
+- [Pokemart Items by Badge Count - ghoulslash](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
+- [Remove the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
 
-### Features from other generations
-- [Remove the extra save confirmation - Hiroshi Sotomura](https://www.pokecommunity.com/showpost.php?p=10211835)
-- Make the keyboard auto-switch to lowercase after the first character
-- [Pokemart Items by Badge Count - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10172995&postcount=96)
+### Overworld
+- [Disabling Union Room check when entering Pokémon Centers](https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
+- [Speedy Pokecenter Healing](https://github.com/pret/pokeemerald/wiki/Speedy-Nurse-Joy)
+- [Pokemon can use learnable Field Moves so long as they are in the Bag](https://github.com/pret/pokeemerald/wiki/Use-HMs-Without-Any-Pokemon-in-your-Party-Knowing-Them#only-pokemon-that-can-learn-hm-can-use-field-move-so-long-as-hm-is-in-bag)
 
-### pokeemerald Miscellaneous
-- [Disable Bag Use in Battle - ghoulslash](https://www.pokecommunity.com/showpost.php?p=10184292&postcount=122)
-- Speedy Pokecenter Healing
-- Battle music changes depending on the map the player is in
-- Extra save space with two lines of code
-- Enable the Reset RTC Feature
+### Graphics
+- [Map Based Trainer Battle Music](https://github.com/pret/pokeemerald/wiki/Map-Based-Trainer-Battle-Music)
