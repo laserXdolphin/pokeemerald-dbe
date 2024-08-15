@@ -30,6 +30,7 @@ You are currently on the master branch which should always be a working (at leas
 ### Overworld
 - [Disabling Union Room check when entering Pokémon Centers](https://github.com/pret/pokeemerald/wiki/Disabling-Union-Room-check-when-entering-Pok%C3%A9mon-Centers)
 - [Speedy Pokecenter Healing](https://github.com/pret/pokeemerald/wiki/Speedy-Nurse-Joy)
+- [Pokemon can use learnable Field Moves so long as they are in the Bag](https://github.com/pret/pokeemerald/wiki/Use-HMs-Without-Any-Pokemon-in-your-Party-Knowing-Them#only-pokemon-that-can-learn-hm-can-use-field-move-so-long-as-hm-is-in-bag)
 
 ### Graphics
 - [Map Based Trainer Battle Music](https://github.com/pret/pokeemerald/wiki/Map-Based-Trainer-Battle-Music)
