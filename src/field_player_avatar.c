@@ -8,6 +8,7 @@
 #include "field_effect_helpers.h"
 #include "field_player_avatar.h"
 #include "fieldmap.h"
+#include "item.h"
 #include "menu.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
@@ -1284,7 +1285,7 @@ bool8 PartyHasMonWithSurf(void)
         {
             if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
-            if (MonKnowsMove(&gPlayerParty[i], MOVE_SURF))
+            if (MonKnowsMove(&gPlayerParty[i], MOVE_SURF) || (CanLearnTeachableMove(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG), MOVE_SURF) && CheckBagHasItem(ITEM_HM03 ,1)))
                 return TRUE;
         }
     }
