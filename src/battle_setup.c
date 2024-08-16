@@ -1023,13 +1023,13 @@ static void CB2_EndFirstBattle(void)
 
 static void TryUpdateGymLeaderRematchFromWild(void)
 {
-    if (GetGameStat(GAME_STAT_WILD_BATTLES) % 60 == 0)
+    if (GetGameStat(GAME_STAT_WILD_BATTLES) % 15 == 0)
         UpdateGymLeaderRematch();
 }
 
 static void TryUpdateGymLeaderRematchFromTrainer(void)
 {
-    if (GetGameStat(GAME_STAT_TRAINER_BATTLES) % 20 == 0)
+    if (GetGameStat(GAME_STAT_TRAINER_BATTLES) % 5 == 0)
         UpdateGymLeaderRematch();
 }
 
@@ -1750,7 +1750,7 @@ static bool32 UpdateRandomTrainerRematches(const struct RematchTrainer *table, u
             // Trainer already wants a rematch. Don't bother updating it.
             return TRUE;
         }
-        else if (TrainerIsMatchCallRegistered(i) && ((Random() % 100) <= 30))
+        else if (TrainerIsMatchCallRegistered(i) && ((Random() % 100) <= 50))
             // 31% chance of getting a rematch.
         {
             SetRematchIdForTrainer(table, i);
@@ -1918,6 +1918,7 @@ static bool8 WasSecondRematchWon(const struct RematchTrainer *table, u16 firstBa
 #if FREE_MATCH_CALL == FALSE
 static bool32 HasAtLeastFiveBadges(void)
 {
+    return FlagGet(FLAG_MET_ARCHIE_METEOR_FALLS);
     s32 i, count;
 
     for (count = 0, i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
