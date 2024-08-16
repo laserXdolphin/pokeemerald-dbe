@@ -9,7 +9,7 @@ LavaridgeTown_House_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+	playmoncry SPECIES_LILLIPUP, CRY_MODE_NORMAL
 	msgbox LavaridgeTown_House_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -22,5 +22,5 @@ LavaridgeTown_House_Text_WifeWarmingEggInHotSprings:
 	.string "And they discovered that EGG!$"
 
 LavaridgeTown_House_Text_Zigzagoon:
-	.string "ZIGZAGOON: Pshoo!$"
+	.string "LILLIPUP: Pup!$"
 

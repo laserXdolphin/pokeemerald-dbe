@@ -858,7 +858,7 @@
             "mons": [
               {
                 "min_level": 20,
-                "max_level": 20,
+                "max_level": 22,
                 "species": "SPECIES_HIPPOPOTAS"
               },
               {
@@ -868,7 +868,7 @@
               },
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 22,
                 "species": "SPECIES_HIPPOPOTAS"
               },
               {
@@ -877,28 +877,28 @@
                 "species": "SPECIES_TRAPINCH"
               },
               {
-                "min_level": 19,
-                "max_level": 19,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 22,
                 "species": "SPECIES_BALTOY"
               },
               {
-                "min_level": 19,
-                "max_level": 19,
+                "min_level": 20,
+                "max_level": 22,
                 "species": "SPECIES_HELIOPTILE"
               },
               {
-                "min_level": 19,
-                "max_level": 19,
+                "min_level": 22,
+                "max_level": 22,
                 "species": "SPECIES_TRAPINCH"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
+                "max_level": 22,
                 "species": "SPECIES_MARACTUS"
               },
               {
@@ -907,8 +907,8 @@
                 "species": "SPECIES_CACNEA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 21,
+                "max_level": 21,
                 "species": "SPECIES_CACNEA"
               },
               {
