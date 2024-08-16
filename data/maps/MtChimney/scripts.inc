@@ -67,6 +67,9 @@ MtChimney_EventScript_Maxie::
 	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieApproachPlayerNorth
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
 	msgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
@@ -588,7 +591,7 @@ MtChimney_Text_TabithaIntro:
 	.string "Hehehe!\p"
 	.string "So you've come all the way here!\p"
 	.string "But you're too late!\n"
-	.string "I've already delivered the METEORITE\l"
+	.string "We've already delivered the METEORITE\l"
 	.string "from METEOR FALLS to the BOSS!$"
 
 MtChimney_Text_TabithaDefeat:
