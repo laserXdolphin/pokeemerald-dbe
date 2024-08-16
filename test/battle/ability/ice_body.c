@@ -22,7 +22,9 @@ SINGLE_BATTLE_TEST("Ice Body recovers 1/16th of Max HP in hail.")
         TURN { MOVE(opponent, MOVE_HAIL); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_ICE_BODY);
-        MESSAGE("Glalie's Ice Body healed it a little bit!");
         HP_BAR(player, damage: -(100 / 16));
+        MESSAGE("Glalie's Ice Body healed it a little bit!");
     }
 }
+
+TO_DO_BATTLE_TEST("Sand Rush doesn't recover HP if Cloud Nine/Air Lock is on the field");

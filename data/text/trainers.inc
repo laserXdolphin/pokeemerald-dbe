@@ -424,7 +424,7 @@ Route104_Text_DarianDefeat:
 	.string "What the…$"
 
 Route104_Text_DarianPostBattle:
-	.string "Hey, MAGIKARP, you sure don't live up\n"
+	.string "Hey, GOLDEEN, you sure don't live up\n"
 	.string "to your name, do you?$"
 
 Route105_Text_FosterIntro:
@@ -1326,10 +1326,10 @@ Route111_Text_DustyPostRematch:
 
 Route111_Text_TravisIntro:
 	.string "I'm full of pep!\n"
-	.string "And my POKéMON is peppy, too!$"
+	.string "And my POKéMON are peppy, too!$"
 
 Route111_Text_TravisDefeat:
-	.string "My POKéMON lost its pep…$"
+	.string "My POKéMON lost their pep…$"
 
 Route111_Text_TravisPostBattle:
 	.string "When I see a TRAINER with a lot of pep,\n"
@@ -2099,7 +2099,7 @@ Route115_Text_CyndyPostRematch:
 	.string "It must be that I love POKéMON.$"
 
 Route115_Text_HectorIntro:
-	.string "I have a rare POKéMON!\n"
+	.string "I have rare POKéMON!\n"
 	.string "Would you like me to show you?$"
 
 Route115_Text_HectorDefeat:
@@ -2107,7 +2107,7 @@ Route115_Text_HectorDefeat:
 	.string "You want my POKéMON, don't you?$"
 
 Route115_Text_HectorPostBattle:
-	.string "I have this rare POKéMON.\n"
+	.string "I have these rare POKéMON.\n"
 	.string "It's enough to keep me satisfied.$"
 
 Route115_Text_KyraIntro:

@@ -8889,16 +8889,10 @@ static const struct TrainerMon sParty_TabithaMtChimney[] = {
     }
 };
 
-static const struct TrainerMon sParty_CourtneyMeteorFalls[] = {
+static const struct TrainerMon sParty_Jonathan[] = {
     {
-    .lvl = 25,
-    .species = SPECIES_KOFFING,
-    .ability = ABILITY_LEVITATE,
-    .nature = NATURE_CALM,
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .ev = TRAINER_PARTY_EVS(0, 0, 0, 192, 0, 0),
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SLUDGE, MOVE_ASSURANCE, MOVE_CLEAR_SMOG, MOVE_WILL_O_WISP}
+    .lvl = 33,
+    .species = SPECIES_KECLEON,
     },
     {
     .lvl = 33,
@@ -11633,7 +11627,7 @@ static const struct TrainerMon sParty_Brawly2[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .ev = TRAINER_PARTY_EVS(0, 252, 0, 4, 0, 0),
     .moves = {MOVE_FAKE_OUT, MOVE_TRIPLE_KICK, MOVE_SUCKER_PUNCH, MOVE_BULLET_PUNCH}
-    }.
+    },
     {
     .lvl = 33,
     .species = SPECIES_HARIYAMA,

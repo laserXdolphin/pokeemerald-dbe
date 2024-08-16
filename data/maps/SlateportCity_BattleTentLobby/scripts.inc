@@ -201,7 +201,7 @@ SlateportCity_BattleTentLobby_EventScript_TormentGiver::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_TORMENT, SlateportCity_BattleTentLobby_EventScript_ReceivedTorment
 	msgbox SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe, MSGBOX_DEFAULT
-	giveitem ITEM_TM_TORMENT
+	giveitem ITEM_TM_TAUNT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_TORMENT
 	msgbox SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT
@@ -285,12 +285,12 @@ SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
 	.string "Just, you know, take this!$"
 
 SlateportCity_BattleTentLobby_Text_ExplainTorment:
-	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's TORMENT, you hearing me?\p"
+	.string "That's, like, TM12, you know?\n"
+	.string "Hey, it's TAUNT, you hearing me?\p"
 	.string "Like, it won't let the other guy\n"
-	.string "use the same move twice in a row, see?\p"
+	.string "use status moves, see?\p"
 	.string "Hey, now, you listen here, like,\n"
-	.string "I'm not laying a torment on you!$"
+	.string "I'm not taunting you!$"
 
 SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons:
 	.string "I don't really like BUG POKéMON,\n"
@@ -304,6 +304,6 @@ SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons:
 	.string "if you don't have any tough POKéMON.$"
 
 SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection:
-	.string "Wouldn't it be nice if they had more of\n"
-	.string "a selection?$"
+	.string "What a selection. They even have exotic\n"
+	.string "POKéMON!$"
 

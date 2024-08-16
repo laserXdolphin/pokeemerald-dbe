@@ -400,6 +400,10 @@ Route111_EventScript_Man2::
 	msgbox Route111_Text_WinstrateFamilyDestroyedMe, MSGBOX_NPC
 	end
 
+Route111_EventScript_NoEntry::
+	msgbox Route111_Text_TrainerHillNoEntry, MSGBOX_NPC
+	end
+	
 Route111_EventScript_Hiker::
 	lock
 	faceplayer
@@ -727,3 +731,6 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+Route111_Text_TrainerHillNoEntry:
+	.string "We are sorry, but due to technical\n"
+	.string "difficulties we are currently closed.$"

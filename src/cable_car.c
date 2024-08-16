@@ -790,16 +790,16 @@ static void CreateCableCarSprites(void)
     u8 spriteId;
     u8 i;
 
-    u8 playerGraphicsIds[2] = {
+    u16 playerGraphicsIds[2] = {
         [MALE]   = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL,
         [FEMALE] = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
     };
     u16 rval = Random();
-    u8 hikerGraphicsIds[4] = {
+    u16 hikerGraphicsIds[4] = {
         OBJ_EVENT_GFX_HIKER,
         OBJ_EVENT_GFX_CAMPER,
         OBJ_EVENT_GFX_PICNICKER,
-        OBJ_EVENT_GFX_ZIGZAGOON_1
+        OBJ_EVENT_GFX_SPECIES(POOCHYENA)
     };
     s16 hikerCoords[2][2] = {
         {   0,  80 }, // Going up
@@ -1058,4 +1058,3 @@ static void InitGroundTilemapData(bool8 goingDown)
 
     sCableCar->groundTimer = 0;
 }
-

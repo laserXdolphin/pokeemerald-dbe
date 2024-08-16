@@ -2,56 +2,66 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(FOCUS_PUNCH) \
-    F(DRAGON_CLAW) \
-    F(WATER_PULSE) \
+    F(FOCUS_BLAST) \
+    F(DRAGON_PULSE) \
+    F(SCALD) \
     F(CALM_MIND) \
-    F(ROAR) \
+    F(ELECTROWEB) \
     F(TOXIC) \
     F(HAIL) \
-    F(BULK_UP) \
+    F(DRAIN_PUNCH) \
     F(BULLET_SEED) \
-    F(HIDDEN_POWER) \
+    F(X_SCISSOR) \
     F(SUNNY_DAY) \
     F(TAUNT) \
     F(ICE_BEAM) \
     F(BLIZZARD) \
-    F(HYPER_BEAM) \
+    F(SKITTER_SMACK) \
     F(LIGHT_SCREEN) \
     F(PROTECT) \
     F(RAIN_DANCE) \
     F(GIGA_DRAIN) \
     F(SAFEGUARD) \
-    F(FRUSTRATION) \
+    F(WILD_CHARGE) \
     F(SOLAR_BEAM) \
     F(IRON_TAIL) \
     F(THUNDERBOLT) \
     F(THUNDER) \
     F(EARTHQUAKE) \
-    F(RETURN) \
-    F(DIG) \
+    F(U_TURN) \
+    F(BULLDOZE) \
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(DOUBLE_TEAM) \
+    F(TRICK_ROOM) \
     F(REFLECT) \
-    F(SHOCK_WAVE) \
+    F(VOLT_SWITCH) \
     F(FLAMETHROWER) \
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
     F(FIRE_BLAST) \
     F(ROCK_TOMB) \
     F(AERIAL_ACE) \
-    F(TORMENT) \
+    F(FLIP_TURN) \
     F(FACADE) \
     F(SECRET_POWER) \
     F(REST) \
     F(ATTRACT) \
-    F(THIEF) \
+    F(DARK_PULSE) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
-    F(SNATCH) \
-    F(OVERHEAT)
+    F(DAZZLING_GLEAM) \
+    F(HEAT_WAVE) \
+    F(FLASH_CANNON) \
+    F(ENERGY_BALL) \
+    F(SLUDGE_WAVE) \
+    F(STONE_EDGE) \
+    F(PSYSHOCK) \
+    F(GRASSY_TERRAIN) \
+    F(MISTY_TERRAIN) \
+    F(ELECTRIC_TERRAIN) \
+    F(PSYCHIC_TERRAIN) \
+    F(TERRAIN_PULSE) \
 
 #define FOREACH_HM(F) \
     F(CUT) \
