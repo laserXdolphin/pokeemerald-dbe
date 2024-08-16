@@ -27,16 +27,24 @@ RustboroCity_Mart_Pokemart_Basic:
 	release
 	end
 
-RustboroCity_Mart_EventScript_PokemartExpanded::
+RustboroCity_Mart_EventScript_PokemartBasic::
+	msgbox RustboroCity_Mart_Text_NotOpenYet, MSGBOX_DEFAULT
+	release
+	end
 
-RustboroCity_Mart_EventScript_Clerk2::
-	lock
-	faceplayer
+RustboroCity_Mart_EventScript_PokemartExpanded::
 	message gText_HowMayIServeYou
 	waitmessage
 	pokemart RustboroCity_Mart_Pokemart_Expanded
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
+	end
+
+RustboroCity_Mart_EventScript_Clerk2::
+	lock
+	faceplayer
+	goto_if_unset FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartBasic
+	goto_if_set FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartExpanded
 	end
 
 	.align 2
@@ -81,3 +89,6 @@ RustboroCity_Mart_Text_GettingEscapeRopeJustInCase:
 	.string "I just need to use it to get back to\n"
 	.string "the entrance.$"
 
+RustboroCity_Mart_Text_NotOpenYet:
+	.string "I'm sorry. We are not open yet.\n"
+	.string "Please come back later.$"

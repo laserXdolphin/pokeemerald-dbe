@@ -51,7 +51,7 @@ static const u16 GymLeaderRematches_Before8GymWW[] = {
 };
 void UpdateGymLeaderRematch(void)
 {
-    if (FlagGet(FLAG_MET_ARCHIE_METEOR_FALLS))
+    if (FlagGet(FLAG_VISITED_FALLARBOR_TOWN))
     {
         if (!FlagGet(FLAG_BADGE06_GET))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before6Gym, ARRAY_COUNT(GymLeaderRematches_Before6Gym), 1);

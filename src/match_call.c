@@ -1848,7 +1848,7 @@ static bool32 ShouldTrainerRequestBattle(int matchCallId)
     int numRematchTrainersFought;
     int max, rand, n;
 
-    if (!FlagGet(FLAG_MET_ARCHIE_METEOR_FALLS))
+    if (!FlagGet(FLAG_VISITED_FALLARBOR_TOWN))
         return FALSE;
 
     dayCount = RtcGetLocalDayCount();
