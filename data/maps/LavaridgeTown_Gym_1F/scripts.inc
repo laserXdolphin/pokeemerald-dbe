@@ -345,8 +345,8 @@ LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
 	.string "Don't be shy about taking it!$"
 
 LavaridgeTown_Gym_1F_Text_ExplainOverheat:
-	.string "That TM50 contains HEAT WAVE.\p"
-	.string "That move hits all opponents.$"
+	.string "That TM50 contains HEAT WAVE.\n"
+	.string "It is a move that hits all opponents.$"
 
 LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
 	.string "Registered GYM LEADER FLANNERY\n"

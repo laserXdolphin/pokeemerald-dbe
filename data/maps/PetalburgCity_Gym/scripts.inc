@@ -1283,8 +1283,10 @@ PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 	.string "from DAD!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "DAD: With that BADGE, the DEFENSE\n"
-	.string "of all your POKéMON will increase.\p"
+	.string "DAD: With that BADGE, you can now\n"
+	.string "examine a POKéMON's training progess\l"
+	.string "by pressing the L Button on the\l"
+	.string "summary screen.\p"
 	.string "POKéMON that know the HM move SURF\n"
 	.string "will be able to travel over water.\p"
 	.string "This is my gift to you. {PLAYER}, I'm\n"
@@ -1336,7 +1338,7 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "Whoops! The doors in this room are\n"
 	.string "already open, so don't attack me!\p"
 	.string "The TRAINERS of PETALBURG GYM\n"
-	.string "use all kinds of items.\p"
+	.string "use all kinds of strategies.\p"
 	.string "The door at the left leads to\n"
 	.string "the SPEED ROOM.\p"
 	.string "The door at the right leads to\n"
