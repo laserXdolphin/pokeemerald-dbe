@@ -711,7 +711,7 @@ Route111_Text_MirageTowerHasntBeenSeenSince:
 	.string "the MIRAGE TOWER…$"
 
 Route111_Text_ClawFossilDisappeared:
-	.string "The CLAW FOSSIL disappeared into\n"
+	.string "The JAW FOSSIL disappeared into\n"
 	.string "the sand…$"
 
 Route111_Text_RootFossilDisappeared:

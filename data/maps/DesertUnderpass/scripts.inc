@@ -17,7 +17,7 @@ DesertUnderpass_EventScript_Fossil::
 	end
 
 DesertUnderpass_EventScript_GiveClawFossil::
-	giveitem ITEM_CLAW_FOSSIL
+	giveitem ITEM_JAW_FOSSIL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	removeobject LOCALID_FOSSIL
 	release
@@ -36,5 +36,5 @@ DesertUnderpass_Text_FoundRootFossil::
 
 @ Unused
 DesertUnderpass_Text_FoundClawFossil::
-	.string "{PLAYER} found the CLAW FOSSIL.$"
+	.string "{PLAYER} found the JAW FOSSIL.$"
 
