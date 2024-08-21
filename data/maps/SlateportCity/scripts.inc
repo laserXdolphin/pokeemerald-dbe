@@ -141,13 +141,36 @@ SlateportCity_EventScript_EnergyGuru::
 	faceplayer
 	message SlateportCity_Text_EnergyGuruSellWhatYouNeed
 	waitmessage
-	pokemart SlateportCity_Pokemart_EnergyGuru
+	goto_if_unset FLAG_BADGE05_GET, SlateportCity_EventScript_EnergyGuruSmallMart
+	goto_if_set FLAG_BADGE05_GET, SlateportCity_EventScript_EnergyGuruBigMart
+	end
+	
+
+SlateportCity_EventScript_EnergyGuruSmallMart:
+	pokemart SlateportCity_Pokemart_EnergyGuruSmall
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportCity_EventScript_EnergyGuruBigMart:
+	pokemart SlateportCity_Pokemart_EnergyGuruBig
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-SlateportCity_Pokemart_EnergyGuru:
+SlateportCity_Pokemart_EnergyGuruSmall:
+	.2byte ITEM_PROTEIN
+	.2byte ITEM_IRON
+	.2byte ITEM_CARBOS
+	.2byte ITEM_ZINC
+	.2byte ITEM_CALCIUM
+	.2byte ITEM_NONE	
+	release
+	end
+	
+	.align 2
+SlateportCity_Pokemart_EnergyGuruBig:
 	.2byte ITEM_PROTEIN
 	.2byte ITEM_IRON
 	.2byte ITEM_CARBOS
@@ -769,6 +792,7 @@ SlateportCity_PokemartBerry:
 	.2byte ITEM_HONDEW_BERRY
 	.2byte ITEM_GREPA_BERRY
 	.2byte ITEM_TAMATO_BERRY
+	.2byte ITEM_FRESH_START_MOCHI
 	.2byte ITEM_NONE
 	release
 	end

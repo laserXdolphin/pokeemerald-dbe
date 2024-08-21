@@ -108,7 +108,7 @@ Route113_GlassWorkshop_EventScript_RedFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_WhiteFlute::
-	setvar VAR_0x8008, ITEM_CLEAR_AMULET
+	setvar VAR_0x8008, ITEM_WISE_GLASSES
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, BLUE_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -132,7 +132,7 @@ Route113_GlassWorkshop_EventScript_BlackFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_PrettyChair::
-	setvar VAR_0x8008, ITEM_WISE_GLASSES
+	setvar VAR_0x8008, ITEM_CLEAR_AMULET
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, YELLOW_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, YELLOW_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -252,7 +252,7 @@ Route113_GlassWorkshop_EventScript_GiveRedFlute::
 
 Route113_GlassWorkshop_EventScript_GiveWhiteFlute::
 	setvar VAR_0x8009, 0
-	setvar VAR_0x8008, ITEM_CLEAR_AMULET
+	setvar VAR_0x8008, ITEM_WISE_GLASSES
 	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
@@ -266,7 +266,7 @@ Route113_GlassWorkshop_EventScript_GiveBlackFlute::
 
 Route113_GlassWorkshop_EventScript_GivePrettyChair::
 	setvar VAR_0x8009, 0
-	setvar VAR_0x8008, ITEM_WISE_GLASSES
+	setvar VAR_0x8008, ITEM_CLEAR_AMULET
 	bufferitemname STR_VAR_1, VAR_0x8008
 	goto Route113_GlassWorkshop_EventScript_TryGiveItemAgain
 	end
