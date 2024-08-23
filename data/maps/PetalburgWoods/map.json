@@ -286,7 +286,7 @@
       "x": 4,
       "y": 19,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_NET_BALL",
       "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POKE_BALL"
     },
     {
