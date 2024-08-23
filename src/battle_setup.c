@@ -1918,7 +1918,7 @@ static bool8 WasSecondRematchWon(const struct RematchTrainer *table, u16 firstBa
 #if FREE_MATCH_CALL == FALSE
 static bool32 HasAtLeastFiveBadges(void)
 {
-    return FlagGet(FLAG_VISITED_FALLARBOR_TOWN);
+    return FlagGet(FLAG_BADGE05_GET);
     s32 i, count;
 
     for (count = 0, i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)

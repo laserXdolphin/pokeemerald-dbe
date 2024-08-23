@@ -51,18 +51,18 @@ static const u16 GymLeaderRematches_Before8GymWW[] = {
 };
 void UpdateGymLeaderRematch(void)
 {
-    if (FlagGet(FLAG_VISITED_FALLARBOR_TOWN))
+    if (FlagGet(FLAG_BADGE05_GET))
     {
         if (!FlagGet(FLAG_BADGE06_GET))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before6Gym, ARRAY_COUNT(GymLeaderRematches_Before6Gym), 1);
         else if (!FlagGet(FLAG_SYS_GAME_CLEAR) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
-            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_Before8Gym), 1);
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_Before8Gym), 2);
         else if (!FlagGet(FLAG_SYS_GAME_CLEAR))
-            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8GymWW, ARRAY_COUNT(GymLeaderRematches_Before8GymWW), 1);
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8GymWW, ARRAY_COUNT(GymLeaderRematches_Before8GymWW), 2);
         else if (FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_AfterNewMauville, ARRAY_COUNT(GymLeaderRematches_AfterNewMauville), 5);
         else
-            UpdateGymLeaderRematchFromArray(GymLeaderRematches_BeforeNewMauville, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 1);
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_BeforeNewMauville, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 2);
     }
 }
 
