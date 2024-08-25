@@ -176,12 +176,6 @@ SlateportCity_Pokemart_EnergyGuruBig:
 	.2byte ITEM_CARBOS
 	.2byte ITEM_ZINC
 	.2byte ITEM_CALCIUM
-	.2byte ITEM_POWER_WEIGHT
-	.2byte ITEM_POWER_BRACER
-	.2byte ITEM_POWER_BELT
-	.2byte ITEM_POWER_ANKLET
-	.2byte ITEM_POWER_LENS
-	.2byte ITEM_POWER_BAND
 	.2byte ITEM_NONE	
 	release
 	end

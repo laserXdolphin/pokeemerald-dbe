@@ -248,7 +248,7 @@ DewfordTown_Hall_EventScript_SludgeBombMan::
 	call Common_EventScript_BufferTrendyPhrase
 	goto_if_set FLAG_RECEIVED_TM_SLUDGE_BOMB, DewfordTown_Hall_EventScript_ReceivedSludgeBomb
 	msgbox DewfordTown_Hall_Text_GiveYouSludgeBomb, MSGBOX_DEFAULT
-	giveitem ITEM_TM_SLUDGE_BOMB
+	giveitem ITEM_TM53
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_SLUDGE_BOMB
 	release
@@ -430,15 +430,15 @@ DewfordTown_Hall_Text_WellBeTrendDuo:
 	.string "Hahahah!$"
 
 DewfordTown_Hall_Text_GiveYouSludgeBomb:
-	.string "For me, SLUDGE BOMB is at the peak\n"
+	.string "For me, SLUDGE WAVE is at the peak\n"
 	.string "of popularity. It's the one.\p"
 	.string "Hunh? You're telling me that you don't\n"
-	.string "know about SLUDGE BOMB?\p"
+	.string "know about SLUDGE WAVE?\p"
 	.string "That's outright pitiful.\n"
 	.string "I'll give you one.$"
 
 DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
-	.string "I love SLUDGE BOMB.\p"
+	.string "I love SLUDGE WAVE.\p"
 	.string "But POKéMON with the move\n"
 	.string "“{STR_VAR_1}”\l"
 	.string "are in, too.$"
