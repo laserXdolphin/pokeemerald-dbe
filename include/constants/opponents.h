@@ -525,22 +525,22 @@
 #define TRAINER_WALLY_VR_1                  519
 #define TRAINER_COURTNEY_METEOR_FALLS       520
 #define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521 // DEV: Free Trainer
-#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522
+#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522 // DEV: Free Trainer
 #define TRAINER_BRENDAN_ROUTE_103           523
 #define TRAINER_BRENDAN_ROUTE_110           524
-#define TRAINER_BRENDAN_ROUTE_119_TREECKO   525
+#define TRAINER_BRENDAN_ROUTE_119           525
 #define TRAINER_BRENDAN_ROUTE_103_TORCHIC   526 // DEV: Free Trainer
 #define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527 // DEV: Free Trainer
-#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528
+#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528 // DEV: Free Trainer
 #define TRAINER_MAY_ROUTE_103_MUDKIP        529 // DEV: Free Trainer
 #define TRAINER_MAY_ROUTE_110_MUDKIP        530 // DEV: Free Trainer
-#define TRAINER_MAY_ROUTE_119_MUDKIP        531
+#define TRAINER_MAY_ROUTE_119_MUDKIP        531 // DEV: Free Trainer
 #define TRAINER_MAY_ROUTE_103               532
 #define TRAINER_MAY_ROUTE_110               533
-#define TRAINER_MAY_ROUTE_119_TREECKO       534
+#define TRAINER_MAY_ROUTE_119               534
 #define TRAINER_MAY_ROUTE_103_TORCHIC       535 // DEV: Free Trainer
 #define TRAINER_MAY_ROUTE_110_TORCHIC       536 // DEV: Free Trainer
-#define TRAINER_MAY_ROUTE_119_TORCHIC       537
+#define TRAINER_MAY_ROUTE_119_TORCHIC       537 // DEV: Free Trainer
 #define TRAINER_ISAAC_1                     538
 #define TRAINER_DAVIS                       539
 #define TRAINER_MITCHELL                    540

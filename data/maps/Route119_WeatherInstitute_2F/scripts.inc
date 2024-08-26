@@ -122,7 +122,7 @@ Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare::
 	message Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_CASTFORM_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_PORYGON
 	return
 
 Route119_WeatherInstitute_2F_EventScript_ExplainCastform::
@@ -213,15 +213,15 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
 	.string "The INSTITUTE created a type of\n"
 	.string "POKéMON that has something to do with\l"
-	.string "the weather. We're here to take them!$"
+	.string "computers. We're here to take them!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
 	.string "Our plan's being spoiled by a kid?$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
 	.string "If the POKéMON they made here can\n"
-	.string "control the weather freely, then we of\l"
-	.string "TEAM AQUA definitely need it!$"
+	.string "compute the weather precisely, then\l"
+	.string "we of TEAM AQUA definitely need it!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
 	.string "We're TEAM AQUA!\n"
@@ -238,7 +238,7 @@ Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
 	.string "Don't tell me you're looking for that\n"
-	.string "weather POKéMON, too?\p"
+	.string "virtual POKéMON, too?\p"
 	.string "That's a no-no!\n"
 	.string "We were here to get it first!$"
 
