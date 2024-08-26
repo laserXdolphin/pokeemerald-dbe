@@ -5652,6 +5652,40 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
     return numMoves;
 }
 
+u8 GetEggMoveLearnerMoves(struct Pokemon *mon, u16 *moves)
+{
+    u16 learnedMoves[4];
+    u8 numMoves = 0;
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
+    species = GetBaseSpecies(species);
+    const u16 *learnset = GetSpeciesEggMoves(species);
+    int i, j, k;
+
+    for (i = 0; i < MAX_MON_MOVES; i++)
+        learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
+
+    for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
+    {
+        if (learnset[i] == MOVE_UNAVAILABLE)
+            break;
+
+        for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != learnset[i]; j++)
+            ;
+
+        if (j == MAX_MON_MOVES)
+        {
+            for (k = 0; k < numMoves && moves[k] != learnset[i]; k++)
+                ;
+
+            if (k == numMoves)
+                moves[numMoves++] = learnset[i];
+        }
+        
+    }
+
+    return numMoves;
+}
+
 u8 GetLevelUpMovesBySpecies(u16 species, u16 *moves)
 {
     u8 numMoves = 0;
@@ -6942,6 +6976,18 @@ u16 GetSpeciesPreEvolution(u16 species)
     }
 
     return SPECIES_NONE;
+}
+
+u16 GetBaseSpecies(u16 species)
+{
+    u16 pe_species = species;
+
+    while(pe_species != SPECIES_NONE){
+        species = pe_species;
+        pe_species = GetSpeciesPreEvolution(species);
+    }
+
+    return species;
 }
 
 const u8 *GetMoveName(u16 moveId)

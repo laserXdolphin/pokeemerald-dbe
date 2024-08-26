@@ -445,24 +445,24 @@ BattleFrontier_Lounge7_Text_SwordsDanceDesc::
 	.string "raises ATTACK.$"
 
 BattleFrontier_Lounge7_Text_DefenseCurlDesc::
-	.string "Curls up to con-\n"
-	.string "ceal weak spots\n"
-	.string "and raise DEFENSE.$"
+	.string "An icy bite\n"
+	.string "that may freeze\n"
+	.string "or flinch the foe.$"
 
 BattleFrontier_Lounge7_Text_SnoreDesc::
-	.string "A loud attack\n"
-	.string "that can be used\n"
-	.string "only while asleep.$"
+	.string "A shocking bite\n"
+	.string "that may paralyze\n"
+	.string "or flinch the foe.$"
 
 BattleFrontier_Lounge7_Text_MudSlapDesc::
-	.string "Hurls mud in the\n"
-	.string "foe's face to re-\n"
-	.string "duce its accuracy.$"
+	.string "A fiery bite\n"
+	.string "that may burn\n"
+	.string "or flinch the foe.$"
 
 BattleFrontier_Lounge7_Text_SwiftDesc::
-	.string "Sprays star-\n"
-	.string "shaped rays\n"
-	.string "that never miss.$"
+	.string "A psychic bite\n"
+	.string "that breaks\n"
+	.string "the foes barriers.$"
 
 BattleFrontier_Lounge7_Text_IcyWindDesc::
 	.string "A chilling attack\n"
@@ -470,14 +470,14 @@ BattleFrontier_Lounge7_Text_IcyWindDesc::
 	.string "foe's SPEED.$"
 
 BattleFrontier_Lounge7_Text_EndureDesc::
-	.string "Endures any at-\n"
-	.string "tack for 1 turn,\n"
-	.string "leaving 1HP.$"
+	.string "A headbutt\n"
+	.string "that may make\n"
+	.string "the foe flinch.$"
 
 BattleFrontier_Lounge7_Text_PsychUpDesc::
-	.string "Copies the foe's\n"
-	.string "effect(s) and\n"
-	.string "gives to the user.$"
+	.string "A poisonous punch\n"
+	.string "that may\n"
+	.string "poison the foe.$"
 
 BattleFrontier_Lounge7_Text_IcePunchDesc::
 	.string "An icy punch\n"
