@@ -307,7 +307,7 @@ static const struct TrainerMon sParty_GruntSpaceCenter1[] = {
 static const struct TrainerMon sParty_GruntMtPyre1[] = {
     {
     .lvl = 32,
-    .species = SPECIES_EKANS,
+    .species = SPECIES_WAILMER,
     .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
     .ev = TRAINER_PARTY_EVS(0, 132, 0, 252, 0, 0),
     },
@@ -334,18 +334,36 @@ static const struct TrainerMon sParty_GruntMtPyre2[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntMtPyre3[] = {
+static const struct TrainerMon sParty_MattMtPyre[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_PAWNIARD,
-    .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
-    .ev = TRAINER_PARTY_EVS(0, 132, 0, 252, 0, 0),
+    .lvl = 33,
+    .species = SPECIES_CLAUNCHER,
+    .ability = ABILITY_MEGA_LAUNCHER,
+    .nature = NATURE_TIMID,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 132, 0),
+    .heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_WATER_PULSE, MOVE_DARK_PULSE, MOVE_DRAGON_PULSE, MOVE_TERRAIN_PULSE}
     },
     {
-    .lvl = 32,
-    .species = SPECIES_CORPHISH,
-    .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+    .lvl = 34,
+    .species = SPECIES_KINGLER,
+    .ability = ABILITY_SHEER_FORCE,
+    .nature = NATURE_ADAMANT,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(0, 132, 0, 252, 0, 0),
+    .heldItem = ITEM_MUSCLE_BAND,
+    .moves = {MOVE_RAZOR_SHELL, MOVE_ROCK_SLIDE, MOVE_METAL_CLAW, MOVE_SECRET_POWER}
+    },
+    {
+    .lvl = 35,
+    .species = SPECIES_CRAWDAUNT,
+    .ability = ABILITY_ADAPTABILITY,
+    .nature = NATURE_ADAMANT,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .ev = TRAINER_PARTY_EVS(0, 132, 0, 252, 0, 0),
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_RAZOR_SHELL, MOVE_KNOCK_OFF, MOVE_AQUA_JET, MOVE_X_SCISSOR}
     }
 };
 
@@ -9105,7 +9123,7 @@ static const struct TrainerMon sParty_Jenna[] = {
     },
     {
     .lvl = 28,
-    .species = SPECIES_AMBIPOM,
+    .species = SPECIES_AIPOM,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(0, 252, 0, 132, 0, 0),
     }
@@ -9232,7 +9250,13 @@ static const struct TrainerMon sParty_GruntMtPyre4[] = {
     },
     {
     .lvl = 32,
-    .species = SPECIES_WAILMER,
+    .species = SPECIES_PAWNIARD,
+    .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+    .ev = TRAINER_PARTY_EVS(0, 132, 0, 252, 0, 0),
+    },
+    {
+    .lvl = 32,
+    .species = SPECIES_EKANS,
     .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
     .ev = TRAINER_PARTY_EVS(0, 132, 0, 252, 0, 0),
     }
