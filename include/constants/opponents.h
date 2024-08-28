@@ -664,12 +664,12 @@
 #define TRAINER_WALLY_VR_3                  658
 #define TRAINER_WALLY_VR_4                  659
 #define TRAINER_WALLY_VR_5                  660
-#define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661
-#define TRAINER_BRENDAN_LILYCOVE_TREECKO    662
-#define TRAINER_BRENDAN_LILYCOVE_TORCHIC    663
-#define TRAINER_MAY_LILYCOVE_MUDKIP         664
-#define TRAINER_MAY_LILYCOVE_TREECKO        665
-#define TRAINER_MAY_LILYCOVE_TORCHIC        666
+#define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661 // DEV: Free Trainer: 
+#define TRAINER_BRENDAN_LILYCOVE            662
+#define TRAINER_BRENDAN_LILYCOVE_TORCHIC    663 // DEV: Free Trainer
+#define TRAINER_MAY_LILYCOVE_MUDKIP         664 // DEV: Free Trainer
+#define TRAINER_MAY_LILYCOVE                665
+#define TRAINER_MAY_LILYCOVE_TORCHIC        666 // DEV: Free Trainer
 #define TRAINER_JONAH                       667
 #define TRAINER_HENRY                       668
 #define TRAINER_ROGER                       669
