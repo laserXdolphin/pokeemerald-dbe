@@ -7754,11 +7754,14 @@ static void Cmd_getmoneyreward(void)
 
     u32 money;
     u8 sPartyLevel = 1;
+    u8 b_buff_number = 5; 
 
     if (gBattleOutcome == B_OUTCOME_WON)
     {        
         if (VarGet(gSpecialVar_0x8003) == 1)
         {
+            money = gSpecialVar_0x8004;
+            b_buff_number = 3; 
             GiveFrontierBattlePoints();
         }
         else{
@@ -7791,12 +7794,11 @@ static void Cmd_getmoneyreward(void)
     
     if (VarGet(gSpecialVar_0x8003) == 1)
     {
-        PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff1, 3, gSpecialVar_0x8004);
         gSpecialVar_0x8003 = 0;
-        gSpecialVar_0x8004 = 0;}
-    else{
-        PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff1, 5, money);
+        gSpecialVar_0x8004 = 0;
     }
+
+    PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff1, b_buff_number, money);
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
