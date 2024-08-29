@@ -3114,8 +3114,6 @@ static void BattleStartClearSetData(void)
         gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
         gBattleStruct->itemLost[B_SIDE_OPPONENT][i].originalItem = GetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM);
         gPartyCriticalHits[i] = 0;
-        gBattleStruct->allowedToChangeFormInWeather[i][B_SIDE_PLAYER] = FALSE;
-        gBattleStruct->allowedToChangeFormInWeather[i][B_SIDE_OPPONENT] = FALSE;
     }
 
     gBattleStruct->swapDamageCategory = FALSE; // Photon Geyser, Shell Side Arm, Light That Burns the Sky
@@ -3221,6 +3219,7 @@ void SwitchInClearSetData(u32 battler)
     gBattleStruct->lastMoveFailed &= ~(gBitTable[battler]);
     gBattleStruct->palaceFlags &= ~(gBitTable[battler]);
     gBattleStruct->boosterEnergyActivates &= ~(gBitTable[battler]);
+    gBattleStruct->canPickupItem &= ~(1u << battler);
 
     for (i = 0; i < ARRAY_COUNT(gSideTimers); i++)
     {
@@ -3756,7 +3755,7 @@ static void DoBattleIntro(void)
                 gBattleStruct->startingStatus = GetTrainerStartingStatusFromId(gTrainerBattleOpponent_B);
                 gBattleStruct->startingStatusTimer = 0; // infinite
             }
-            else if (GetTrainerStartingStatusFromId(gTrainerBattleOpponent_A))
+            else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && GetTrainerStartingStatusFromId(gTrainerBattleOpponent_A))
             {
                 gBattleStruct->startingStatus = GetTrainerStartingStatusFromId(gTrainerBattleOpponent_A);
                 gBattleStruct->startingStatusTimer = 0; // infinite
@@ -4038,6 +4037,11 @@ void BattleTurnPassed(void)
     SetShellSideArmCategory();
     SetAiLogicDataForTurn(AI_DATA); // get assumed abilities, hold effects, etc of all battlers
     gBattleMainFunc = HandleTurnActionSelectionState;
+
+    if (gSideTimers[B_SIDE_PLAYER].retaliateTimer > 0)
+        gSideTimers[B_SIDE_PLAYER].retaliateTimer--;
+    if (gSideTimers[B_SIDE_OPPONENT].retaliateTimer > 0)
+        gSideTimers[B_SIDE_OPPONENT].retaliateTimer--;
 
     if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
         BattleScriptExecute(BattleScript_PalacePrintFlavorText);
@@ -5114,6 +5118,7 @@ static void TurnValuesCleanUp(bool8 var0)
                 if (gDisableStructs[i].rechargeTimer == 0)
                     gBattleMons[i].status2 &= ~STATUS2_RECHARGE;
             }
+            gBattleStruct->canPickupItem &= ~(1u << i);
         }
 
         if (gDisableStructs[i].substituteHP == 0)
@@ -5741,8 +5746,10 @@ bool32 TrySetAteType(u32 move, u32 battlerAtk, u32 attackerAbility)
         break;
     case EFFECT_HIDDEN_POWER:
     case EFFECT_WEATHER_BALL:
-    case EFFECT_CHANGE_TYPE_ON_ITEM:
     case EFFECT_NATURAL_GIFT:
+    case EFFECT_CHANGE_TYPE_ON_ITEM:
+    case EFFECT_REVELATION_DANCE:
+    case EFFECT_TERRAIN_PULSE:
         return FALSE;
     }
 
