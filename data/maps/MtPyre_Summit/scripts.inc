@@ -459,8 +459,8 @@ MtPyre_Summit_Text_Grunt2PostBattle:
 	.string "So why are you messing with us?$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "You…\n"
-	.string "We saw you at MT. CHIMNEY.\p"
+	.string "Hehe. You…\n"
+	.string "We met at the museum.\p"
 	.string "You don't belong to either TEAM,\n"
 	.string "so why would you be here?$"
 
