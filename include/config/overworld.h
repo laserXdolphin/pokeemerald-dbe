@@ -75,6 +75,7 @@
 #define OW_FLAG_NO_COLLISION        0  // If this flag is set, the player will be able to walk over tiles with collision. Mainly intended for debugging purposes.
 
 #define BATTLE_PYRAMID_RANDOM_ENCOUNTERS    FALSE    // If set to TRUE, battle pyramid Pokemon will be generated randomly based on the round's challenge instead of hardcoded in src/data/battle_frontier/battle_pyramid_level_50_wild_mons.h (or open_level_wild_mons.h)
+#define BATTLE_FRONTIER_INTRO_FOR_BP_FIGHTS FALSE    // If set to TRUE, battle frontier intros will be played before a fight where a player can earn BP
 
 // Map pop-up config
 #define OW_POPUP_GENERATION        GEN_3    // Different generations display location names in overworld pop-ups differently.
