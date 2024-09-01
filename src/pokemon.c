@@ -5804,6 +5804,8 @@ u16 GetBattleBGM(void)
         else
             trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);
 
+        if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT)
+            return MUS_VS_KYOGRE_GROUDON;
         switch (trainerClass)
         {
         case TRAINER_CLASS_AQUA_LEADER:
