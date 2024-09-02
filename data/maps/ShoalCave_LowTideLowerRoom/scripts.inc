@@ -35,7 +35,7 @@ ShoalCave_LowTideLowerRoom_EventScript_BlackBelt::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_FOCUS_BAND, ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand
 	msgbox ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus, MSGBOX_DEFAULT
-	giveitem ITEM_FOCUS_BAND
+	giveitem ITEM_FOCUS_SASH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FOCUS_BAND
 	release
@@ -50,7 +50,7 @@ ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
 	.string "The penetrating cold around these\n"
 	.string "parts is an impediment to training.\p"
 	.string "But with focus, one can overcome!\p"
-	.string "With this FOCUS BAND, buckle down and\n"
+	.string "With this FOCUS SASH, buckle down and\n"
 	.string "withstand the cold!$"
 
 ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
