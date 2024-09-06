@@ -83,7 +83,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_GALARIA_WREATH",
+      "trainer_sight_or_berry_tree_id": "ITEM_GALARICA_WREATH",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_127_CARBOS"
     },
@@ -174,7 +174,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_GALARIA_CUFF",
+      "trainer_sight_or_berry_tree_id": "ITEM_GALARICA_CUFF",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_127_RARE_CANDY"
     }

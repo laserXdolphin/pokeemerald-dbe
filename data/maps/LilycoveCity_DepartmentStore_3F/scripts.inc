@@ -47,6 +47,10 @@ LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
 	.2byte ITEM_LEAF_STONE
 	.2byte ITEM_MOON_STONE
 	.2byte ITEM_SUN_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_ICE_STONE
 	.2byte ITEM_NONE
 	release
 	end

@@ -1394,14 +1394,14 @@
 
 [TRAINER_GRUNT_SPACE_CENTER_2] =
 {
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .trainerName = _("GRUNT"),
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+    .trainerName = _("COURTNEY"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_GruntSpaceCenter2),
+    .party = TRAINER_PARTY(sParty_CourtneySpaceCenter),
 },
 
 [TRAINER_CINDY_2] =
@@ -3280,7 +3280,7 @@
     .trainerName = _("TATE&LIZA"),
     .items = {},
     .mugshotEnabled = TRUE,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
+    .mugshotColor = MUGSHOT_COLOR_PURPLE,
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
     .party = TRAINER_PARTY(sParty_TateAndLiza1),
@@ -3294,7 +3294,7 @@
     .trainerName = _("JUAN"),
     .items = {},
     .mugshotEnabled = TRUE,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
+    .mugshotColor = MUGSHOT_COLOR_BLUE,
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
     .party = TRAINER_PARTY(sParty_Juan1),
