@@ -18,7 +18,39 @@ MossdeepCity_House1_EventScript_NeutralNature::
 	end
 
 MossdeepCity_House1_EventScript_Woman::
-	msgbox MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes, MSGBOX_NPC
+	lock
+	faceplayer
+	message MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes
+	waitmessage
+	pokemart MossdeepCity_House1_Pokemart_Mints
+	release
+	end
+
+	.align 2
+MossdeepCity_House1_Pokemart_Mints:
+	.2byte ITEM_LONELY_MINT
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_BRAVE_MINT
+	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_LAX_MINT
+	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_MILD_MINT
+	.2byte ITEM_RASH_MINT
+	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_CALM_MINT
+	.2byte ITEM_GENTLE_MINT
+	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_SASSY_MINT
+	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_HASTY_MINT
+	.2byte ITEM_JOLLY_MINT
+	.2byte ITEM_NAIVE_MINT
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_NONE
+	release
 	end
 
 MossdeepCity_House1_Text_HmmYourPokemon:
@@ -36,6 +68,5 @@ MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks:
 	.string "any {POKEBLOCK}S.$"
 
 MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes:
-	.string "My husband can tell what kind of\n"
-	.string "{POKEBLOCK}S a POKéMON likes at a glance.$"
+	.string "Care for a mint?$"
 

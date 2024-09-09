@@ -32,8 +32,6 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	msgbox SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT
 	applymovement VAR_0x8004, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
 	msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
 	setweather WEATHER_NONE
 	doweather
@@ -63,6 +61,10 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	waitmovement 0
 	special FadeOutOrbEffect
 	waitstate
+	applymovement VAR_0x8004, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -233,16 +235,15 @@ SeafloorCavern_Room9_Text_ArchieSoItWasYou:
 	.string "So it was you, after all.$"
 
 SeafloorCavern_Room9_Text_ArchieBeholdKyogre:
-	.string "ARCHIE: Behold!\p"
+	.string "Behold!\p"
 	.string "See how beautiful it is, the sleeping\n"
 	.string "form of the ancient POKéMON KYOGRE!\p"
 	.string "I have waited so long for this day to\n"
 	.string "come…$"
 
 SeafloorCavern_Room9_Text_ArchieYouMustDisappear:
-	.string "ARCHIE: It surprises me, how you've\n"
-	.string "managed to chase me here.\p"
-	.string "But that's all over now.\p"
+	.string "ARCHIE: Fufufu…\n"
+	.string "I commend you. But!\p"
 	.string "For the realization of my dream,\n"
 	.string "you must disappear now!$"
 
@@ -251,10 +252,9 @@ SeafloorCavern_Room9_Text_ArchieDefeat:
 	.string "I lost to a mere child like you?!$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
-	.string "ARCHIE: Fufufu…\p"
-	.string "I commend you. I must recognize that\n"
-	.string "you are truly gifted.\p"
-	.string "But!\n"
+	.string "It surprises me, how you've\n"
+	.string "managed to chase me here.\p"
+	.string "But that's all over now.\p"
 	.string "I have this in my possession!\p"
 	.string "With this RED ORB, I can make KYOGRE…$"
 

@@ -5804,7 +5804,7 @@ u16 GetBattleBGM(void)
         else
             trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);
 
-        if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT)
+        if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT || gTrainerBattleOpponent_A == TRAINER_ARCHIE)
             return MUS_VS_KYOGRE_GROUDON;
         switch (trainerClass)
         {
