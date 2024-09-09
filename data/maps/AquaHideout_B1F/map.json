@@ -88,8 +88,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "AquaHideout_B1F_EventScript_Electrode1",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_SLUDGE_BOMB",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_1"
     },
     {
@@ -114,8 +114,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "AquaHideout_B1F_EventScript_Electrode2",
+      "trainer_sight_or_berry_tree_id": "ITEM_ABILITY_PATCH",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_2"
     },
     {

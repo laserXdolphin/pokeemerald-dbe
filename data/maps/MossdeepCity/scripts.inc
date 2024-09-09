@@ -44,7 +44,40 @@ MossdeepCity_EventScript_SailorMagmaGone::
 	end
 
 MossdeepCity_EventScript_NinjaBoy::
-	msgbox MossdeepCity_Text_WailmerWatching, MSGBOX_NPC
+	lock
+	faceplayer
+	message MossdeepCity_Text_WailmerWatching
+	waitmessage
+	pokemart MossdeepCity_Pokemart_Mints
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+MossdeepCity_Pokemart_Mints:
+	.2byte ITEM_LONELY_MINT
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_BRAVE_MINT
+	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_LAX_MINT
+	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_MILD_MINT
+	.2byte ITEM_RASH_MINT
+	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_CALM_MINT
+	.2byte ITEM_GENTLE_MINT
+	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_SASSY_MINT
+	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_HASTY_MINT
+	.2byte ITEM_JOLLY_MINT
+	.2byte ITEM_NAIVE_MINT
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_NONE
+	release
 	end
 
 MossdeepCity_EventScript_ExpertM::
@@ -330,12 +363,7 @@ MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "supposed to do with some weird rock?$"
 
 MossdeepCity_Text_WailmerWatching:
-	.string "Around MOSSDEEP, you can see wild\n"
-	.string "WAILMER.\p"
-	.string "It's called, uh…\n"
-	.string "What was it now…\p"
-	.string "WAI, WAI, WAI…\p"
-	.string "WAILMER watching!$"
+	.string "Care for a Mint$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
 	.string "The island's SPACE CENTER has been\n"
