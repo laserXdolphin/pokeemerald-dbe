@@ -1729,6 +1729,13 @@ static void AccuracyCheck(bool32 recalcDragonDarts, const u8 *nextInstr, const u
             gBattlescriptCurrInstr = failInstr;
         else if (!JumpIfMoveAffectedByProtect(gCurrentMove))
             gBattlescriptCurrInstr = nextInstr;
+        if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_DYNAMAX)
+        {
+            if (gProtectStructs[gBattlerTarget].maxGuarded)
+                gBattlescriptCurrInstr = nextInstr;
+            else
+                AbilityBattleEffects(ABILITYEFFECT_ABSORBING, gBattlerTarget, 0, 0, gCurrentMove);
+        }
     }
     else if (gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_2ND_HIT
         || (gSpecialStatuses[gBattlerAttacker].multiHitOn
@@ -6016,15 +6023,18 @@ static void Cmd_moveend(void)
             && gMultiHitCounter
             && !(gMovesInfo[gCurrentMove].effect == EFFECT_PRESENT && gBattleStruct->presentBasePower == 0)) // Silly edge case
             {
+                gMultiHitCounter--;
+                if (!IsBattlerAlive(gBattlerTarget) && gMovesInfo[gCurrentMove].effect != EFFECT_DRAGON_DARTS)
+                    gMultiHitCounter = 0;
+
                 gBattleScripting.multihitString[4]++;
-                if (--gMultiHitCounter == 0)
+                if (gMultiHitCounter == 0)
                 {
                     if (gMovesInfo[gCurrentMove].argument == MOVE_EFFECT_SCALE_SHOT && !NoAliveMonsForEitherParty())
                     {
                         BattleScriptPush(gBattlescriptCurrInstr + 1);
                         gBattlescriptCurrInstr = BattleScript_DefDownSpeedUp;
                     }
-
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_MultiHitPrintStrings;
                     effect = TRUE;
@@ -6428,6 +6438,8 @@ static void Cmd_moveend(void)
             gBattleStruct->poisonPuppeteerConfusion = FALSE;
             gBattleStruct->fickleBeamBoosted = FALSE;
             gBattleStruct->distortedTypeMatchups = 0;
+            if (gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
+                gBattleStruct->pledgeMove = FALSE;
             if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE)
                 SetActiveGimmick(gBattlerAttacker, GIMMICK_NONE);
             if (B_CHARGE <= GEN_8 || moveType == TYPE_ELECTRIC)
@@ -7427,9 +7439,9 @@ static void Cmd_switchineffects(void)
 
 static void Cmd_trainerslidein(void)
 {
-    CMD_ARGS(u8 battler);
+    CMD_ARGS(u8 position);
 
-    u32 battler = GetBattlerAtPosition(cmd->battler);
+    u32 battler = GetBattlerForBattleScript(cmd->position);
     BtlController_EmitTrainerSlide(battler, BUFFER_A);
     MarkBattlerForControllerExec(battler);
 
@@ -10721,20 +10733,6 @@ static void Cmd_various(void)
         {
             if (!(gBattleMons[battler].status2 & STATUS2_ESCAPE_PREVENTION))
                 gDisableStructs[battler].noRetreat = TRUE;
-            gBattlescriptCurrInstr = cmd->nextInstr;
-        }
-        return;
-    }
-    case VARIOUS_TRY_TAR_SHOT:
-    {
-        VARIOUS_ARGS(const u8 *failInstr);
-        if (gDisableStructs[battler].tarShot)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else
-        {
-            gDisableStructs[battler].tarShot = TRUE;
             gBattlescriptCurrInstr = cmd->nextInstr;
         }
         return;
@@ -15666,7 +15664,7 @@ static void Cmd_trainerslideout(void)
 {
     CMD_ARGS(u8 position);
 
-    u32 battler = GetBattlerAtPosition(cmd->position);
+    u32 battler = GetBattlerForBattleScript(cmd->position);
     BtlController_EmitTrainerSlideBack(battler, BUFFER_A);
     MarkBattlerForControllerExec(battler);
 
@@ -16139,7 +16137,6 @@ static void TryUpdateRoundTurnOrder(void)
         for (i = 0; roundUsers[i] != 0xFF && i < 3; i++)
         {
             gBattlerByTurnOrder[currRounder] = roundUsers[i];
-            gActionsByTurnOrder[currRounder] = gActionsByTurnOrder[roundUsers[i]];
             gProtectStructs[roundUsers[i]].quash = TRUE; // Make it so their turn order can't be changed again
             currRounder++;
         }
@@ -16148,7 +16145,6 @@ static void TryUpdateRoundTurnOrder(void)
         for (i = 0; nonRoundUsers[i] != 0xFF && i < 3; i++)
         {
             gBattlerByTurnOrder[currRounder] = nonRoundUsers[i];
-            gActionsByTurnOrder[currRounder] = gActionsByTurnOrder[nonRoundUsers[i]];
             currRounder++;
         }
     }
@@ -16680,7 +16676,7 @@ void BS_SetPledge(void)
     u32 i = 0;
     u32 k = 0;
 
-    if (gBattleStruct->pledgeMove)
+    if (gBattleStruct->pledgeMove && !(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE))
     {
         PrepareStringBattle(STRINGID_USEDMOVE, gBattlerAttacker);
         gHitMarker |= HITMARKER_ATTACKSTRING_PRINTED;
@@ -16709,6 +16705,8 @@ void BS_SetPledge(void)
     else if ((gChosenActionByBattler[partner] == B_ACTION_USE_MOVE)
           && gBattleTypeFlags & BATTLE_TYPE_DOUBLE
           && IsBattlerAlive(partner)
+          && GetBattlerTurnOrderNum(gBattlerAttacker) < GetBattlerTurnOrderNum(partner)
+          && !(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
           && gCurrentMove != partnerMove
           && gMovesInfo[partnerMove].effect == EFFECT_PLEDGE)
     {
@@ -16747,8 +16745,8 @@ void BS_SetPledge(void)
     }
     else
     {
+        gBattleStruct->pledgeMove = FALSE;
         gBattlescriptCurrInstr = cmd->jumpInstr;
-
     }
 }
 
@@ -17215,6 +17213,37 @@ void BS_FickleBeamDamageCalculation(void)
     {
         gBattleStruct->fickleBeamBoosted = TRUE;
         gBattlescriptCurrInstr = BattleScript_FickleBeamDoubled;
+    }
+    else
+    {
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
+}
+
+void BS_TryTarShot(void)
+{
+    NATIVE_ARGS(const u8 *failInstr);
+    if (gDisableStructs[gBattlerTarget].tarShot || GetActiveGimmick(gBattlerTarget) == GIMMICK_TERA)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else
+    {
+        gDisableStructs[gBattlerTarget].tarShot = TRUE;
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
+}
+
+void BS_JumpIfBlockedBySoundproof(void)
+{
+    NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
+    u32 battler = GetBattlerForBattleScript(cmd->battler);
+    if (gMovesInfo[gCurrentMove].soundMove && GetBattlerAbility(battler) == ABILITY_SOUNDPROOF)
+    {
+        gLastUsedAbility = ABILITY_SOUNDPROOF;
+        gBattlescriptCurrInstr = cmd->jumpInstr;
+        RecordAbilityBattle(battler, gLastUsedAbility);
+        gBattlerAbility = battler;
     }
     else
     {
