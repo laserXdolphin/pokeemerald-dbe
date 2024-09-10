@@ -1002,7 +1002,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_PLUSLE] =
     {
-        .nickname = _("SPHERES"),
+        .nickname = _("Spheres"),
         .species = SPECIES_SPHEAL,
         .ivs = {16, 31, 16, 0, 31, 16},
         .abilityNum = 0,
@@ -1011,23 +1011,23 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x6F,
         .heldItem = ITEM_AIR_BALLOON,
         .mailNum = 0,
-        .otName = _("ROMAN"),
+        .otName = _("Roman"),
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_KECLEON
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("SEASOR"),
+        .nickname = _("Seasor"),
         .species = SPECIES_HORSEA,
-        .ivs = {5, 4, 4, 4, 5, 4},
+        .ivs = {16, 0, 16, 31, 31, 16},
         .abilityNum = 0,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x7F,
-        .heldItem = ITEM_WAVE_MAIL,
+        .heldItem = ITEM_LUCKY_EGG,
         .mailNum = 1,
-        .otName = _("SKYLAR"),
+        .otName = _("Skylar"),
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_BAGON

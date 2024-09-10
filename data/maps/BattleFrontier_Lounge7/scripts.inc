@@ -305,17 +305,7 @@ BattleFrontier_Lounge7_EventScript_Gentleman::
 
 BattleFrontier_Lounge7_Text_LeftTutorIntro:
 	.string "Buhahaha!\p"
-	.string "You couldn't tell it from looking now,\n"
-	.string "but I used to be one tough TRAINER.\p"
-	.string "I had a reputation as the toughest\n"
-	.string "BEAUTY around, I tell you!\p"
-	.string "… … … … … …\p"
-	.string "What is it now?\n"
-	.string "You don't believe me.\p"
-	.string "I'm not like that blowhard woman over\n"
-	.string "there. I'm actually talented!\p"
-	.string "Let me prove it to you.\n"
-	.string "I can teach your POKéMON special and\l"
+	.string "I can teach your POKéMON special and\n"
 	.string "yet cute moves.\p"
 	.string "But my lessons don't come free.\n"
 	.string "How about paying for the moves I teach\l"
@@ -353,27 +343,21 @@ BattleFrontier_Lounge7_Text_YouDontWantTo:
 	.string "you come see me anytime!$"
 
 BattleFrontier_Lounge7_Text_RightTutorIntro:
-	.string "Ihihihi!\p"
-	.string "I know it's hard to see now, but I used\n"
-	.string "to be one fantastic TRAINER.\p"
-	.string "I had a reputation as the most\n"
-	.string "invincible SWIMMER around, I tell you!\p"
-	.string "… … … … … …\p"
+	.string "People… POKéMON…\p"
+	.string "Their hidden powers are aroused by\n"
+	.string "living in natural environments…\p"
 	.string "What's wrong?\n"
 	.string "You don't believe me.\p"
-	.string "I'm not like that buffoonish woman over\n"
-	.string "there. I'm actually experienced!\p"
 	.string "I can prove it to you.\n"
-	.string "I can teach your POKéMON hard and\l"
-	.string "yet pretty moves.\p"
+	.string "I can unlock the power within your\l"
+	.string "POKéMON by teaching them moves.\p"
 	.string "But my lessons don't come free.\n"
 	.string "How about paying for the moves I teach\l"
 	.string "with a wee bit of Battle Points?$"
 
 BattleFrontier_Lounge7_Text_RightTutorWelcomeBack:
-	.string "Ihihihi!\p"
-	.string "Have you come to learn hard and\n"
-	.string "yet pretty POKéMON moves?$"
+	.string "Have you come to awaken the hidden\n"
+	.string "power of your POKéMON.$"
 
 BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong:
 	.string "Those ladies, the way they bad-mouth\n"

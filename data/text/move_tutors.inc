@@ -113,8 +113,8 @@ MoveTutor_Text_MetronomeTaught:
 	.string "use it, too?$"
 
 MoveTutor_Text_SleepTalkTeach:
-	.string "Humph! My wife relies on HIDDEN\n"
-	.string "POWER to stay awake.\p"
+	.string "Humph! My wife relies on coffee\n"
+	.string "to stay awake.\p"
 	.string "She should just take a nap like I do,\n"
 	.string "and SLEEP TALK.\p"
 	.string "I can teach your POKéMON how to\n"
@@ -122,7 +122,7 @@ MoveTutor_Text_SleepTalkTeach:
 
 MoveTutor_Text_SleepTalkDeclined:
 	.string "Oh, fine, fine. You want to stay awake\n"
-	.string "with HIDDEN POWER, too…$"
+	.string "with coffee, too…$"
 
 MoveTutor_Text_SleepTalkWhichMon:
 	.string "Ah, an appreciative child!\n"
@@ -130,7 +130,7 @@ MoveTutor_Text_SleepTalkWhichMon:
 
 MoveTutor_Text_SleepTalkTaught:
 	.string "I've never once gotten my wife's\n"
-	.string "coin trick right.\p"
+	.string "coffee right.\p"
 	.string "I would be happy if I got it right\n"
 	.string "even as I SLEEP TALK…$"
 

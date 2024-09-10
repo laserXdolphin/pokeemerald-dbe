@@ -35,7 +35,7 @@ PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard:
 
 PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola:
 	.string "PACIFIDLOG TOWN floats on top of\n"
-	.string "a colony of CORSOLA.\p"
+	.string "a colony of QWILFISH.\p"
 	.string "If I told you that, would you believe\n"
 	.string "me?$"
 

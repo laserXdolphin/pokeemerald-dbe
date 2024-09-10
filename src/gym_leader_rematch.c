@@ -43,7 +43,7 @@ static const u16 GymLeaderRematches_Before8Gym[] = {
     REMATCH_FLANNERY,
     REMATCH_NORMAN,
 }; 
-static const u16 GymLeaderRematches_Before8GymWW[] = {
+static const u16 GymLeaderRematches_Before8Gym_BNM[] = {
     REMATCH_ROXANNE,
     REMATCH_BRAWLY,
     REMATCH_FLANNERY,
@@ -51,18 +51,31 @@ static const u16 GymLeaderRematches_Before8GymWW[] = {
 };
 void UpdateGymLeaderRematch(void)
 {
-    if (FlagGet(FLAG_BADGE05_GET))
+    if (FlagGet(FLAG_BADGE05_GET)) // enable after 5. Badge
     {
-        if (!FlagGet(FLAG_BADGE06_GET))
+        // before 6. Gym Roxanne and Brawly
+        if (!FlagGet(FLAG_BADGE06_GET)) 
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before6Gym, ARRAY_COUNT(GymLeaderRematches_Before6Gym), 1);
-        else if (!FlagGet(FLAG_SYS_GAME_CLEAR) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
+        // before finishing of Aqua Hideout: 1. rounds up to Norman
+        else if (!FlagGet(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_Before8Gym), 1);
+        else if (!FlagGet(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE))
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym_BNM, ARRAY_COUNT(GymLeaderRematches_Before8Gym_BNM), 1);
+        // before defeating Wally in Victory Road: 2. rounds up to Norman
+        else if (!FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_Before8Gym), 2);
+        else if (!FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD))
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym_BNM, ARRAY_COUNT(GymLeaderRematches_Before8Gym_BNM), 2);
+        // before clearing the game: 3. rounds 
+        else if (!FlagGet(FLAG_SYS_GAME_CLEAR) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_AfterNewMauville, ARRAY_COUNT(GymLeaderRematches_AfterNewMauville), 3);
         else if (!FlagGet(FLAG_SYS_GAME_CLEAR))
-            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8GymWW, ARRAY_COUNT(GymLeaderRematches_Before8GymWW), 2);
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_BeforeNewMauville, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 3);
+        // after clearing the game: 4. rounds
         else if (FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_AfterNewMauville, ARRAY_COUNT(GymLeaderRematches_AfterNewMauville), 5);
         else
-            UpdateGymLeaderRematchFromArray(GymLeaderRematches_BeforeNewMauville, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 2);
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_BeforeNewMauville, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 5);
     }
 }
 

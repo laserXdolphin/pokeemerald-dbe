@@ -114,7 +114,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_SunStoneMan::
 	goto_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_SunStoneManMagma
 	goto_if_set FLAG_RECEIVED_SUN_STONE_MOSSDEEP, MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStone
 	msgbox MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt, MSGBOX_DEFAULT
-	giveitem ITEM_SUN_STONE
+	giveitem ITEM_DUBIOUS_DISC
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_SUN_STONE_MOSSDEEP
 	msgbox MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers, MSGBOX_DEFAULT
@@ -129,7 +129,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStone::
 MossdeepCity_SpaceCenter_1F_EventScript_SunStoneManMagma::
 	goto_if_set FLAG_RECEIVED_SUN_STONE_MOSSDEEP, MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStoneMagma
 	msgbox MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_SUN_STONE
+	giveitem ITEM_DUBIOUS_DISC
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_SUN_STONE_MOSSDEEP
 	msgbox MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma, MSGBOX_DEFAULT
@@ -315,10 +315,9 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
 	.string "to interfere with our rocket launch!$"
 
 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
-	.string "I was taking a stroll down the beach\n"
-	.string "when I found this.\p"
-	.string "It's not anything I need, so you can\n"
-	.string "have it.$"
+	.string "Your exploits from the Weather\n"
+	.string "Institute have reached us.\p"
+	.string "We decided that you should have this$"
 
 MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
 	.string "The HOENN region has been famous for \n"
@@ -327,12 +326,12 @@ MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
 	.string "TEAM MAGMA can't be allowed to steal\n"
 	.string "the rocket fuel.\p"
-	.string "Oh, by the way, you can have this stone\n"
-	.string "I found on the beach.$"
+	.string "Oh, by the way, we decided you should\n"
+	.string "have this disc.$"
 
 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
 	.string "With TEAM MAGMA around, I guess\n"
-	.string "strolls on the beach aren't safe.$"
+	.string "Mossdeep City isn't safe.$"
 
 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
 	.string "Some people claim that POKéMON came\n"
