@@ -899,11 +899,6 @@ u8 GetTrainerBattleTransition(void)
     u32 trainerId = SanitizeTrainerId(gTrainerBattleOpponent_A);
     u32 trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);
 
-    #if BATTLE_FRONTIER_INTRO_FOR_BP_FIGHTS
-    if (VarGet(gSpecialVar_0x8003) == 1)
-        return GetSpecialBattleTransition(FRONTIER_MODE_DOUBLES);
-    #endif
-    
     if (DoesTrainerHaveMugshot(trainerId))
         return B_TRANSITION_MUGSHOT;
 
