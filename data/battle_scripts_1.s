@@ -1838,7 +1838,7 @@ BattleScript_HitSwitchTargetForceRandomSwitchFailed:
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectToxicThread::
-	setstatchanger STAT_SPEED, 2, TRUE
+	setstatchanger STAT_SPEED, 1, TRUE
 	attackcanceler
 	jumpifsubstituteblocks BattleScript_FailedFromAtkString
 	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_SPEED, MIN_STAT_STAGE, BattleScript_ToxicThreadWorks
@@ -5612,13 +5612,7 @@ BattleScript_LocalBattleWonLoseTexts::
 	trainerslidein BS_OPPONENT2
 	waitstate
 	printstring STRINGID_TRAINER2LOSETEXT
-BattleScript_LocalBattleWonBP::
-	getmoneyreward
-	printstring STRINGID_PLAYERGOTBP
-	waitmessage B_WAIT_TIME_LONG
-	end2
 BattleScript_LocalBattleWonReward::
-	jumpifbyte CMP_EQUAL, gSpecialVar_0x8003, 1, BattleScript_LocalBattleWonBP
 	getmoneyreward
 	printstring STRINGID_PLAYERGOTMONEY
 	waitmessage B_WAIT_TIME_LONG
@@ -9409,6 +9403,16 @@ BattleScript_ZMoveActivateStatus::
 	restoretarget
 	copybyte sSTATCHANGER, sSAVED_STAT_CHANGER
 	return
+
+BattleScript_ZMoveActivatePowder::
+	flushtextbox
+	trytrainerslidezmovemsg
+	savetarget
+	printstring STRINGID_ZPOWERSURROUNDS
+	playanimation BS_ATTACKER, B_ANIM_ZMOVE_ACTIVATE, NULL
+	setzeffect
+	restoretarget
+	goto BattleScript_MoveUsedPowder
 
 BattleScript_ZEffectPrintString::
 	printfromtable gZEffectStringIds

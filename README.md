@@ -7,7 +7,7 @@ You are currently on the master branch which should always be a working (at leas
 
 ## What feature branches are included?
 
-- **[RHH's pokeemerald-expansion v1.9.1](https://github.com/rh-hideout/pokeemerald-expansion/)**
+- **[RHH's pokeemerald-expansion v1.9.2](https://github.com/rh-hideout/pokeemerald-expansion/)**
 - **[Prof. Leon Dias' Fully Decapitalized Pokeemerald](https://www.pokecommunity.com/showthread.php?t=451448)**
 - **[Content from Pokecommunity Simple Modifications Directory Content](https://www.pokecommunity.com/showthread.php?t=416647):** IV/EV Stat screens 
 - **[Fixes and content from the pret tutorials](https://github.com/pret/pokeemerald/wiki/Tutorials):** Map dependent Trainer Battle Music
