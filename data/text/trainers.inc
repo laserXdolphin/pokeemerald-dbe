@@ -4682,7 +4682,7 @@ Route134_Text_JackPostBattle:
 	.string "currents around these parts.$"
 
 Route134_Text_LaurelIntro:
-	.string "My LUVDISC are looking for a fun\n"
+	.string "My POKéMON are looking for a fun\n"
 	.string "match. Will you join us?$"
 
 Route134_Text_LaurelDefeat:
