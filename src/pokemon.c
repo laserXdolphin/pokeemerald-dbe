@@ -5806,6 +5806,9 @@ u16 GetBattleBGM(void)
 
         if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT || gTrainerBattleOpponent_A == TRAINER_ARCHIE)
             return MUS_VS_KYOGRE_GROUDON;
+        if (gTrainerBattleOpponent_A == TRAINER_MIROR_B || gTrainerBattleOpponent_A == TRAINER_DAKIM
+        || gTrainerBattleOpponent_A == TRAINER_VENUS || gTrainerBattleOpponent_A == TRAINER_EIN)
+            return MUS_VS_FRONTIER_BRAIN;
         switch (trainerClass)
         {
         case TRAINER_CLASS_AQUA_LEADER:

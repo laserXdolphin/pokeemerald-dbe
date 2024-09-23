@@ -14,6 +14,7 @@ SealedChamber_OuterRoom_OnTransition:
 	end
 
 SealedChamber_OuterRoom_OnLoad:
+	setflag FLAG_SYS_BRAILLE_DIG
 	call_if_unset FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_CloseInnerRoomEntrance
 	end
 

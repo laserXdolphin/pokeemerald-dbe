@@ -15892,6 +15892,138 @@ static const struct TrainerMon sParty_Everett[] = {
     }
 };
 
+static const struct TrainerMon sParty_Miror_B[] = {
+    {
+    .lvl = 52,
+    .species = SPECIES_LUDICOLO,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_BOLD,
+    .heldItem = ITEM_DAMP_ROCK,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
+    .moves = {MOVE_SCALD, MOVE_ICY_WIND, MOVE_TOXIC, MOVE_RAIN_DANCE}
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_LUDICOLO,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_CALM,
+    .heldItem = ITEM_LEFTOVERS,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 4, 252),
+    .moves = {MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_ICY_WIND, MOVE_RAIN_DANCE}
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_SUDOWOODO,
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_ADAMANT,
+    .heldItem = ITEM_CHOICE_BAND,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 0, 31),
+    .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
+    .moves = {MOVE_HEAD_SMASH, MOVE_DIG, MOVE_SUCKER_PUNCH, MOVE_EXPLOSION}
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_EXPLOUD,
+    .ability = ABILITY_SCRAPPY,
+    .nature = NATURE_TIMID,
+    .heldItem = ITEM_THROAT_SPRAY,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
+    .moves = {MOVE_BOOMBURST, MOVE_FOCUS_BLAST, MOVE_EXTRASENSORY, MOVE_RAIN_DANCE}
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_LUDICOLO,
+    .ability = ABILITY_SWIFT_SWIM,
+    .nature = NATURE_MODEST,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
+    .moves = {MOVE_HYDRO_PUMP, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_FAKE_OUT}
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_LUDICOLO,
+    .ability = ABILITY_SWIFT_SWIM,
+    .nature = NATURE_MODEST,
+    .heldItem = ITEM_LIFE_ORB,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
+    .moves = {MOVE_SCALD, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_FAKE_OUT}
+    }
+};
+
+static const struct TrainerMon sParty_Dakim[] = {
+    {
+    .lvl = 2,
+    .species = SPECIES_MOLTRES,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_BOLD,
+    .heldItem = ITEM_DAMP_ROCK,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
+    .moves = {MOVE_SCALD, MOVE_ICY_WIND, MOVE_TOXIC, MOVE_RAIN_DANCE}
+    },
+    {
+    .lvl = 2,
+    .species = SPECIES_ENTEI,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_CALM,
+    .heldItem = ITEM_LEFTOVERS,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 4, 252),
+    .moves = {MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_ICY_WIND, MOVE_RAIN_DANCE}
+    }
+};
+
+static const struct TrainerMon sParty_Venus[] = {
+    {
+    .lvl = 2,
+    .species = SPECIES_ARTICUNO,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_BOLD,
+    .heldItem = ITEM_DAMP_ROCK,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
+    .moves = {MOVE_SCALD, MOVE_ICY_WIND, MOVE_TOXIC, MOVE_RAIN_DANCE}
+    },
+    {
+    .lvl = 2,
+    .species = SPECIES_SUICUNE,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_CALM,
+    .heldItem = ITEM_LEFTOVERS,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 4, 252),
+    .moves = {MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_ICY_WIND, MOVE_RAIN_DANCE}
+    }
+};
+
+static const struct TrainerMon sParty_Ein[] = {
+    {
+    .lvl = 2,
+    .species = SPECIES_ZAPDOS,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_BOLD,
+    .heldItem = ITEM_DAMP_ROCK,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
+    .moves = {MOVE_SCALD, MOVE_ICY_WIND, MOVE_TOXIC, MOVE_RAIN_DANCE}
+    },
+    {
+    .lvl = 2,
+    .species = SPECIES_RAIKOU,
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_CALM,
+    .heldItem = ITEM_LEFTOVERS,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 4, 252),
+    .moves = {MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_ICY_WIND, MOVE_RAIN_DANCE}
+    }
+};
+
 static const struct TrainerMon sParty_Red[] = {
     {
     .lvl = 5,

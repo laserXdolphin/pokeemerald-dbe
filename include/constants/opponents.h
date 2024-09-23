@@ -529,10 +529,10 @@
 #define TRAINER_BRENDAN_ROUTE_103           523
 #define TRAINER_BRENDAN_ROUTE_110           524
 #define TRAINER_BRENDAN_ROUTE_119           525
-#define TRAINER_BRENDAN_ROUTE_103_TORCHIC   526 // DEV: Free Trainer
-#define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527 // DEV: Free Trainer
-#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528 // DEV: Free Trainer
-#define TRAINER_MAY_ROUTE_103_MUDKIP        529 // DEV: Free Trainer
+#define TRAINER_MIROR_B                     526
+#define TRAINER_DAKIM                       527
+#define TRAINER_VENUS                       528
+#define TRAINER_EIN                         529
 #define TRAINER_MAY_ROUTE_110_MUDKIP        530 // DEV: Free Trainer
 #define TRAINER_MAY_ROUTE_119_MUDKIP        531 // DEV: Free Trainer
 #define TRAINER_MAY_ROUTE_103               532

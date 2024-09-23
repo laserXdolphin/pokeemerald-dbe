@@ -1,3 +1,5 @@
+.set LOCALID_MIROR_B, 1
+
 SealedChamber_InnerRoom_MapScripts::
 	.byte 0
 
@@ -28,6 +30,31 @@ SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	closemessage
 	fadeinbgm 0
 	setflag FLAG_REGI_DOORS_OPENED
+	releaseall
+	end
+
+SealedChamber_InnerRoom_EventScript_MirorBTrigger::
+	lockall
+	playbgm MUS_B_PIKE, FALSE
+	msgbox SealedChamber_InnerRoom_Text_MirorBMumble, MSGBOX_DEFAULT
+	playse SE_PIN
+	applymovement LOCALID_MIROR_B, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_MIROR_B, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox SealedChamber_InnerRoom_Text_MirorBIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_MIROR_B, SealedChamber_InnerRoom_Text_MirorBDefeat
+	msgbox SealedChamber_InnerRoom_Text_MirorBBye, MSGBOX_DEFAULT
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	closemessage
+	waitse
+	playmoncry SPECIES_POLITOED, CRY_MODE_NORMAL
+	waitmoncry
+	setflag FLAG_DEFEATED_MIROR_B
+	setvar VAR_SEALED_CHAMBER_STATE, 1
+	removeobject LOCALID_MIROR_B
+	fadescreen FADE_FROM_BLACK
 	releaseall
 	end
 
@@ -71,3 +98,27 @@ SealedChamber_InnerRoom_EventScript_BrailleStoryPart6::
 	releaseall
 	end
 
+SealedChamber_InnerRoom_Text_MirorBMumble:
+	.string "Oh, no, no, what a no-no!\n"
+	.string "He will have my head for this!\p"
+	.string "Digging was easy but ... Hm?$"
+
+SealedChamber_InnerRoom_Text_MirorBIntro:
+	.string "Fuhohoho! Darling who are you?\p"
+	.string "Some naughty kiddo trying to\n" 
+	.string "mess with our plans?\p"
+	.string "We can't have that ...\n"
+	.string "Let the music play!$" 
+
+SealedChamber_InnerRoom_Text_MirorBDefeat:
+	.string "You messed up my rhythm!\n"
+	.string "I just can't, no, I just can't do it!$"
+
+SealedChamber_InnerRoom_Text_MirorBBye:
+	.string "How, how, how dare you!\p"
+	.string "Don't you dare think you'll get away\n"
+	.string "with your latest outrage! One of these\p"
+	.string "days, I will take great pleasure in\n"
+	.string "kicking you about with my elegant\p"
+	.string "dance steps!\p"
+	.string "Let's go! Escape!$"
