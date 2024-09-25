@@ -596,6 +596,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_120_REVIVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 7,
+      "y": 55,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_SCOTT"
     }
   ],
   "warp_events": [
@@ -641,7 +654,7 @@
       "x": 12,
       "y": 64,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_RAIN"
+      "weather": "COORD_EVENT_WEATHER_RAIN_THUNDERSTORM"
     },
     {
       "type": "weather",
@@ -747,6 +760,15 @@
       "y": 75,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 56,
+      "elevation": 0,
+      "var": "VAR_ROUTE120_STATE",
+      "var_value": "1",
+      "script": "Route120_EventScript_EinTrigger"
     }
   ],
   "bg_events": [

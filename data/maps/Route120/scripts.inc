@@ -1,6 +1,7 @@
 .set LOCALID_BRIDGE_KECLEON, 30
 .set LOCALID_STEVEN, 31
 .set LOCALID_BRIDGE_KECLEON_SHADOW, 36  @ They use a second object which is identical to Kecleon but has a reflection palette tag for the bridge shadow
+.set LOCALID_EIN, 45
 
 Route120_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route120_OnResume
@@ -237,6 +238,70 @@ Route120_EventScript_StevenGiveDeconScope::
 	special DrawWholeMapView
 	release
 	end
+
+Route120_EventScript_EinTrigger::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	addobject LOCALID_EIN
+	playbgm MUS_B_PIKE, FALSE
+	applymovement OBJ_EVENT_ID_PLAYER, Route120_Movement_PushPlayerDown
+	applymovement LOCALID_EIN, Route120_Movement_EinApproachPlayer
+	waitmovement 0
+	msgbox Route120_Text_EinMumble, MSGBOX_DEFAULT
+	playse SE_PIN
+	applymovement LOCALID_EIN, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox Route120_Text_EinIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_EIN, Route120_Text_EinDeafeat
+	msgbox Route120_Text_EinOutro, MSGBOX_DEFAULT
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	closemessage
+	setflag FLAG_DEFEATED_EIN
+	setvar VAR_ROUTE120_STATE, 2
+	removeobject LOCALID_EIN
+	fadescreen FADE_FROM_BLACK
+	msgbox Route120_Text_EinDropped, MSGBOX_DEFAULT
+	giveitem ITEM_CHOICE_SPECS
+	releaseall
+	end
+
+Route120_Movement_PushPlayerDown:
+	lock_facing_direction
+	walk_down
+	face_up
+	unlock_facing_direction
+	step_end
+
+Route120_Movement_EinApproachPlayer:
+	delay_8
+	walk_down
+	step_end
+
+Route120_Text_EinMumble:
+	.string "Of all things, Flash. How can I\n"
+	.string "acquire that move in a timely manner?$"
+
+Route120_Text_EinIntro:
+	.string "How did you get here without my notice?\p"
+	.string "Fufufu, I see. You must be the\n"
+	.string "much-talked-about {PLAYER}.\p"
+	.string "You wouldn't happen to have the HM\n"
+	.string "Flash on you? Alas it doesn't matter.\p" 
+	.string "No one is allowed to interfere with our\n"
+	.string "plan. Let me acquaint you with the\p"
+	.string "power of my Pokémon.$"
+
+Route120_Text_EinDeafeat:
+	.string "Urrrgh… What unbelievable power…$"
+
+Route120_Text_EinOutro:
+	.string "It is a shame that you oppose us.\n"
+	.string "Till we meet again, {PLAYER}. Wahahah!$"
+
+Route120_Text_EinDropped:
+	.string "Seems like they dropped something$"
 
 Route120_EventScript_PlayerApproachKecleonNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft

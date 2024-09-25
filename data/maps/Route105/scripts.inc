@@ -1,3 +1,5 @@
+.set LOCALID_VENUS, 9
+
 Route105_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route105_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, Route105_OnTransition
@@ -75,6 +77,67 @@ Route105_EventScript_AndresRematch::
 	trainerbattle_rematch TRAINER_ANDRES_1, Route105_Text_AndresRematchIntro, Route105_Text_AndresRematchDefeated
 	msgbox Route105_Text_AndresRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route105_EventScript_VenusTrigger::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	addobject LOCALID_VENUS
+	playbgm MUS_B_PIKE, FALSE
+	applymovement OBJ_EVENT_ID_PLAYER, Route105_Movement_PushPlayerDown
+	applymovement LOCALID_VENUS, Route105_Movement_VenusApproachPlayer
+	waitmovement 0
+	msgbox Route105_Text_VenusMumble, MSGBOX_DEFAULT
+	playse SE_PIN
+	applymovement LOCALID_VENUS, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox Route105_Text_VenusIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_VENUS, Route105_Text_VenusDeafeat
+	msgbox Route105_Text_VenusOutro, MSGBOX_DEFAULT
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	closemessage
+	setflag FLAG_DEFEATED_VENUS
+	setvar VAR_ROUTE105_STATE, 2
+	removeobject LOCALID_VENUS
+	fadescreen FADE_FROM_BLACK
+	msgbox Route105_Text_VenusDropped, MSGBOX_DEFAULT
+	giveitem ITEM_CHOICE_SCARF
+	releaseall
+	end
+
+Route105_Movement_PushPlayerDown:
+	lock_facing_direction
+	walk_down
+	face_up
+	unlock_facing_direction
+	step_end
+
+Route105_Movement_VenusApproachPlayer:
+	delay_8
+	walk_down
+	step_end
+
+Route105_Text_VenusMumble:
+	.string "Running a lap! Me, Venus? No way!\n"
+	.string "Let that oaf Miror B. do it!$"
+
+Route105_Text_VenusIntro:
+	.string "Aak! I recognize your face! How did you\n"
+	.string "find us?! But that's not important now!\p"
+	.string "I'll squash you myself and collect a\n"
+	.string "reward from Master Nascour!$"
+
+Route105_Text_VenusDeafeat:
+	.string "Aiyeeh! How dare you! How dare you!$"
+
+Route105_Text_VenusOutro:
+	.string "Aiyeeeeh! How dare you!\p"
+	.string "How could I be defeated? Remember\n"
+	.string "this! I'll get you back for this!$"
+
+Route105_Text_VenusDropped:
+	.string "Seems like they dropped something$"
 
 Route104_Text_DadPokenavCall:
 	.string "… … … … … …\n"

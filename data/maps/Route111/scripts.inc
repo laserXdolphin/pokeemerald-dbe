@@ -3,6 +3,7 @@
 .set LOCALID_VIVI, 3
 .set LOCALID_VICKY, 4
 .set LOCALID_ROCK_SMASH_MAN, 46
+.set LOCALID_DAKIM, 48
 
 @ Note: LOCALID_ROUTE111_PLAYER_FALLING is a local id for this map used elsewhere. It's defined in event_objects.h
 
@@ -576,6 +577,71 @@ Route111_EventScript_Branden::
 Route111_EventScript_TrainerHillSign::
 	msgbox Route111_Text_TrainerHillSign, MSGBOX_SIGN
 	end
+
+Route111_EventScript_DakimTrigger::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	addobject LOCALID_DAKIM
+	playbgm MUS_B_PIKE, FALSE
+	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushPlayerDown
+	applymovement LOCALID_DAKIM, Route111_Movement_DakimApproachPlayer
+	waitmovement 0
+	msgbox Route111_Text_DakimMumble, MSGBOX_DEFAULT
+	playse SE_PIN
+	applymovement LOCALID_DAKIM, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox Route111_Text_DakimIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DAKIM, Route111_Text_DakimDeafeat
+	msgbox Route111_Text_DakimOutro, MSGBOX_DEFAULT
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	closemessage
+	setflag FLAG_DEFEATED_DAKIM
+	setvar VAR_ROUTE111_STATE, 2
+	removeobject LOCALID_DAKIM
+	fadescreen FADE_FROM_BLACK
+	msgbox Route111_Text_DakimDropped, MSGBOX_DEFAULT
+	giveitem ITEM_CHOICE_BAND
+	releaseall
+	end
+
+Route111_Movement_PushPlayerDown:
+	lock_facing_direction
+	walk_down
+	face_up
+	unlock_facing_direction
+	step_end
+
+Route111_Movement_DakimApproachPlayer:
+	delay_8
+	walk_down
+	step_end
+
+Route111_Text_DakimMumble:
+	.string "Gwah! Damn Rock Smash!$"
+
+Route111_Text_DakimIntro:
+	.string "Hm? Who are you? You must be the\n"
+	.string "troublemaker who messed with Miror B.!\p"
+	.string "And now you've come to mess with me,\n"
+	.string "the great Dakim! Don't make me laugh!\p"
+	.string "I'll pound a lesson into your flesh and\n"
+	.string "bones, so you'll never even think of\p"
+	.string "bothering me again!$"
+
+Route111_Text_DakimDeafeat:
+	.string "Gwah! You meddlesome pest!$"
+
+Route111_Text_DakimOutro:
+	.string "This isn't over yet. Stronger Pokémon\n"
+	.string "are being made even now. You'd better\p"
+	.string "get serious about training your\n"
+	.string "Pokémon for our next meeting.\p"
+	.string "Daahahah!$"
+
+Route111_Text_DakimDropped:
+	.string "Seems like they dropped something$"
 
 Route111_Text_BattleOurFamily:
 	.string "Hello! I take it you're a traveler.\p"

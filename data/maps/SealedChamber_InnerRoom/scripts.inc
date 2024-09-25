@@ -30,6 +30,9 @@ SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	closemessage
 	fadeinbgm 0
 	setflag FLAG_REGI_DOORS_OPENED
+	setvar VAR_ROUTE105_STATE, 1
+	setvar VAR_ROUTE111_STATE, 1
+	setvar VAR_ROUTE120_STATE, 1
 	releaseall
 	end
 
@@ -44,7 +47,7 @@ SealedChamber_InnerRoom_EventScript_MirorBTrigger::
 	waitmovement 0
 	msgbox SealedChamber_InnerRoom_Text_MirorBIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MIROR_B, SealedChamber_InnerRoom_Text_MirorBDefeat
-	msgbox SealedChamber_InnerRoom_Text_MirorBBye, MSGBOX_DEFAULT
+	msgbox SealedChamber_InnerRoom_Text_MirorBOutro, MSGBOX_DEFAULT
 	waitmessage
 	fadescreen FADE_TO_BLACK
 	closemessage
@@ -55,6 +58,8 @@ SealedChamber_InnerRoom_EventScript_MirorBTrigger::
 	setvar VAR_SEALED_CHAMBER_STATE, 1
 	removeobject LOCALID_MIROR_B
 	fadescreen FADE_FROM_BLACK
+	msgbox SealedChamber_InnerRoom_Text_MirorBDropped, MSGBOX_DEFAULT
+	giveitem ITEM_LEFTOVERS
 	releaseall
 	end
 
@@ -114,7 +119,7 @@ SealedChamber_InnerRoom_Text_MirorBDefeat:
 	.string "You messed up my rhythm!\n"
 	.string "I just can't, no, I just can't do it!$"
 
-SealedChamber_InnerRoom_Text_MirorBBye:
+SealedChamber_InnerRoom_Text_MirorBOutro:
 	.string "How, how, how dare you!\p"
 	.string "Don't you dare think you'll get away\n"
 	.string "with your latest outrage! One of these\p"
@@ -122,3 +127,6 @@ SealedChamber_InnerRoom_Text_MirorBBye:
 	.string "kicking you about with my elegant\p"
 	.string "dance steps!\p"
 	.string "Let's go! Escape!$"
+
+SealedChamber_InnerRoom_Text_MirorBDropped:
+	.string "Seems like they dropped something$"
