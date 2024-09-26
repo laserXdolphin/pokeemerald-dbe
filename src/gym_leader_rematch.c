@@ -62,10 +62,15 @@ void UpdateGymLeaderRematch(void)
         else if (!FlagGet(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym_BNM, ARRAY_COUNT(GymLeaderRematches_Before8Gym_BNM), 1);
         // before defeating Wally in Victory Road: 2. rounds up to Norman
-        else if (!FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
+        else if (!FlagGet(FLAG_BADGE08_GET) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_Before8Gym), 2);
-        else if (!FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD))
+        else if (!FlagGet(FLAG_BADGE08_GET))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym_BNM, ARRAY_COUNT(GymLeaderRematches_Before8Gym_BNM), 2);
+        // before defeating Wally in Victory Road: 2. rounds
+        else if (!FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_AfterNewMauville), 2);
+        else if (!FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD))
+            UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym_BNM, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 2);
         // before clearing the game: 3. rounds 
         else if (!FlagGet(FLAG_SYS_GAME_CLEAR) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_AfterNewMauville, ARRAY_COUNT(GymLeaderRematches_AfterNewMauville), 3);
