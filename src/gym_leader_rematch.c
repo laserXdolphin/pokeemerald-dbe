@@ -61,7 +61,7 @@ void UpdateGymLeaderRematch(void)
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_Before8Gym), 1);
         else if (!FlagGet(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym_BNM, ARRAY_COUNT(GymLeaderRematches_Before8Gym_BNM), 1);
-        // before defeating Wally in Victory Road: 2. rounds up to Norman
+        // before defeating Juan: 2. rounds up to Norman
         else if (!FlagGet(FLAG_BADGE08_GET) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym, ARRAY_COUNT(GymLeaderRematches_Before8Gym), 2);
         else if (!FlagGet(FLAG_BADGE08_GET))
