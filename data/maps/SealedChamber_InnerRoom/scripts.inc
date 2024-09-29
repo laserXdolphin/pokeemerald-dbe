@@ -59,6 +59,10 @@ SealedChamber_InnerRoom_EventScript_MirorBTrigger::
 	removeobject LOCALID_MIROR_B
 	fadescreen FADE_FROM_BLACK
 	msgbox SealedChamber_InnerRoom_Text_MirorBDropped, MSGBOX_DEFAULT
+	buffernumberstring STR_VAR_1, 10
+	setvar VAR_0x8004, 10
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	giveitem ITEM_LEFTOVERS
 	releaseall
 	end

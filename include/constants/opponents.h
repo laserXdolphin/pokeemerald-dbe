@@ -666,10 +666,10 @@
 #define TRAINER_WALLY_VR_5                  660
 #define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661 // DEV: Free Trainer: 
 #define TRAINER_BRENDAN_LILYCOVE            662
-#define TRAINER_BRENDAN_LILYCOVE_TORCHIC    663 // DEV: Free Trainer
+#define TRAINER_BRENDAN_EVERGRANDE    663 // DEV: Free Trainer
 #define TRAINER_MAY_LILYCOVE_MUDKIP         664 // DEV: Free Trainer
 #define TRAINER_MAY_LILYCOVE                665
-#define TRAINER_MAY_LILYCOVE_TORCHIC        666 // DEV: Free Trainer
+#define TRAINER_MAY_EVERGRANDE              666
 #define TRAINER_JONAH                       667
 #define TRAINER_HENRY                       668
 #define TRAINER_ROGER                       669

@@ -11865,6 +11865,69 @@ static const struct TrainerMon sParty_RivalLilycove[] = {
     }
 };
 
+
+static const struct TrainerMon sParty_RivalEverGrande[] = {
+    {
+    .lvl = 58,
+    .species = SPECIES_GASTRODON_WEST_SEA,
+    .ability = ABILITY_STORM_DRAIN,
+    .nature = NATURE_BOLD,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(4, 0, 252, 0, 252, 0),
+    .moves = {MOVE_MUDDY_WATER, MOVE_ICE_BEAM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB}
+    },
+    {
+    .lvl = 59,
+    .species = SPECIES_TALONFLAME,
+    .ability = ABILITY_FLAME_BODY,
+    .nature = NATURE_ADAMANT,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 0, 31),
+    .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
+    .moves = {MOVE_ACROBATICS, MOVE_FLARE_BLITZ, MOVE_U_TURN, MOVE_STEEL_WING}
+    },
+    {
+    .lvl = 58,
+    .species = SPECIES_FLYGON,
+    .ability = ABILITY_LEVITATE,
+    .nature = NATURE_JOLLY,
+    .heldItem = ITEM_LIFE_ORB,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 0, 31),
+    .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
+    .moves = {MOVE_U_TURN, MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_DRAGON_CLAW}
+    },
+    {
+    .lvl = 57,
+    .species = SPECIES_PORYGON_Z,
+    .ability = ABILITY_ADAPTABILITY,
+    .nature = NATURE_MODEST,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
+    .moves = {MOVE_TRI_ATTACK, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_SHADOW_BALL}
+    },
+    {
+    .lvl = 59,
+    .species = SPECIES_BRELOOM,
+    .ability = ABILITY_TECHNICIAN,
+    .nature = NATURE_ADAMANT,
+    .heldItem = ITEM_LOADED_DICE,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
+    .moves = {MOVE_MACH_PUNCH, MOVE_SPORE, MOVE_BULLET_SEED, MOVE_ROCK_TOMB}
+    },
+    {
+    .lvl = 60,
+    .species = SPECIES_DITTO,
+    .ability = ABILITY_IMPOSTER,
+    .nature = NATURE_RELAXED,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
+    }
+};
+
 static const struct TrainerMon sParty_Jonah[] = {
     {
     .lvl = 30,
@@ -14757,6 +14820,7 @@ static const struct TrainerMon sParty_TateAndLiza3[] = {
     .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
     .moves = {MOVE_SCORCHING_SANDS, MOVE_GRASS_KNOT, MOVE_PSYCHIC, MOVE_TRICK_ROOM}
     },
+    {
     .lvl = 53,
     .species = SPECIES_SLOWBRO_GALARIAN,
     .ability = ABILITY_QUICK_DRAW,

@@ -7982,7 +7982,7 @@
     .party = TRAINER_PARTY(sParty_RivalLilycove),
 },
 
-[TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
+[TRAINER_BRENDAN_EVERGRANDE] =
 {
     .trainerClass = TRAINER_CLASS_RIVAL,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -7991,7 +7991,7 @@
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalLilycove),
+    .party = TRAINER_PARTY(sParty_RivalEverGrande),
 },
 
 [TRAINER_MAY_LILYCOVE_MUDKIP] =
@@ -8018,7 +8018,7 @@
     .party = TRAINER_PARTY(sParty_RivalLilycove),
 },
 
-[TRAINER_MAY_LILYCOVE_TORCHIC] =
+[TRAINER_MAY_EVERGRANDE] =
 {
     .trainerClass = TRAINER_CLASS_RIVAL,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -8027,7 +8027,7 @@
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalLilycove),
+    .party = TRAINER_PARTY(sParty_RivalEverGrande),
 },
 
 [TRAINER_JONAH] =

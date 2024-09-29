@@ -602,6 +602,10 @@ Route111_EventScript_DakimTrigger::
 	removeobject LOCALID_DAKIM
 	fadescreen FADE_FROM_BLACK
 	msgbox Route111_Text_DakimDropped, MSGBOX_DEFAULT
+	buffernumberstring STR_VAR_1, 10
+	setvar VAR_0x8004, 10
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	giveitem ITEM_CHOICE_BAND
 	releaseall
 	end
