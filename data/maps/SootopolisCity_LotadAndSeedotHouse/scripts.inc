@@ -1,5 +1,17 @@
+
 SootopolisCity_LotadAndSeedotHouse_MapScripts::
 	.byte 0
+
+SootopolisCity_LotadAndSeedotHouse_EventScript_MoveRelearner::
+	lockall
+	setflag FLAG_EGG_MOVES_TUTOR
+	faceplayer
+	waitmovement 0
+	goto_if_set FLAG_TEMP_1, FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove
+	msgbox SootopolisCity_LotadAndSeedotHouse_ImTheMoveTutor, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_1
+	goto FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove
+	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother::
 	special GetLotadSizeRecordInfo
@@ -58,6 +70,17 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord::
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory, MSGBOX_DEFAULT
 	releaseall
 	end
+
+
+SootopolisCity_LotadAndSeedotHouse_ImTheMoveTutor:
+	.string "I'm the  EGG MOVE TUTOR.\p"
+	.string "I know all egg moves that POKéMON\n"
+	.string "learn--every one of them--and I can\l"
+	.string "teach POKéMON those moves.\p"
+	.string "I can teach a move to a POKéMON\n"
+	.string "of yours if you'd like.\p"
+	.string "I'll do it for a HEART SCALE.\n"
+	.string "I'm collecting those now.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot:
 	.string "Do you know the POKéMON SEEDOT?\n"
