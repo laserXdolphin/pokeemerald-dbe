@@ -244,7 +244,7 @@ Route120_EventScript_EinTrigger::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	addobject LOCALID_EIN
-	playbgm MUS_B_PIKE, FALSE
+	playbgm MUS_B_FACTORY, TRUE
 	applymovement OBJ_EVENT_ID_PLAYER, Route120_Movement_PushPlayerDown
 	applymovement LOCALID_EIN, Route120_Movement_EinApproachPlayer
 	waitmovement 0
@@ -257,12 +257,17 @@ Route120_EventScript_EinTrigger::
 	msgbox Route120_Text_EinOutro, MSGBOX_DEFAULT
 	waitmessage
 	fadescreen FADE_TO_BLACK
+	fadedefaultbgm
 	closemessage
 	setflag FLAG_DEFEATED_EIN
 	setvar VAR_ROUTE120_STATE, 2
 	removeobject LOCALID_EIN
 	fadescreen FADE_FROM_BLACK
 	msgbox Route120_Text_EinDropped, MSGBOX_DEFAULT
+	buffernumberstring STR_VAR_1, 10
+	setvar VAR_0x8004, 10
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	giveitem ITEM_CHOICE_SPECS
 	releaseall
 	end
@@ -290,7 +295,7 @@ Route120_Text_EinIntro:
 	.string "You wouldn't happen to have the HM\n"
 	.string "Flash on you? Alas it doesn't matter.\p" 
 	.string "No one is allowed to interfere with our\n"
-	.string "plan. Let me acquaint you with the\p"
+	.string "plan. Let me acquaint you with the\l"
 	.string "power of my Pokémon.$"
 
 Route120_Text_EinDeafeat:
@@ -301,7 +306,7 @@ Route120_Text_EinOutro:
 	.string "Till we meet again, {PLAYER}. Wahahah!$"
 
 Route120_Text_EinDropped:
-	.string "Seems like they dropped something$"
+	.string "Seems like they dropped something ...$"
 
 Route120_EventScript_PlayerApproachKecleonNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft

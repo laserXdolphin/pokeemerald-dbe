@@ -38,7 +38,7 @@ SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 
 SealedChamber_InnerRoom_EventScript_MirorBTrigger::
 	lockall
-	playbgm MUS_B_PIKE, FALSE
+	playbgm MUS_B_PIKE, TRUE
 	msgbox SealedChamber_InnerRoom_Text_MirorBMumble, MSGBOX_DEFAULT
 	playse SE_PIN
 	applymovement LOCALID_MIROR_B, Common_Movement_ExclamationMark
@@ -54,6 +54,7 @@ SealedChamber_InnerRoom_EventScript_MirorBTrigger::
 	waitse
 	playmoncry SPECIES_POLITOED, CRY_MODE_NORMAL
 	waitmoncry
+	fadedefaultbgm
 	setflag FLAG_DEFEATED_MIROR_B
 	setvar VAR_SEALED_CHAMBER_STATE, 1
 	removeobject LOCALID_MIROR_B

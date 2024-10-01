@@ -583,7 +583,7 @@ Route111_EventScript_DakimTrigger::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	addobject LOCALID_DAKIM
-	playbgm MUS_B_PIKE, FALSE
+	playbgm MUS_B_DOME, TRUE
 	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushPlayerDown
 	applymovement LOCALID_DAKIM, Route111_Movement_DakimApproachPlayer
 	waitmovement 0
@@ -598,6 +598,7 @@ Route111_EventScript_DakimTrigger::
 	fadescreen FADE_TO_BLACK
 	closemessage
 	setflag FLAG_DEFEATED_DAKIM
+	fadedefaultbgm
 	setvar VAR_ROUTE111_STATE, 2
 	removeobject LOCALID_DAKIM
 	fadescreen FADE_FROM_BLACK
@@ -626,10 +627,11 @@ Route111_Text_DakimMumble:
 	.string "Gwah! Damn Rock Smash!$"
 
 Route111_Text_DakimIntro:
-	.string "Hm? Who are you? You must be the\n"
-	.string "troublemaker who messed with Miror B.!\p"
-	.string "And now you've come to mess with me,\n"
-	.string "the great Dakim! Don't make me laugh!\p"
+	.string "Hm? Who are you?\p"
+	.string "You must be the troublemaker who\n"
+	.string "messed with Miror B.! And now you've\p"
+	.string "come to mess with me, the great Dakim!\n"
+	.string "Don't make me laugh!\p"
 	.string "I'll pound a lesson into your flesh and\n"
 	.string "bones, so you'll never even think of\p"
 	.string "bothering me again!$"
@@ -645,7 +647,7 @@ Route111_Text_DakimOutro:
 	.string "Daahahah!$"
 
 Route111_Text_DakimDropped:
-	.string "Seems like they dropped something$"
+	.string "Seems like they dropped something ...$"
 
 Route111_Text_BattleOurFamily:
 	.string "Hello! I take it you're a traveler.\p"

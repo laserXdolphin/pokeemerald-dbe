@@ -3143,7 +3143,7 @@
     .mugshotEnabled = TRUE,
     .mugshotColor = MUGSHOT_COLOR_PURPLE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_Sidney),
+    .party = TRAINER_PARTY(sParty_Sidney1),
 },
 
 [TRAINER_PHOEBE] =
@@ -3157,7 +3157,7 @@
     .mugshotEnabled = TRUE,
     .mugshotColor = MUGSHOT_COLOR_GREEN,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_Phoebe),
+    .party = TRAINER_PARTY(sParty_Phoebe1),
 },
 
 [TRAINER_GLACIA] =
@@ -3171,7 +3171,7 @@
     .mugshotEnabled = TRUE,
     .mugshotColor = MUGSHOT_COLOR_PINK,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_Glacia),
+    .party = TRAINER_PARTY(sParty_Glacia1),
 },
 
 [TRAINER_DRAKE] =
@@ -3185,7 +3185,7 @@
     .mugshotEnabled = TRUE,
     .mugshotColor = MUGSHOT_COLOR_BLUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_Drake),
+    .party = TRAINER_PARTY(sParty_Drake1),
 },
 
 [TRAINER_ROXANNE_1] =
@@ -4055,7 +4055,7 @@
     .mugshotEnabled = TRUE,
     .mugshotColor = MUGSHOT_COLOR_YELLOW,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_Wallace),
+    .party = TRAINER_PARTY(sParty_Wallace1),
 },
 
 [TRAINER_ANDREW] =
@@ -6352,7 +6352,7 @@
 
 [TRAINER_DAKIM] =
 {
-    .trainerClass = TRAINER_CLASS_BLACK_BELT,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_BLACK_BELT,
     .trainerName = _("DAKIM"),
@@ -6364,7 +6364,7 @@
 
 [TRAINER_VENUS] =
 {
-    .trainerClass = TRAINER_CLASS_BEAUTY,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .trainerPic = TRAINER_PIC_BEAUTY,
     .trainerName = _("VENUS"),

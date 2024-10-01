@@ -83,7 +83,7 @@ Route105_EventScript_VenusTrigger::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	addobject LOCALID_VENUS
-	playbgm MUS_B_PIKE, FALSE
+	playbgm MUS_B_ARENA, TRUE
 	applymovement OBJ_EVENT_ID_PLAYER, Route105_Movement_PushPlayerDown
 	applymovement LOCALID_VENUS, Route105_Movement_VenusApproachPlayer
 	waitmovement 0
@@ -96,12 +96,17 @@ Route105_EventScript_VenusTrigger::
 	msgbox Route105_Text_VenusOutro, MSGBOX_DEFAULT
 	waitmessage
 	fadescreen FADE_TO_BLACK
+	fadedefaultbgm
 	closemessage
 	setflag FLAG_DEFEATED_VENUS
 	setvar VAR_ROUTE105_STATE, 2
 	removeobject LOCALID_VENUS
 	fadescreen FADE_FROM_BLACK
 	msgbox Route105_Text_VenusDropped, MSGBOX_DEFAULT
+	buffernumberstring STR_VAR_1, 10
+	setvar VAR_0x8004, 10
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	giveitem ITEM_CHOICE_SCARF
 	releaseall
 	end
@@ -123,10 +128,9 @@ Route105_Text_VenusMumble:
 	.string "Let that oaf Miror B. do it!$"
 
 Route105_Text_VenusIntro:
-	.string "Aak! I recognize your face! How did you\n"
-	.string "find us?! But that's not important now!\p"
-	.string "I'll squash you myself and collect a\n"
-	.string "reward from Master Nascour!$"
+	.string "Aak! I recognize your face!\n"
+	.string "How did you find us?! But that's not\l"
+	.string "important now! I'll squash you myself!$"
 
 Route105_Text_VenusDeafeat:
 	.string "Aiyeeh! How dare you! How dare you!$"
@@ -137,7 +141,7 @@ Route105_Text_VenusOutro:
 	.string "this! I'll get you back for this!$"
 
 Route105_Text_VenusDropped:
-	.string "Seems like they dropped something$"
+	.string "Seems like they dropped something ...$"
 
 Route104_Text_DadPokenavCall:
 	.string "… … … … … …\n"
