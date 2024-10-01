@@ -79,7 +79,7 @@ BattleFrontier_Lounge7_EventScript_SeismicToss::
 
 BattleFrontier_Lounge7_EventScript_DreamEater::
 	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_DUAL_WINGBEAT
+	setvar VAR_0x8005, MOVE_RISING_VOLTAGE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
