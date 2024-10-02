@@ -3132,7 +3132,7 @@
     .party = TRAINER_PARTY(sParty_Walter5),
 },
 
-[TRAINER_SIDNEY] =
+[TRAINER_SIDNEY_1] =
 {
     .trainerClass = TRAINER_CLASS_ELITE_FOUR,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
@@ -3146,7 +3146,7 @@
     .party = TRAINER_PARTY(sParty_Sidney1),
 },
 
-[TRAINER_PHOEBE] =
+[TRAINER_PHOEBE_1] =
 {
     .trainerClass = TRAINER_CLASS_ELITE_FOUR,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
@@ -3160,7 +3160,7 @@
     .party = TRAINER_PARTY(sParty_Phoebe1),
 },
 
-[TRAINER_GLACIA] =
+[TRAINER_GLACIA_1] =
 {
     .trainerClass = TRAINER_CLASS_ELITE_FOUR,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
@@ -3174,7 +3174,7 @@
     .party = TRAINER_PARTY(sParty_Glacia1),
 },
 
-[TRAINER_DRAKE] =
+[TRAINER_DRAKE_1] =
 {
     .trainerClass = TRAINER_CLASS_ELITE_FOUR,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
@@ -4044,7 +4044,7 @@
     .party = TRAINER_PARTY(sParty_Timmy),
 },
 
-[TRAINER_WALLACE] =
+[TRAINER_WALLACE_1] =
 {
     .trainerClass = TRAINER_CLASS_CHAMPION,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -6386,28 +6386,32 @@
     .party = TRAINER_PARTY(sParty_Ein1),
 },
 
-[TRAINER_MAY_ROUTE_110_MUDKIP] =
+[TRAINER_SIDNEY_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
+    .trainerName = _("SIDNEY"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_PURPLE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRoute110),
+    .party = TRAINER_PARTY(sParty_Sidney2),
 },
 
-[TRAINER_MAY_ROUTE_119_MUDKIP] =
+[TRAINER_PHOEBE_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_PHOEBE,
+    .trainerName = _("PHOEBE"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_GREEN,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRoute119),
+    .party = TRAINER_PARTY(sParty_Phoebe2),
 },
 
 [TRAINER_MAY_ROUTE_103] =
@@ -6446,40 +6450,46 @@
     .party = TRAINER_PARTY(sParty_RivalRoute119),
 },
 
-[TRAINER_MAY_ROUTE_103_TORCHIC] =
+[TRAINER_GLACIA_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_GLACIA,
+    .trainerName = _("GLACIA"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_PINK,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRoute103),
+    .party = TRAINER_PARTY(sParty_Glacia2),
 },
 
-[TRAINER_MAY_ROUTE_110_TORCHIC] =
+[TRAINER_DRAKE_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
+    .trainerName = _("DRAKE"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_BLUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRoute110),
+    .party = TRAINER_PARTY(sParty_Drake2),
 },
 
-[TRAINER_MAY_ROUTE_119_TORCHIC] =
+[TRAINER_WALLACE_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerClass = TRAINER_CLASS_CHAMPION,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
+    .trainerName = _("WALLACE"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_YELLOW,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRoute119),
+    .party = TRAINER_PARTY(sParty_Wallace2),
 },
 
 [TRAINER_ISAAC_1] =

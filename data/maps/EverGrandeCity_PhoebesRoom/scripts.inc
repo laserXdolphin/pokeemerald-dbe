@@ -41,8 +41,9 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Remtach
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_PHOEBE_1, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
 	end
 
@@ -56,6 +57,12 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
+	end
+
+EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Remtach::
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_PHOEBE_2, EverGrandeCity_PhoebesRoom_Text_Defeat
+	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:

@@ -264,10 +264,10 @@
 #define TRAINER_WALTER_3                    258
 #define TRAINER_WALTER_4                    259
 #define TRAINER_WALTER_5                    260
-#define TRAINER_SIDNEY                      261
-#define TRAINER_PHOEBE                      262
-#define TRAINER_GLACIA                      263
-#define TRAINER_DRAKE                       264
+#define TRAINER_SIDNEY_1                    261
+#define TRAINER_PHOEBE_1                    262
+#define TRAINER_GLACIA_1                    263
+#define TRAINER_DRAKE_1                     264
 #define TRAINER_ROXANNE_1                   265
 #define TRAINER_BRAWLY_1                    266
 #define TRAINER_WATTSON_1                   267
@@ -338,7 +338,7 @@
 #define TRAINER_EDDIE                       332
 #define TRAINER_ALLEN                       333
 #define TRAINER_TIMMY                       334
-#define TRAINER_WALLACE                     335
+#define TRAINER_WALLACE_1                   335
 #define TRAINER_ANDREW                      336
 #define TRAINER_IVAN                        337
 #define TRAINER_CLAUDE                      338
@@ -533,14 +533,14 @@
 #define TRAINER_DAKIM                       527
 #define TRAINER_VENUS                       528
 #define TRAINER_EIN                         529
-#define TRAINER_MAY_ROUTE_110_MUDKIP        530 // DEV: Free Trainer
-#define TRAINER_MAY_ROUTE_119_MUDKIP        531 // DEV: Free Trainer
+#define TRAINER_SIDNEY_2                    530
+#define TRAINER_PHOEBE_2                    531
 #define TRAINER_MAY_ROUTE_103               532
 #define TRAINER_MAY_ROUTE_110               533
 #define TRAINER_MAY_ROUTE_119               534
-#define TRAINER_MAY_ROUTE_103_TORCHIC       535 // DEV: Free Trainer
-#define TRAINER_MAY_ROUTE_110_TORCHIC       536 // DEV: Free Trainer
-#define TRAINER_MAY_ROUTE_119_TORCHIC       537 // DEV: Free Trainer
+#define TRAINER_GLACIA_2                    535
+#define TRAINER_DRAKE_2                     536
+#define TRAINER_WALLACE_2                   537
 #define TRAINER_ISAAC_1                     538
 #define TRAINER_DAVIS                       539
 #define TRAINER_MITCHELL                    540
@@ -666,7 +666,7 @@
 #define TRAINER_WALLY_VR_5                  660
 #define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661 // DEV: Free Trainer: 
 #define TRAINER_BRENDAN_LILYCOVE            662
-#define TRAINER_BRENDAN_EVERGRANDE    663 // DEV: Free Trainer
+#define TRAINER_BRENDAN_EVERGRANDE          663
 #define TRAINER_MAY_LILYCOVE_MUDKIP         664 // DEV: Free Trainer
 #define TRAINER_MAY_LILYCOVE                665
 #define TRAINER_MAY_EVERGRANDE              666

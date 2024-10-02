@@ -41,8 +41,9 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_GlaciasRoom_EventScript_Glacia_Remtach
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_GLACIA_1, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
 
@@ -56,6 +57,12 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
+	end
+
+EverGrandeCity_GlaciasRoom_EventScript_Glacia_Remtach::
+	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GLACIA_2, EverGrandeCity_GlaciasRoom_Text_Defeat
+	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
