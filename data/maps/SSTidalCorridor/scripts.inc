@@ -194,6 +194,8 @@ SSTidalCorridor_EventScript_ScottScene::
 	waitmovement 0
 	msgbox SSTidalCorridor_Text_ScottBattleFrontierInvite, MSGBOX_DEFAULT
 	closemessage
+	giveitem ITEM_MEGA_RING
+	giveitem ITEM_AGGRONITE
 	applymovement OBJ_EVENT_ID_PLAYER, SSTidalCorridor_Movement_PlayerWatchScottExit
 	applymovement LOCALID_SAILOR, SSTidalCorridor_Movement_SailorMoveForScott
 	applymovement LOCALID_SCOTT, SSTidalCorridor_Movement_ScottExit
@@ -270,6 +272,9 @@ SSTidalCorridor_Text_ScottBattleFrontierInvite:
 	.string "The next time you take a ferry,\n"
 	.string "you should be able to sail to\l"
 	.string "the BATTLE FRONTIER.\p"
+	.string "Also take these. You will need them.\n"
+	.string "I have distributed these to promising\l"
+	.string "trainers all over the region.\p"
 	.string "Okay, {PLAYER}{KUN}, I'll be waiting for you\n"
 	.string "at the BATTLE FRONTIER!$"
 

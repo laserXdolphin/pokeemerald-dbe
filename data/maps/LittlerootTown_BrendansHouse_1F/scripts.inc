@@ -436,5 +436,5 @@ PlayersHouse_1F_Text_WhatColorDidTheySay:
 	.string "that POKéMON was?$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
-	.string "MOM: Well, isn't that something!\n"
+	.string "Green? Well, isn't that something!\n"
 	.string "There are still unknown POKéMON.$"
