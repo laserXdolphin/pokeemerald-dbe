@@ -379,29 +379,29 @@ BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful:
 	.string "Time is so cruel…$"
 
 BattleFrontier_Lounge7_Text_SoftboiledDesc::
-	.string "Recovers up to\n"
-	.string "half the user's\n"
-	.string "maximum HP.$"
+	.string "Attack that\n"
+	.string "goes first on\n"
+    .string "Grassy Terrain.$"
 
 BattleFrontier_Lounge7_Text_SeismicTossDesc::
-	.string "Inflicts damage\n"
-	.string "identical to the\n"
-	.string "user's level.$"
+	.string "Power up and\n"
+	.string "damages all foes\n"
+	.string "on Psychic Terrain.$"
 
 BattleFrontier_Lounge7_Text_DreamEaterDesc::
-	.string "Recovers half the\n"
-	.string "damage inflicted\n"
-	.string "on a sleeping foe.$"
+	.string "Move's power\n"
+	.string "doubles when on\n"
+	.string "Electric Terrain.$"
 
 BattleFrontier_Lounge7_Text_MegaPunchDesc::
-	.string "A strong punch\n"
-	.string "thrown with\n"
-	.string "incredible power.$"
+	.string "Throws sand\n"
+	.string "at the target.\n"
+	.string "May leave a burn.$"
 
 BattleFrontier_Lounge7_Text_MegaKickDesc::
-	.string "An extremely\n"
-	.string "powerful kick with\n"
-	.string "intense force.$"
+	.string "Sound waves\n"
+	.string "that damage and\n"
+	.string "prevent healing.$"
 
 BattleFrontier_Lounge7_Text_BodySlamDesc::
 	.string "A full-body slam\n"
@@ -414,9 +414,9 @@ BattleFrontier_Lounge7_Text_RockSlideDesc::
 	.string "cause flinching.$"
 
 BattleFrontier_Lounge7_Text_CounterDesc::
-	.string "Retaliates any\n"
-	.string "physical hit with\n"
-	.string "double the power.$"
+	.string "User attacks\n"
+	.string "suprisingly,\n"
+	.string "raising its Speed.$"
 
 BattleFrontier_Lounge7_Text_ThunderWaveDesc::
 	.string "A weak jolt of\n"
