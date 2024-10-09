@@ -403,7 +403,12 @@ PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
 	.string "DAD: Hm, a TICKET for a ferry?\p"
 	.string "If I recall, there are ferry ports in\n"
-	.string "SLATEPORT and LILYCOVE.$"
+	.string "SLATEPORT and LILYCOVE.\p"
+	.string "also we both recieved a parcel from a\n"
+	.string "certain SCOTT. The note says that\l"
+	.string "these have been sent to various\l"
+	.string "trainers and that they will make our\l"
+	.string "battles more thrilling.$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
 	.string "I'd better get back to PETALBURG GYM.\p"

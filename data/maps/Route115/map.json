@@ -151,7 +151,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_CAREFUL_MINT",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_115_SUPER_POTION"
     },
@@ -164,9 +164,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_EXPERT_BELT",
+      "trainer_sight_or_berry_tree_id": "ITEM_GARCHOMPITE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH"
+      "flag": "FLAG_ITEM_ROUTE_115_GARCHOMPITE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -229,7 +229,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_CAREFUL_MINT",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXPERT_BELT",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_115_GREAT_BALL"
     },
