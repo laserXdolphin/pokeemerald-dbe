@@ -661,9 +661,9 @@
 #define TRAINER_ASHLEY                      655
 #define TRAINER_WALLY_MAUVILLE              656
 #define TRAINER_WALLY_VR_2                  657
-#define TRAINER_WALLY_VR_3                  658
-#define TRAINER_WALLY_VR_4                  659
-#define TRAINER_WALLY_VR_5                  660
+#define TRAINER_RED_1                       658
+#define TRAINER_BLUE_1                      659
+#define TRAINER_GREEN_1                     660
 #define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661 // DEV: Free Trainer: 
 #define TRAINER_BRENDAN_LILYCOVE            662
 #define TRAINER_BRENDAN_EVERGRANDE          663

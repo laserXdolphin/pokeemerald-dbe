@@ -7932,40 +7932,40 @@
     .party = TRAINER_PARTY(sParty_WallyVR2),
 },
 
-[TRAINER_WALLY_VR_3] =
+[TRAINER_RED_1] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    .trainerClass = TRAINER_CLASS_CHAMPION,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_WALLY,
-    .trainerName = _("WALLY"),
+    .trainerName = _("RED"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_WallyVR3),
+    .party = TRAINER_PARTY(sParty_Red1),
 },
 
-[TRAINER_WALLY_VR_4] =
+[TRAINER_BLUE_1] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    .trainerClass = TRAINER_CLASS_CHAMPION,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_WALLY,
-    .trainerName = _("WALLY"),
+    .trainerName = _("BLUE"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_WallyVR4),
+    .party = TRAINER_PARTY(sParty_Blue1),
 },
 
-[TRAINER_WALLY_VR_5] =
+[TRAINER_GREEN_1] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    .trainerClass = TRAINER_CLASS_CHAMPION,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_WALLY,
-    .trainerName = _("WALLY"),
+    .trainerName = _("GREEN"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_WallyVR5),
+    .party = TRAINER_PARTY(sParty_Green1),
 },
 
 [TRAINER_BRENDAN_LILYCOVE_MUDKIP] =

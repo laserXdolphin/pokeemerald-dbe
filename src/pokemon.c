@@ -5803,15 +5803,16 @@ u16 GetBattleBGM(void)
         else
             trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);
 
-        if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT || gTrainerBattleOpponent_A == TRAINER_ARCHIE)
-            return MUS_VS_KYOGRE_GROUDON;
         if (gTrainerBattleOpponent_A == TRAINER_MIROR_B || gTrainerBattleOpponent_A == TRAINER_DAKIM
         || gTrainerBattleOpponent_A == TRAINER_VENUS || gTrainerBattleOpponent_A == TRAINER_EIN)
             return MUS_VS_FRONTIER_BRAIN;
+
         switch (trainerClass)
         {
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_LEADER:
+            if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT || gTrainerBattleOpponent_A == TRAINER_ARCHIE)
+                return MUS_VS_KYOGRE_GROUDON;
             return MUS_VS_AQUA_MAGMA_LEADER;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
@@ -5827,6 +5828,8 @@ u16 GetBattleBGM(void)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(gTrainerBattleOpponent_A), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
+            if (gTrainerBattleOpponent_A == TRAINER_STEVEN)
+                return MUS_VS_CHAMPION;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;

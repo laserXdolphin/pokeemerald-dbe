@@ -16,7 +16,9 @@ MeteorFalls_StevensCave_EventScript_Steven::
 	waitmovement 0
 	msgbox MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
-	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
+	msgbox MeteorFalls_StevensCave_Text_AuroraTicket, MSGBOX_DEFAULT
+	giveitem ITEM_AURORA_TICKET
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
 	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
 	release
 	end
@@ -24,6 +26,8 @@ MeteorFalls_StevensCave_EventScript_Steven::
 MeteorFalls_StevensCave_EventScript_Defeated::
 	applymovement LOCALID_STEVEN, Common_Movement_FacePlayer
 	waitmovement 0
+	msgbox MeteorFalls_StevensCave_Text_Rematch, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
 	release
 	end
@@ -41,6 +45,10 @@ MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
 	.string "Okay, {PLAYER}{KUN}, if you're going to mount\n"
 	.string "a serious challenge, expect the worst!$"
 
+MeteorFalls_StevensCave_Text_Rematch:
+	.string "STEVEN: Oh, {PLAYER}{KUN}. Let me\n"
+	.string "test my skills against you once again!$"
+
 MeteorFalls_StevensCave_Text_StevenDefeat:
 	.string "You…\n"
 	.string "I had no idea you'd become so strong…$"
@@ -57,3 +65,8 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "… … … … … …\p"
 	.string "Fufufu, even I couldn't tell you that.$"
 
+MeteorFalls_StevensCave_Text_AuroraTicket:
+	.string "STEVEN: {PLAYER}, I heard of an\n"
+	.string "approaching threat. Since you are\p"
+	.string "stronger than me please take this\n"
+	.string "ticket and stop it!$"
