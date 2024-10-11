@@ -9,7 +9,7 @@ MeteorFalls_1F_1R_MapScripts::
 	.byte 0
 
 MeteorFalls_1F_1R_OnLoad:
-	call_if_set FLAG_MET_SCOTT_ON_SS_TIDAL, MeteorFalls_1F_1R_EventScript_OpenStevensCave
+	call_if_set FLAG_SYS_GAME_CLEAR, MeteorFalls_1F_1R_EventScript_OpenStevensCave
 	end
 
 MeteorFalls_1F_1R_EventScript_OpenStevensCave::

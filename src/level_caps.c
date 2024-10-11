@@ -19,7 +19,6 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE08_GET, 49},
         {FLAG_DEFEATED_RIVAL_EG, 59},
         {FLAG_IS_CHAMPION, 64},
-        {FLAG_MET_SCOTT_ON_SS_TIDAL, 70},
     };
 
     u32 i;

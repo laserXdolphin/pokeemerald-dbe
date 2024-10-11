@@ -72,9 +72,9 @@ void UpdateGymLeaderRematch(void)
         else if (!FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_Before8Gym_BNM, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 2);
         // before clearing the game: 3. rounds 
-        else if (!FlagGet(FLAG_MET_SCOTT_ON_SS_TIDAL) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
+        else if (!FlagGet(FLAG_SYS_GAME_CLEAR) && FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_AfterNewMauville, ARRAY_COUNT(GymLeaderRematches_AfterNewMauville), 3);
-        else if (!FlagGet(FLAG_MET_SCOTT_ON_SS_TIDAL))
+        else if (!FlagGet(FLAG_SYS_GAME_CLEAR))
             UpdateGymLeaderRematchFromArray(GymLeaderRematches_BeforeNewMauville, ARRAY_COUNT(GymLeaderRematches_BeforeNewMauville), 3);
         // after clearing the game: 4. rounds
         else if (FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
