@@ -1,4 +1,5 @@
 .set LOCALID_KYOGRE, 1
+.set LOCALID_ARCHIE, 2
 
 MarineCave_End_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, MarineCave_End_OnResume
@@ -61,6 +62,35 @@ MarineCave_End_EventScript_RanFromKyogre::
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
+MarineCave_End_EventScript_Archie::
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_ARCHIE, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_ARCHIE, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox MarineCave_End_Text_ArchieIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ARCHIE_MARINE_CAVE, MarineCave_End_Text_ArchieDefeat
+	msgbox MarineCave_End_Text_ArchieWorthy, MSGBOX_DEFAULT
+	giveitem ITEM_SHARPEDONITE
+	buffernumberstring STR_VAR_1, 10
+	setvar VAR_0x8004, 10
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
+	msgbox MarineCave_End_Text_ArchieOutro, MSGBOX_DEFAULT
+	playfanfare MUS_HEAL
+	waitfanfare
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	special HealPlayerParty
+	closemessage
+	playse SE_EXIT
+	setflag FLAG_DEFEATED_ARCHIE_MC
+	removeobject LOCALID_ARCHIE
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
 MarineCave_End_Movement_KyogreApproach:
 	init_affine_anim
 	walk_down_start_affine
@@ -72,3 +102,22 @@ MarineCave_End_Movement_KyogreApproach:
 	walk_down_affine
 	step_end
 
+MarineCave_End_Text_ArchieIntro:
+	.string "Grr, {PLAYER}. Behold.\n"
+	.string "A few steps ahead you will find Kyogre.\p" 
+	.string "After that incident I have to make sure\n"
+	.string "that only a worthy person captures it.\p"
+	.string "Fufufu, let's see how worthy you are!$" 
+
+MarineCave_End_Text_ArchieDefeat:
+	.string "I... I lost again?$" 
+
+MarineCave_End_Text_ArchieWorthy:
+	.string "{PLAYER} it seems you are indeed worthy.\n"
+	.string "Please take these ...$" 
+
+MarineCave_End_Text_ArchieOutro:
+	.string "With the stone came the instruction\n"
+	.string "to give the points to the person who\p"
+	.string "would defeat me.\n"
+	.string "Best of luck with Kyogre.$" 

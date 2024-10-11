@@ -1,4 +1,5 @@
 .set LOCALID_GROUDON, 1
+.set LOCALID_MAXIE, 2
 
 TerraCave_End_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, TerraCave_End_OnResume
@@ -61,6 +62,35 @@ TerraCave_End_EventScript_RanFromGroudon::
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
+TerraCave_End_EventScript_Maxie::
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_MAXIE, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox TerraCave_End_Text_MaxieIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_MAXIE_TERRA_CAVE, TerraCave_End_Text_MaxieDefeat
+	msgbox TerraCave_End_Text_MaxieWorthy, MSGBOX_DEFAULT
+	giveitem ITEM_CAMERUPTITE
+	buffernumberstring STR_VAR_1, 10
+	setvar VAR_0x8004, 10
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
+	msgbox TerraCave_End_Text_MaxieOutro, MSGBOX_DEFAULT
+	playfanfare MUS_HEAL
+	waitfanfare
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	special HealPlayerParty
+	closemessage
+	playse SE_EXIT
+	setflag FLAG_DEFEATED_MAXIE_TC
+	removeobject LOCALID_MAXIE
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
 TerraCave_End_Movement_GroudonApproach:
 	init_affine_anim
 	walk_down_start_affine
@@ -72,3 +102,22 @@ TerraCave_End_Movement_GroudonApproach:
 	walk_down_affine
 	step_end
 
+TerraCave_End_Text_MaxieIntro:
+	.string "{PLAYER}, it is good to see you.\n"
+	.string "A few steps ahead you will find Groudon.\p" 
+	.string "After that incident I have to make sure\n"
+	.string "that only a worthy person captures it.\p"
+	.string "Fufufu, let's see how worthy you are!$" 
+
+TerraCave_End_Text_MaxieDefeat:
+	.string "Still as strong as ever ...$" 
+
+TerraCave_End_Text_MaxieWorthy:
+	.string "{PLAYER} it seems you are indeed worthy.\n"
+	.string "Please take these ...$" 
+
+TerraCave_End_Text_MaxieOutro:
+	.string "With the stone came the instruction\n"
+	.string "to give the points to the person who\p"
+	.string "would defeat me.\n"
+	.string "Best of luck with Groudon.$" 
