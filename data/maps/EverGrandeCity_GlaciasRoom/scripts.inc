@@ -41,7 +41,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-	goto_if_set FLAG_MET_SCOTT_ON_SS_TIDAL, EverGrandeCity_GlaciasRoom_EventScript_Glacia_Remtach
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GLACIA_1, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
@@ -59,8 +59,8 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	release
 	end
 
-EverGrandeCity_GlaciasRoom_EventScript_Glacia_Remtach::
-	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch::
+	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GLACIA_2, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
@@ -88,3 +88,8 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 	.string "And there, confirm the truly fearsome\n"
 	.string "side of the POKéMON LEAGUE.$"
 
+EverGrandeCity_GlaciasRoom_Text_IntroSpeechRematch:
+	.string "I've been waiting for a\n"
+	.string "Trainer with a burning-hot soul.\p" 
+	.string "How can you oppose Mega Evolution that\n"
+	.string "can freeze everything?$"

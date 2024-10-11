@@ -50,7 +50,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	end
 
 EverGrandeCity_ChampionsRoom_EventScript_Wallace_Rematch::
-	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE_2, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
@@ -252,6 +252,12 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "Who can most elegantly dance with\n"
 	.string "their POKéMON in HOENN?\p"
 	.string "Show me right here and now!$"
+
+EverGrandeCity_ChampionsRoom_Text_IntroSpeechRematch:
+	.string "WALLACE: Welcome, {PLAYER}{KUN}.\p"
+	.string "Who can most elegantly dance with\n"
+	.string "their POKéMON in HOENN?\p"
+	.string "Show me again right here and now!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "I, the CHAMPION, fall in defeat…\p"

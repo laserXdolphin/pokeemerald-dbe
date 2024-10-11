@@ -41,7 +41,7 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-	goto_if_set FLAG_MET_SCOTT_ON_SS_TIDAL, EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Remtach
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PHOEBE_1, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
@@ -59,8 +59,8 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	release
 	end
 
-EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Remtach::
-	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch::
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PHOEBE_2, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
 	end
@@ -89,3 +89,9 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 	.string "will carry you.\p"
 	.string "Go ahead, move on to the next room.$"
 
+EverGrandeCity_PhoebesRoom_Text_IntroSpeechRematch:
+	.string "Ahaha!\n"
+	.string "I've been waiting for you!\p"
+	.string "I'm bringing a little something new\n"
+	.string "to the table this time!\p"
+	.string "Prepare yourself and bring it on!$"
