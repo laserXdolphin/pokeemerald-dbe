@@ -5841,8 +5841,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            if (gMapHeader.regionMapSectionId == MAPSEC_ROUTE_102 && FALSE) // DEV: add maps with specific music here - Map Based Trainer Battle Music
-                return MUS_RG_VS_TRAINER;
+            if (gMapHeader.regionMapSectionId == MAPSEC_FARAWAY_ISLAND)
+                return MUS_RG_VS_GYM_LEADER;
             else
                 return MUS_VS_TRAINER;
         }

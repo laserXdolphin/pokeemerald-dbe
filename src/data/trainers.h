@@ -7936,7 +7936,7 @@
 {
     .trainerClass = TRAINER_CLASS_CHAMPION,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .trainerPic = TRAINER_PIC_WALLY,
+    .trainerPic = TRAINER_PIC_RED,
     .trainerName = _("RED"),
     .items = {},
     .doubleBattle = TRUE,
@@ -7958,9 +7958,9 @@
 
 [TRAINER_GREEN_1] =
 {
-    .trainerClass = TRAINER_CLASS_CHAMPION,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .trainerPic = TRAINER_PIC_WALLY,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    .trainerPic = TRAINER_PIC_LEAF,
     .trainerName = _("GREEN"),
     .items = {},
     .doubleBattle = TRUE,

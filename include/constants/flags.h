@@ -1302,7 +1302,7 @@
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
 #define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
+#define FLAG_DEFEATED_GREEN                                         0x4E7 // Unused Flag
 #define FLAG_DEFEATED_MAXIE_TC                                      0x4E8 // Unused Flag
 #define FLAG_DEFEATED_ARCHIE_MC                                     0x4E9 // Unused Flag
 #define FLAG_DEFEATED_RIVAL_EG                                      0x4EA // Unused Flag
@@ -1310,7 +1310,7 @@
 #define FLAG_DEFEATED_DAKIM                                         0x4EC // Unused Flag
 #define FLAG_DEFEATED_VENUS                                         0x4ED // Unused Flag
 #define FLAG_DEFEATED_EIN                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_HIDE_KANTO_PPL                                         0x4EF // Unused Flag
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
