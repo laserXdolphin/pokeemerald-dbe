@@ -1,6 +1,67 @@
 BattleFrontier_Lounge7_MapScripts::
 	.byte 0
 
+BattleFrontier_Lounge7_EventScript_LeftMart::
+	lock
+	faceplayer
+	message BattleFrontier_Lounge7_Text_LeftMartIntro
+	waitmessage
+	pokemart BattleFrontier_Lounge7_EventScript_LeftPokemart
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_Lounge7_EventScript_RightMart::
+	lock
+	faceplayer
+	message BattleFrontier_Lounge7_Text_RightMartIntro
+	waitmessage
+	pokemart BattleFrontier_Lounge7_EventScript_RightPokemart
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+BattleFrontier_Lounge7_EventScript_LeftPokemart:
+	.2byte ITEM_AUSPICIOUS_ARMOR
+	.2byte ITEM_MALICIOUS_ARMOR
+	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_CRACKED_POT
+	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_GALARICA_CUFF
+	.2byte ITEM_GALARICA_WREATH
+	.2byte ITEM_MASTERPIECE_TEACUP
+	.2byte ITEM_UNREMARKABLE_TEACUP
+	.2byte ITEM_METAL_ALLOY
+	.2byte ITEM_PEAT_BLOCK
+	.2byte ITEM_SWEET_APPLE
+	.2byte ITEM_TART_APPLE
+	.2byte ITEM_SYRUPY_APPLE
+	.2byte ITEM_RED_NECTAR
+	.2byte ITEM_YELLOW_NECTAR
+	.2byte ITEM_PINK_NECTAR
+	.2byte ITEM_PURPLE_NECTAR
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+BattleFrontier_Lounge7_EventScript_RightPokemart:
+	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_UPGRADE
+	.2byte ITEM_DUBIOUS_DISC
+	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_PROTECTOR
+	.2byte ITEM_RAZOR_CLAW
+	.2byte ITEM_RAZOR_FANG
+	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_NONE
+	release
+	end
+
 BattleFrontier_Lounge7_EventScript_LeftMoveTutor::
 	lock
 	faceplayer
@@ -302,6 +363,16 @@ BattleFrontier_Lounge7_EventScript_Sailor::
 BattleFrontier_Lounge7_EventScript_Gentleman::
 	msgbox BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful, MSGBOX_NPC
 	end
+
+BattleFrontier_Lounge7_Text_LeftMartIntro:
+	.string "Buhaha! Unlike that blowhard over\n"
+	.string "there, I sell special and cute items.\p"
+	.string "What do you want?$"
+
+BattleFrontier_Lounge7_Text_RightMartIntro:
+	.string "Ihihihi! Unlike that buffoon over\n"
+	.string "there, I sell hard and pretty items.\p"
+	.string "What do you want?$"
 
 BattleFrontier_Lounge7_Text_LeftTutorIntro:
 	.string "Buhahaha!\p"

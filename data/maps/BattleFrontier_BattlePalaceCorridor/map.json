@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KIRLIA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KIRLIA)",
       "x": 12,
       "y": 6,
       "elevation": 0,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LILLIPUP)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZIGZAGOON)",
       "x": 4,
       "y": 9,
       "elevation": 0,
