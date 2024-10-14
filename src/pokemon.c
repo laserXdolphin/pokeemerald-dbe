@@ -5806,6 +5806,12 @@ u16 GetBattleBGM(void)
         || gTrainerBattleOpponent_A == TRAINER_VENUS || gTrainerBattleOpponent_A == TRAINER_EIN)
             return MUS_VS_FRONTIER_BRAIN;
 
+        if (gTrainerBattleOpponent_A == TRAINER_GREEN_1)
+            return MUS_RG_VS_GYM_LEADER;
+            
+        if (gTrainerBattleOpponent_A == TRAINER_RED_1 || gTrainerBattleOpponent_A == TRAINER_BLUE_1)
+            return MUS_RG_VS_CHAMPION;
+
         switch (trainerClass)
         {
         case TRAINER_CLASS_AQUA_LEADER:
@@ -5841,7 +5847,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            if (gMapHeader.regionMapSectionId == MAPSEC_FARAWAY_ISLAND)
+            if (gMapHeader.regionMapSectionId == MAPSEC_FARAWAY_ISLAND || FALSE)
                 return MUS_RG_VS_GYM_LEADER;
             else
                 return MUS_VS_TRAINER;

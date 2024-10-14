@@ -7934,24 +7934,28 @@
 
 [TRAINER_RED_1] =
 {
-    .trainerClass = TRAINER_CLASS_CHAMPION,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_RED,
     .trainerName = _("RED"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_YELLOW,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
     .party = TRAINER_PARTY(sParty_Red1),
 },
 
 [TRAINER_BLUE_1] =
 {
-    .trainerClass = TRAINER_CLASS_CHAMPION,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_WALLY,
     .trainerName = _("BLUE"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_BLUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
     .party = TRAINER_PARTY(sParty_Blue1),
 },
@@ -7964,6 +7968,8 @@
     .trainerName = _("GREEN"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_GREEN,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
     .party = TRAINER_PARTY(sParty_Green1),
 },
@@ -9756,6 +9762,8 @@
     .trainerName = _("STEVEN"),
     .items = {},
     .doubleBattle = TRUE,
+    .mugshotEnabled = TRUE,
+    .mugshotColor = MUGSHOT_COLOR_YELLOW,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
     .party = TRAINER_PARTY(sParty_Steven),
 },

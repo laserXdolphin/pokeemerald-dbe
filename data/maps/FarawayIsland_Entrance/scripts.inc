@@ -58,6 +58,9 @@ FarawayIsland_Entrance_EventScript_Leaf::
 	msgbox FarawayIsland_Entrance_Text_GreenIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GREEN_1, FarawayIsland_Entrance_Text_GreenDefeat
 	msgbox FarawayIsland_Entrance_Text_GreenItem, MSGBOX_DEFAULT
+	giveitem ITEM_VENUSAURITE
+	giveitem ITEM_CHARIZARDITE_X
+	giveitem ITEM_CHARIZARDITE_Y
 	giveitem ITEM_BLASTOISINITE
 	msgbox FarawayIsland_Entrance_Text_GreenOutro, MSGBOX_DEFAULT
 	waitmessage

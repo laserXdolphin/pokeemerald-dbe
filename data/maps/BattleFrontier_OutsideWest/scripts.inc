@@ -307,6 +307,72 @@ BattleFrontier_OutsideWest_EventScript_PokefanF::
 	msgbox BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier, MSGBOX_NPC
 	end
 
+BattleFrontier_OutsideWest_EventScript_GREEN::
+	lock
+	faceplayer
+	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, FALSE
+	msgbox BattleFrontier_OutsideWest_Text_GreenIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GREEN_1, FarawayIsland_Entrance_Text_GreenDefeat
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
+	msgbox BattleFrontier_OutsideWest_Text_GreenOutro, MSGBOX_DEFAULT
+	waitmessage
+	release
+	end
+
+BattleFrontier_OutsideWest_EventScript_BLUE::
+	lock
+	faceplayer
+	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
+	msgbox BattleFrontier_OutsideWest_Text_BlueIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_BLUE_1, BattleFrontier_OutsideWest_Text_BlueDefeat
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
+	msgbox BattleFrontier_OutsideWest_Text_BlueDefeat, MSGBOX_DEFAULT
+	waitmessage
+	release
+	end
+
+BattleFrontier_OutsideWest_EventScript_RED::
+	lock
+	faceplayer
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox BattleFrontier_OutsideWest_Text_Red, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_RED_1, BattleFrontier_OutsideWest_Text_Red
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
+	msgbox BattleFrontier_OutsideWest_Text_Red, MSGBOX_DEFAULT
+	waitmessage
+	release
+	end
+
+BattleFrontier_OutsideWest_Text_GreenIntro:
+	.string "GREEN: You again?\n"
+	.string "Just show me how strong you've gotten!$"
+
+BattleFrontier_OutsideWest_Text_GreenOutro:
+	.string "GREEN: My friends are stronger\n"
+	.string "than me. Dare to challenge them?$"
+
+BattleFrontier_OutsideWest_Text_BlueIntro:
+	.string "BLUE: Look, I'm a Trainer.\n"
+	.string "If I see another strong Trainer, I'm\l"
+	.string "gonna want to fight them. So, here I go!$"
+
+BattleFrontier_OutsideWest_Text_BlueDefeat:
+	.string "You're a pretty big deal!\n"
+	.string "Amazing that I could lose!$"
+
+BattleFrontier_OutsideWest_Text_BlueOutro:
+	.string "BLUE: How did I lose? You really are\n"
+	.string "the real deal! Smell ya later!$"
+
+BattleFrontier_OutsideWest_Text_Red:
+	.string "... ...$"
+
 BattleFrontier_OutsideWest_Text_BattleDomeSign:
 	.string "This is the BATTLE DOME!\n"
 	.string "Your path to the invincible superstar!$"
