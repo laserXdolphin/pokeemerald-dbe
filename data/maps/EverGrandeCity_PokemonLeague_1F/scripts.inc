@@ -50,6 +50,7 @@ EverGrandeCity_PokemonLeague_1F_EventScript_Clerk2::
 	.align 2
 EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_ABILITY_PATCH
+	.2byte ITEM_LINKING_CORD
 	.2byte ITEM_TM_ICE_BEAM
 	.2byte ITEM_TM_THUNDERBOLT
 	.2byte ITEM_TM_FLAMETHROWER
