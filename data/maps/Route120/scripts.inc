@@ -253,7 +253,7 @@ Route120_EventScript_EinTrigger::
 	applymovement LOCALID_EIN, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox Route120_Text_EinIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_EIN, Route120_Text_EinDeafeat
+	trainerbattle_no_intro TRAINER_EIN_1, Route120_Text_EinDeafeat
 	msgbox Route120_Text_EinOutro, MSGBOX_DEFAULT
 	waitmessage
 	fadescreen FADE_TO_BLACK
@@ -295,8 +295,7 @@ Route120_Text_EinIntro:
 	.string "You wouldn't happen to have the HM\n"
 	.string "Flash on you? Alas it doesn't matter.\p" 
 	.string "No one is allowed to interfere with our\n"
-	.string "plan. Let me acquaint you with the\l"
-	.string "power of my Pokémon.$"
+	.string "plan.$"
 
 Route120_Text_EinDeafeat:
 	.string "Urrrgh… What unbelievable power…$"
@@ -306,7 +305,7 @@ Route120_Text_EinOutro:
 	.string "Till we meet again, {PLAYER}. Wahahah!$"
 
 Route120_Text_EinDropped:
-	.string "Seems like they dropped something ...$"
+	.string "Seems like he dropped something ...$"
 
 Route120_EventScript_PlayerApproachKecleonNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft

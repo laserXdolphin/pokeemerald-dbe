@@ -1,4 +1,5 @@
 .set LOCALID_HO_OH, 1
+.set LOCALID_DAKIM, 2
 
 NavelRock_Top_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, NavelRock_Top_OnTransition
@@ -82,6 +83,26 @@ NavelRock_Top_EventScript_RanFromHoOh::
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
+NavelRock_Top_EventScript_Dakim::
+	lockall
+	playbgm MUS_B_DOME, TRUE
+	applymovement LOCALID_DAKIM, Common_Movement_ExclamationMark
+	waitmovement 0
+	faceplayer
+	msgbox NavelRock_Top_Text_DakimIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DAKIM_2, NavelRock_Top_Text_DakimDeafeat
+	msgbox NavelRock_Top_Text_DakimOutro, MSGBOX_DEFAULT
+	giveitem ITEM_HOUNDOOMINITE
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	closemessage
+	fadedefaultbgm
+	setflag FLAG_DEFEATED_DAKIM
+	removeobject LOCALID_DAKIM
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
 NavelRock_Top_Movement_CameraPanUp:
 	walk_up
 	walk_up
@@ -115,3 +136,21 @@ NavelRock_Top_Movement_HoOhAppear:
 	walk_in_place_down
 	walk_in_place_down
 	step_end
+
+NavelRock_Top_Text_DakimIntro:
+	.string "Daahahah!\n"
+	.string "Your luck ran out when you showed up\p"
+	.string "before me! Ho-Oh should be near.\n"
+	.string "I'll prove my worth by crushing you.\p"
+	.string "Your stab at adventure's gone\n"
+	.string "on long enough!$"
+
+NavelRock_Top_Text_DakimDeafeat:
+	.string "This can't be!\n"
+	.string "The mighty Dakim loses again?$"
+
+NavelRock_Top_Text_DakimOutro:
+	.string "In all the time I've been battling, my\n"
+	.string "only losses came at the hands of\p"
+	.string "Master and you. Now, take this.\n"
+	.string "Daahahahah!$"

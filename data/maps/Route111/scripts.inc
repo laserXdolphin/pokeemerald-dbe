@@ -592,7 +592,7 @@ Route111_EventScript_DakimTrigger::
 	applymovement LOCALID_DAKIM, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox Route111_Text_DakimIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_DAKIM, Route111_Text_DakimDeafeat
+	trainerbattle_no_intro TRAINER_DAKIM_1, Route111_Text_DakimDeafeat
 	msgbox Route111_Text_DakimOutro, MSGBOX_DEFAULT
 	waitmessage
 	fadescreen FADE_TO_BLACK
@@ -647,7 +647,7 @@ Route111_Text_DakimOutro:
 	.string "Daahahah!$"
 
 Route111_Text_DakimDropped:
-	.string "Seems like they dropped something ...$"
+	.string "Seems like he dropped something ...$"
 
 Route111_Text_BattleOurFamily:
 	.string "Hello! I take it you're a traveler.\p"

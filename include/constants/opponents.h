@@ -529,10 +529,10 @@
 #define TRAINER_BRENDAN_ROUTE_103           523
 #define TRAINER_BRENDAN_ROUTE_110           524
 #define TRAINER_BRENDAN_ROUTE_119           525
-#define TRAINER_MIROR_B                     526
-#define TRAINER_DAKIM                       527
-#define TRAINER_VENUS                       528
-#define TRAINER_EIN                         529
+#define TRAINER_MIROR_B_1                   526
+#define TRAINER_DAKIM_1                     527
+#define TRAINER_VENUS_1                     528
+#define TRAINER_EIN_1                       529
 #define TRAINER_SIDNEY_2                    530
 #define TRAINER_PHOEBE_2                    531
 #define TRAINER_MAY_ROUTE_103               532
@@ -596,14 +596,14 @@
 #define TRAINER_GRUNT_SPACE_CENTER_7        590
 #define TRAINER_MACEY                       591
 #define TRAINER_BRENDAN_RUSTBORO            592
-#define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593 // DEV: Free Trainer
+#define TRAINER_MIROR_B_2                   593
 #define TRAINER_PAXTON                      594
 #define TRAINER_ISABELLA                    595
 #define TRAINER_GRUNT_WEATHER_INST_5        596
 #define TRAINER_TABITHA_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
-#define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599 // DEV: Free Trainer
-#define TRAINER_MAY_RUSTBORO_MUDKIP         600 // DEV: Free Trainer
+#define TRAINER_DAKIM_2                     599
+#define TRAINER_VENUS_2                     600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_TIANA                       603
@@ -664,7 +664,7 @@
 #define TRAINER_RED_1                       658
 #define TRAINER_BLUE_1                      659
 #define TRAINER_GREEN_1                     660
-#define TRAINER_BRENDAN_LILYCOVE_MUDKIP     661 // DEV: Free Trainer: 
+#define TRAINER_EIN_2                       661
 #define TRAINER_BRENDAN_LILYCOVE            662
 #define TRAINER_BRENDAN_EVERGRANDE          663
 #define TRAINER_MAY_LILYCOVE_MUDKIP         664 // DEV: Free Trainer

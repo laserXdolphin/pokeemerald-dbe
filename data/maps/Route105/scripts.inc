@@ -92,13 +92,12 @@ Route105_EventScript_VenusTrigger::
 	applymovement LOCALID_VENUS, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox Route105_Text_VenusIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_VENUS, Route105_Text_VenusDeafeat
+	trainerbattle_no_intro TRAINER_VENUS_1, Route105_Text_VenusDeafeat
 	msgbox Route105_Text_VenusOutro, MSGBOX_DEFAULT
 	waitmessage
 	fadescreen FADE_TO_BLACK
 	fadedefaultbgm
 	closemessage
-	setflag FLAG_DEFEATED_VENUS
 	setvar VAR_ROUTE105_STATE, 2
 	removeobject LOCALID_VENUS
 	fadescreen FADE_FROM_BLACK
@@ -141,7 +140,7 @@ Route105_Text_VenusOutro:
 	.string "this! I'll get you back for this!$"
 
 Route105_Text_VenusDropped:
-	.string "Seems like they dropped something ...$"
+	.string "Seems like she dropped something ...$"
 
 Route104_Text_DadPokenavCall:
 	.string "… … … … … …\n"

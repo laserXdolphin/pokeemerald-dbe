@@ -46,7 +46,7 @@ SealedChamber_InnerRoom_EventScript_MirorBTrigger::
 	applymovement LOCALID_MIROR_B, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox SealedChamber_InnerRoom_Text_MirorBIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_MIROR_B, SealedChamber_InnerRoom_Text_MirorBDefeat
+	trainerbattle_no_intro TRAINER_MIROR_B_1, SealedChamber_InnerRoom_Text_MirorBDefeat
 	msgbox SealedChamber_InnerRoom_Text_MirorBOutro, MSGBOX_DEFAULT
 	waitmessage
 	fadescreen FADE_TO_BLACK
@@ -55,7 +55,7 @@ SealedChamber_InnerRoom_EventScript_MirorBTrigger::
 	playmoncry SPECIES_POLITOED, CRY_MODE_NORMAL
 	waitmoncry
 	fadedefaultbgm
-	setflag FLAG_DEFEATED_MIROR_B
+	setflag FLAG_DEFEATED_MIROR_B_1
 	setvar VAR_SEALED_CHAMBER_STATE, 1
 	removeobject LOCALID_MIROR_B
 	fadescreen FADE_FROM_BLACK
@@ -134,4 +134,4 @@ SealedChamber_InnerRoom_Text_MirorBOutro:
 	.string "Let's go! Escape!$"
 
 SealedChamber_InnerRoom_Text_MirorBDropped:
-	.string "Seems like they dropped something$"
+	.string "Seems like he dropped something$"

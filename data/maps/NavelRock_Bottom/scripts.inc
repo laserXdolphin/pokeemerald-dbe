@@ -1,4 +1,5 @@
 .set LOCALID_LUGIA, 1
+.set LOCALID_EIN, 2
 
 NavelRock_Bottom_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, NavelRock_Bottom_OnTransition
@@ -76,3 +77,42 @@ NavelRock_Bottom_EventScript_RanFromLugia::
 	setvar VAR_0x8004, SPECIES_LUGIA
 	goto Common_EventScript_LegendaryFlewAway
 	end
+
+NavelRock_Bottom_EventScript_Ein::
+	lockall
+	playbgm MUS_B_FACTORY, TRUE
+	applymovement LOCALID_EIN, Common_Movement_ExclamationMark
+	waitmovement 0
+	faceplayer
+	msgbox NavelRock_Bottom_Text_EinIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_EIN_2, NavelRock_Bottom_Text_EinDeafeat
+	msgbox NavelRock_Bottom_Text_EinOutro, MSGBOX_DEFAULT
+	giveitem ITEM_AMPHAROSITE
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	closemessage
+	fadedefaultbgm
+	setflag FLAG_DEFEATED_EIN
+	removeobject LOCALID_EIN
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
+NavelRock_Bottom_Text_EinIntro:
+	.string "Well, well. So, you have come.\n"
+	.string "I am working on a modification that\p"
+	.string "makes Pokémon more vicious. Once we\n"
+	.string "get Lugia no one will be able to stop us.\l"
+	.string "The boss will be most pleased.\p"
+	.string "Let me acquaint you with the power of\n"
+	.string "my Paradox Pokémon!$"
+
+NavelRock_Bottom_Text_EinDeafeat:
+	.string "Gwaah! You have improved\n"
+	.string "since our last meeting?!$"
+
+NavelRock_Bottom_Text_EinOutro:
+	.string "Grr… It is a shame that you oppose us,\n"
+	.string "{PLAYER}. Here, use this.\p"
+	.string "Our test here was a success, time to\n"
+	.string "to phase Orre ...$"

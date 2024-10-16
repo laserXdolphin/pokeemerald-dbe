@@ -6338,7 +6338,7 @@
     .party = TRAINER_PARTY(sParty_RivalRoute119),
 },
 
-[TRAINER_MIROR_B] =
+[TRAINER_MIROR_B_1] =
 {
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -6350,7 +6350,7 @@
     .party = TRAINER_PARTY(sParty_Miror_B1),
 },
 
-[TRAINER_DAKIM] =
+[TRAINER_DAKIM_1] =
 {
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -6362,7 +6362,7 @@
     .party = TRAINER_PARTY(sParty_Dakim1),
 },
 
-[TRAINER_VENUS] =
+[TRAINER_VENUS_1] =
 {
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6374,7 +6374,7 @@
     .party = TRAINER_PARTY(sParty_Venus1),
 },
 
-[TRAINER_EIN] =
+[TRAINER_EIN_1] =
 {
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -7152,16 +7152,16 @@
     .party = TRAINER_PARTY(sParty_RivalRustboro),
 },
 
-[TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
+[TRAINER_MIROR_B_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .trainerPic = TRAINER_PIC_BRENDAN,
-    .trainerName = _("BRENDAN"),
+    .trainerPic = TRAINER_PIC_GUITARIST,
+    .trainerName = _("MIROR B."),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRustboro),
+    .party = TRAINER_PARTY(sParty_Miror_B2),
 },
 
 [TRAINER_PAXTON] =
@@ -7224,28 +7224,28 @@
     .party = TRAINER_PARTY(sParty_Jonathan),
 },
 
-[TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
+[TRAINER_DAKIM_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .trainerPic = TRAINER_PIC_BRENDAN,
-    .trainerName = _("BRENDAN"),
+    .trainerPic = TRAINER_PIC_BLACK_BELT,
+    .trainerName = _("DAKIM"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRustboro),
+    .party = TRAINER_PARTY(sParty_Dakim2),
 },
 
-[TRAINER_MAY_RUSTBORO_MUDKIP] =
+[TRAINER_VENUS_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerPic = TRAINER_PIC_BEAUTY,
+    .trainerName = _("VENUS"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRustboro),
+    .party = TRAINER_PARTY(sParty_Venus2),
 },
 
 [TRAINER_MAXIE_MAGMA_HIDEOUT] =
@@ -7974,16 +7974,16 @@
     .party = TRAINER_PARTY(sParty_Green1),
 },
 
-[TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
+[TRAINER_EIN_2] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .trainerPic = TRAINER_PIC_BRENDAN,
-    .trainerName = _("BRENDAN"),
+    .trainerPic = TRAINER_PIC_COLLECTOR,
+    .trainerName = _("EIN"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalLilycove),
+    .party = TRAINER_PARTY(sParty_Ein2),
 },
 
 [TRAINER_BRENDAN_LILYCOVE] =

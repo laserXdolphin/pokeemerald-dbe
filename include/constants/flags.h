@@ -1301,12 +1301,12 @@
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
+#define FLAG_DEFEATED_MIROR_B_2                                     0x4E6 // Unused Flag
 #define FLAG_DEFEATED_GREEN                                         0x4E7 // Unused Flag
 #define FLAG_DEFEATED_MAXIE_TC                                      0x4E8 // Unused Flag
 #define FLAG_DEFEATED_ARCHIE_MC                                     0x4E9 // Unused Flag
 #define FLAG_DEFEATED_RIVAL_EG                                      0x4EA // Unused Flag
-#define FLAG_DEFEATED_MIROR_B                                       0x4EB // Unused Flag
+#define FLAG_DEFEATED_MIROR_B_1                                     0x4EB // Unused Flag
 #define FLAG_DEFEATED_DAKIM                                         0x4EC // Unused Flag
 #define FLAG_DEFEATED_VENUS                                         0x4ED // Unused Flag
 #define FLAG_DEFEATED_EIN                                           0x4EE // Unused Flag
