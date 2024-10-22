@@ -667,7 +667,7 @@
 #define TRAINER_EIN_2                       661
 #define TRAINER_BRENDAN_LILYCOVE            662
 #define TRAINER_BRENDAN_EVERGRANDE          663
-#define TRAINER_MAY_LILYCOVE_MUDKIP         664 // DEV: Free Trainer
+#define TRAINER_XANDER                      664
 #define TRAINER_MAY_LILYCOVE                665
 #define TRAINER_MAY_EVERGRANDE              666
 #define TRAINER_JONAH                       667
@@ -772,7 +772,7 @@
 #define TRAINER_PAT                         766
 #define TRAINER_CRISTIN_1                   767
 #define TRAINER_MAY_RUSTBORO                768
-#define TRAINER_MAY_RUSTBORO_TORCHIC        769 // DEV: Free Trainer
+#define TRAINER_HUNTER              	    769
 #define TRAINER_ROXANNE_2                   770
 #define TRAINER_ROXANNE_3                   771
 #define TRAINER_ROXANNE_4                   772

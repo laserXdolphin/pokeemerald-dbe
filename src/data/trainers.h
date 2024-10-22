@@ -6309,7 +6309,7 @@
     .trainerPic = TRAINER_PIC_BRENDAN,
     .trainerName = _("BRENDAN"),
     .items = {},
-    .doubleBattle = FALSE,
+    .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_POWERFUL_STATUS,
     .party = TRAINER_PARTY(sParty_RivalRoute103),
 },
@@ -6421,7 +6421,7 @@
     .trainerPic = TRAINER_PIC_MAY,
     .trainerName = _("MAY"),
     .items = {},
-    .doubleBattle = FALSE,
+    .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT  | AI_FLAG_POWERFUL_STATUS,
     .party = TRAINER_PARTY(sParty_RivalRoute103),
 },
@@ -8010,16 +8010,16 @@
     .party = TRAINER_PARTY(sParty_RivalEverGrande),
 },
 
-[TRAINER_MAY_LILYCOVE_MUDKIP] =
+[TRAINER_XANDER] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerClass = TRAINER_CLASS_RICH_BOY,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
+    .trainerPic = TRAINER_PIC_RICH_BOY,
+    .trainerName = _("XANDER"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalLilycove),
+    .party = TRAINER_PARTY(sParty_Xander),
 },
 
 [TRAINER_MAY_LILYCOVE] =
@@ -9270,16 +9270,16 @@
     .party = TRAINER_PARTY(sParty_RivalRustboro),
 },
 
-[TRAINER_MAY_RUSTBORO_TORCHIC] =
+[TRAINER_HUNTER] =
 {
     .trainerClass = TRAINER_CLASS_RIVAL,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .trainerPic = TRAINER_PIC_MAY,
-    .trainerName = _("MAY"),
+    .trainerName = _("HUNTER"),
     .items = {},
     .doubleBattle = TRUE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT,
-    .party = TRAINER_PARTY(sParty_RivalRustboro),
+    .party = TRAINER_PARTY(sParty_Hunter),
 },
 
 [TRAINER_ROXANNE_2] =
