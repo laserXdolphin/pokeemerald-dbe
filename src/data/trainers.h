@@ -6340,7 +6340,7 @@
 
 [TRAINER_MIROR_B_1] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_GUITARIST,
     .trainerName = _("MIROR B."),
@@ -6352,7 +6352,7 @@
 
 [TRAINER_DAKIM_1] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_BLACK_BELT,
     .trainerName = _("DAKIM"),
@@ -6364,7 +6364,7 @@
 
 [TRAINER_VENUS_1] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .trainerPic = TRAINER_PIC_BEAUTY,
     .trainerName = _("VENUS"),
@@ -6376,7 +6376,7 @@
 
 [TRAINER_EIN_1] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_COLLECTOR,
     .trainerName = _("EIN"),
@@ -7154,7 +7154,7 @@
 
 [TRAINER_MIROR_B_2] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_GUITARIST,
     .trainerName = _("MIROR B."),
@@ -7226,7 +7226,7 @@
 
 [TRAINER_DAKIM_2] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_BLACK_BELT,
     .trainerName = _("DAKIM"),
@@ -7238,7 +7238,7 @@
 
 [TRAINER_VENUS_2] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .trainerPic = TRAINER_PIC_BEAUTY,
     .trainerName = _("VENUS"),
@@ -7976,7 +7976,7 @@
 
 [TRAINER_EIN_2] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerClass = TRAINER_CLASS_CIPHER_ADMIN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .trainerPic = TRAINER_PIC_COLLECTOR,
     .trainerName = _("EIN"),

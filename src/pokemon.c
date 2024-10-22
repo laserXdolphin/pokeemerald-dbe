@@ -5802,10 +5802,6 @@ u16 GetBattleBGM(void)
         else
             trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);
 
-        if (gTrainerBattleOpponent_A == TRAINER_MIROR_B || gTrainerBattleOpponent_A == TRAINER_DAKIM
-        || gTrainerBattleOpponent_A == TRAINER_VENUS || gTrainerBattleOpponent_A == TRAINER_EIN)
-            return MUS_VS_FRONTIER_BRAIN;
-
         if (gTrainerBattleOpponent_A == TRAINER_GREEN_1)
             return MUS_RG_VS_GYM_LEADER;
             
@@ -5832,12 +5828,14 @@ u16 GetBattleBGM(void)
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(gTrainerBattleOpponent_A), gText_BattleWallyName))
-                return MUS_VS_TRAINER;
+                return MUS_RG_VS_TRAINER;
             if (gTrainerBattleOpponent_A == TRAINER_STEVEN)
                 return MUS_VS_CHAMPION;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
+        case TRAINER_CLASS_CIPHER_ADMIN:
+            return MUS_RG_VS_TRAINER;
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
         case TRAINER_CLASS_PALACE_MAVEN:
