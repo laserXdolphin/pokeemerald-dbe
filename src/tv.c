@@ -195,34 +195,28 @@ static const struct {
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
-        .level = 3,
-        .location = MAP_NUM(ROUTE102)
-    },
-    {
-        .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 15,
-        .location = MAP_NUM(ROUTE114),
-    },
-    {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 13,
-        .location = MAP_NUM(ROUTE117),
-    },
-    {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
-        .level = 25,
-        .location = MAP_NUM(ROUTE120),
-    },
-    {
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
+        .species = SPECIES_SQUIRTLE,
+        .moves = {MOVE_AQUA_JET, MOVE_FAKE_OUT, MOVE_LIFE_DEW, MOVE_YAWN},
         .level = 8,
-        .location = MAP_NUM(ROUTE116),
+        .location = MAP_NUM(ROUTE102),
+    },
+    {
+        .species = SPECIES_BULBASAUR,
+        .moves = {MOVE_CURSE, MOVE_INGRAIN, MOVE_WEATHER_BALL, MOVE_GRASS_KNOT},
+        .level = 8,
+        .location = MAP_NUM(ROUTE104),
+    },
+    {
+        .species = SPECIES_CYNDAQUIL,
+        .moves = {MOVE_PLAY_ROUGH, MOVE_EXTRASENSORY, MOVE_BURNING_JEALOUSY, MOVE_TEMPER_FLARE},
+        .level = 15,
+        .location = MAP_NUM(JAGGED_PASS),
+    },
+    {
+        .species = SPECIES_CHIKORITA,
+        .moves = {MOVE_GRASS_KNOT, MOVE_SOLAR_BLADE, MOVE_COUNTER, MOVE_HEAL_PULSE},
+        .level = 15,
+        .location = MAP_NUM(ROUTE117),
     }
 };
 
