@@ -6,7 +6,6 @@ ArtisanCave_B1F_OnTransition:
 	setflag FLAG_LANDMARK_ARTISAN_CAVE
 	end
 
-
 ArtisanCave_B1F_EventScript_Noland::
 	lock
 	faceplayer
@@ -14,6 +13,10 @@ ArtisanCave_B1F_EventScript_Noland::
 	goto_if_eq VAR_RESULT, NO, ArtisanCave_B1F_EventScript_NolandOutro
 	trainerbattle_no_intro TRAINER_NOLAND, ArtisanCave_B1F_Text_NolandDefeat
 	call Common_EventScript_OutOfCenterPartyHeal
+	buffernumberstring STR_VAR_1, 15
+	setvar VAR_0x8004, 15
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	goto ArtisanCave_B1F_EventScript_NolandOutro
 	release
 	end
@@ -30,6 +33,10 @@ ArtisanCave_B1F_EventScript_Greta::
 	goto_if_eq VAR_RESULT, NO, ArtisanCave_B1F_EventScript_GretaOutro
 	trainerbattle_no_intro TRAINER_GRETA, ArtisanCave_B1F_Text_GretaDefeat
 	call Common_EventScript_OutOfCenterPartyHeal
+	buffernumberstring STR_VAR_1, 15
+	setvar VAR_0x8004, 15
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	goto ArtisanCave_B1F_EventScript_GretaOutro
 	release
 	end
@@ -46,6 +53,10 @@ ArtisanCave_B1F_EventScript_Tucker::
 	goto_if_eq VAR_RESULT, NO, ArtisanCave_B1F_EventScript_TuckerOutro
 	trainerbattle_no_intro TRAINER_TUCKER, ArtisanCave_B1F_Text_TuckerDefeat
 	call Common_EventScript_OutOfCenterPartyHeal
+	buffernumberstring STR_VAR_1, 15
+	setvar VAR_0x8004, 15
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	goto ArtisanCave_B1F_EventScript_TuckerOutro
 	release
 	end
@@ -62,6 +73,10 @@ ArtisanCave_B1F_EventScript_Lucy::
 	goto_if_eq VAR_RESULT, NO, ArtisanCave_B1F_EventScript_LucyOutro
 	trainerbattle_no_intro TRAINER_LUCY, ArtisanCave_B1F_Text_LucyDefeat
 	call Common_EventScript_OutOfCenterPartyHeal
+	buffernumberstring STR_VAR_1, 15
+	setvar VAR_0x8004, 15
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	goto ArtisanCave_B1F_EventScript_LucyOutro
 	release
 	end
@@ -78,6 +93,10 @@ ArtisanCave_B1F_EventScript_Spenser::
 	goto_if_eq VAR_RESULT, NO, ArtisanCave_B1F_EventScript_SpenserOutro
 	trainerbattle_no_intro TRAINER_SPENSER, ArtisanCave_B1F_Text_SpenserDefeat
 	call Common_EventScript_OutOfCenterPartyHeal
+	buffernumberstring STR_VAR_1, 15
+	setvar VAR_0x8004, 15
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	goto ArtisanCave_B1F_EventScript_SpenserOutro
 	release
 	end
@@ -94,6 +113,10 @@ ArtisanCave_B1F_EventScript_Brandon::
 	goto_if_eq VAR_RESULT, NO, ArtisanCave_B1F_EventScript_BrandonOutro
 	trainerbattle_no_intro TRAINER_BRANDON, ArtisanCave_B1F_Text_BrandonDefeat
 	call Common_EventScript_OutOfCenterPartyHeal
+	buffernumberstring STR_VAR_1, 15
+	setvar VAR_0x8004, 15
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	goto ArtisanCave_B1F_EventScript_BrandonOutro
 	release
 	end
@@ -110,6 +133,10 @@ ArtisanCave_B1F_EventScript_Anabel::
 	goto_if_eq VAR_RESULT, NO, ArtisanCave_B1F_EventScript_AnabelOutro
 	trainerbattle_no_intro TRAINER_ANABEL, ArtisanCave_B1F_Text_AnabelDefeat
 	call Common_EventScript_OutOfCenterPartyHeal
+	buffernumberstring STR_VAR_1, 15
+	setvar VAR_0x8004, 15
+	special GiveFrontierBattlePoints
+	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	goto ArtisanCave_B1F_EventScript_AnabelOutro
 	release
 	end

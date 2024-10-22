@@ -313,9 +313,7 @@ BattleFrontier_OutsideWest_EventScript_GREEN::
 	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, FALSE
 	msgbox BattleFrontier_OutsideWest_Text_GreenIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GREEN_1, FarawayIsland_Entrance_Text_GreenDefeat
-	playfanfare MUS_HEAL
-	waitfanfare
-	special HealPlayerParty
+	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox BattleFrontier_OutsideWest_Text_GreenOutro, MSGBOX_DEFAULT
 	waitmessage
 	release
@@ -327,9 +325,7 @@ BattleFrontier_OutsideWest_EventScript_BLUE::
 	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
 	msgbox BattleFrontier_OutsideWest_Text_BlueIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_BLUE_1, BattleFrontier_OutsideWest_Text_BlueDefeat
-	playfanfare MUS_HEAL
-	waitfanfare
-	special HealPlayerParty
+	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox BattleFrontier_OutsideWest_Text_BlueDefeat, MSGBOX_DEFAULT
 	waitmessage
 	release
@@ -341,9 +337,7 @@ BattleFrontier_OutsideWest_EventScript_RED::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox BattleFrontier_OutsideWest_Text_Red, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_RED_1, BattleFrontier_OutsideWest_Text_Red
-	playfanfare MUS_HEAL
-	waitfanfare
-	special HealPlayerParty
+	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox BattleFrontier_OutsideWest_Text_Red, MSGBOX_DEFAULT
 	waitmessage
 	release

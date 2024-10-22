@@ -9272,9 +9272,9 @@
 
 [TRAINER_HUNTER] =
 {
-    .trainerClass = TRAINER_CLASS_RIVAL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .trainerPic = TRAINER_PIC_MAY,
+    .trainerClass = TRAINER_CLASS_COOLTRAINER,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F,
     .trainerName = _("HUNTER"),
     .items = {},
     .doubleBattle = TRUE,

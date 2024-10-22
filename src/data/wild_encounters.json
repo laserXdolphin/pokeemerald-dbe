@@ -10752,7 +10752,7 @@
               {
                 "min_level": 42,
                 "max_level": 42,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_GLIMMET"
               },
               {
                 "min_level": 43,
@@ -10762,12 +10762,12 @@
               {
                 "min_level": 44,
                 "max_level": 44,
-                "species": "SPECIES_TOXEL"
+                "species": "SPECIES_IMPIDIMP"
               },
               {
                 "min_level": 45,
                 "max_level": 45,
-                "species": "SPECIES_MACHOP"
+                "species": "SPECIES_HATENNA"
               },
               {
                 "min_level": 46,
