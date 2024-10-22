@@ -9272,7 +9272,7 @@
 
 [TRAINER_HUNTER] =
 {
-    .trainerClass = TRAINER_CLASS_COOLTRAINER,
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
     .trainerPic = TRAINER_PIC_COOLTRAINER_F,
     .trainerName = _("HUNTER"),
