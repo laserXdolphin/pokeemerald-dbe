@@ -7948,9 +7948,9 @@
 
 [TRAINER_BLUE_1] =
 {
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .trainerPic = TRAINER_PIC_WALLY,
+    .trainerClass = TRAINER_CLASS_RICH_BOY,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
+    .trainerPic = TRAINER_PIC_RICH_BOY,
     .trainerName = _("BLUE"),
     .items = {},
     .doubleBattle = TRUE,
