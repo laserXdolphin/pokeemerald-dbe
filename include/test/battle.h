@@ -645,6 +645,15 @@ struct AILogLine
     s16 score;
 };
 
+// Data which is updated by the test runner during a battle and needs to
+// be reset between trials.
+struct BattleTrialData
+{
+    u8 lastActionTurn;
+    u8 queuedEvent;
+    u8 aiActionsPlayed[MAX_BATTLERS_COUNT];
+};
+
 struct BattleTestData
 {
     u8 stack[BATTLE_TEST_STACK_SIZE];
@@ -676,20 +685,19 @@ struct BattleTestData
     u8 battleRecordSourceLineOffsets[MAX_BATTLERS_COUNT][BATTLER_RECORD_SIZE];
     u16 recordIndexes[MAX_BATTLERS_COUNT];
     struct BattlerTurn battleRecordTurns[MAX_TURNS][MAX_BATTLERS_COUNT];
-    u8 lastActionTurn;
 
     u8 queuedEventsCount;
     u8 queueGroupType;
     u8 queueGroupStart;
-    u8 queuedEvent;
     struct QueuedEvent queuedEvents[MAX_QUEUED_EVENTS];
     u8 expectedAiActionIndex[MAX_BATTLERS_COUNT];
-    u8 aiActionsPlayed[MAX_BATTLERS_COUNT];
     struct ExpectedAIAction expectedAiActions[MAX_BATTLERS_COUNT][MAX_EXPECTED_ACTIONS];
     struct ExpectedAiScore expectedAiScores[MAX_BATTLERS_COUNT][MAX_TURNS][MAX_AI_SCORE_COMPARISION_PER_TURN]; // Max 4 comparisions per turn
     struct AILogLine aiLogLines[MAX_BATTLERS_COUNT][MAX_MON_MOVES][MAX_AI_LOG_LINES];
     u8 aiLogPrintedForMove[MAX_BATTLERS_COUNT]; // Marks ai score log as printed for move, so the same log isn't displayed multiple times.
     u16 flagId;
+
+    struct BattleTrialData trial;
 };
 
 struct BattleTestRunnerState
@@ -726,6 +734,8 @@ extern struct BattleTestRunnerState *const gBattleTestRunnerState;
 
 #define APPEND_COMMA_TRUE(a) , a, TRUE
 #define R_APPEND_TRUE(...) __VA_OPT__(FIRST(__VA_ARGS__), TRUE RECURSIVELY(R_FOR_EACH(APPEND_COMMA_TRUE, EXCEPT_1(__VA_ARGS__))))
+
+#define AI_TRAINER_NAME "{PKMN} TRAINER LEAF"
 
 /* Test */
 
@@ -944,7 +954,10 @@ struct MoveContext
     u16 gimmick:4;
     u16 explicitGimmick:1;
     u16 allowed:1;
+    // End of word
     u16 explicitAllowed:1;
+    u16 partyIndex:3; // Used for moves where you select a party member without swiching, such as Revival Blessing
+    u16 explicitPartyIndex:1;
     u16 notExpected:1; // Has effect only with EXPECT_MOVE
     u16 explicitNotExpected:1;
     struct BattlePokemon *target;
