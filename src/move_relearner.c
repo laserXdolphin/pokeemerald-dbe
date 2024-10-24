@@ -912,10 +912,7 @@ static void CreateLearnableMovesList(void)
     u8 nickname[POKEMON_NAME_LENGTH + 1];
 
     if (FlagGet(FLAG_EGG_MOVES_TUTOR))
-    {
-        u16 eggSpecies = GetEggSpecies(GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_SPECIES));
-        sMoveRelearnerStruct->numMenuChoices = GetEggMovesBySpecies(eggSpecies, sMoveRelearnerStruct->movesToLearn);
-    }
+        sMoveRelearnerStruct->numMenuChoices = GetEggMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
     else
         sMoveRelearnerStruct->numMenuChoices = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
 

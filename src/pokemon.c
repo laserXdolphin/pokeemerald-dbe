@@ -11,6 +11,7 @@
 #include "battle_tower.h"
 #include "battle_z_move.h"
 #include "data.h"
+#include "daycare.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "evolution_scene.h"
@@ -5702,7 +5703,9 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
 {
     u16 learnedMoves[MAX_MON_MOVES];
     u16 moves[MAX_LEVEL_UP_MOVES];
+    u16 eggMoves[EGG_MOVES_ARRAY_COUNT];
     u8 numMoves = 0;
+    u8 numEggMoves = 0;
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, 0);
     const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
@@ -5710,6 +5713,13 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
 
     if (species == SPECIES_EGG)
         return 0;
+
+    if (FlagGet(FLAG_EGG_MOVES_TUTOR))
+    {
+        numEggMoves = GetEggMoves(mon, eggMoves);
+        if (numEggMoves == 0)
+            return 0;
+    }
 
     for (i = 0; i < MAX_MON_MOVES; i++)
         learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
@@ -5738,6 +5748,9 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
             }
         }
     }
+
+    if (numMoves == 0 && FlagGet(FLAG_EGG_MOVES_TUTOR) && numEggMoves > 0)
+        return numEggMoves;
 
     return numMoves;
 }

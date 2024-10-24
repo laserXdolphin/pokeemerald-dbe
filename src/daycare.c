@@ -33,7 +33,6 @@ static void ClearDaycareMonMail(struct DaycareMail *mail);
 static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare);
 static void DaycarePrintMonInfo(u8 windowId, u32 daycareSlotId, u8 y);
 static u8 ModifyBreedingScoreForOvalCharm(u8 score);
-static u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves);
 
 // RAM buffers used to assist with BuildEggMoveset()
 EWRAM_DATA static u16 sHatchedEggLevelUpMoves[EGG_LVL_UP_MOVES_ARRAY_COUNT] = {0};
@@ -771,21 +770,41 @@ static void InheritAbility(struct Pokemon *egg, struct BoxPokemon *father, struc
 
 // Counts the number of egg moves a Pokémon learns and stores the moves in
 // the given array.
-static u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves)
+u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves)
 {
+    u16 learnedMoves[MAX_MON_MOVES];
     u16 numEggMoves;
     u16 species;
-    u32 i;
+    u32 i, j = 0;
     const u16 *eggMoveLearnset;
 
     numEggMoves = 0;
-    species = GetMonData(pokemon, MON_DATA_SPECIES);
+    species = GetEggSpecies(GetMonData(pokemon, MON_DATA_SPECIES));
     eggMoveLearnset = GetSpeciesEggMoves(species);
+
+    if(FlagGet(FLAG_EGG_MOVES_TUTOR))
+    {
+        for (i = 0; i < MAX_MON_MOVES; i++)
+            learnedMoves[i] = GetMonData(pokemon, MON_DATA_MOVE1 + i, 0);
+    }
 
     for (i = 0; eggMoveLearnset[i] != MOVE_UNAVAILABLE; i++)
     {
-        eggMoves[i] = eggMoveLearnset[i];
-        numEggMoves++;
+        if (FlagGet(FLAG_EGG_MOVES_TUTOR))
+        {
+            // Is the egg move in current move set
+            for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != eggMoveLearnset[i]; j++);
+            // If not add it to the list of possible moves
+            if(j == MAX_MON_MOVES){
+                eggMoves[numEggMoves] = eggMoveLearnset[i];
+                numEggMoves++;
+            }
+        }
+        else
+        {
+            eggMoves[i] = eggMoveLearnset[i];
+            numEggMoves++;
+        }
     }
 
     return numEggMoves;
