@@ -107,7 +107,7 @@
       "x": 32,
       "y": 33,
       "elevation": 0,
-      "item": "ITEM_FULL_RESTORE",
+      "item": "ITEM_EXP_CANDY_L",
       "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_FULL_RESTORE"
     }
   ]
