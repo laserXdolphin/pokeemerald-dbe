@@ -1,0 +1,80 @@
+#ifndef GUARD_CONSTANTS_TMS_HMS_H
+#define GUARD_CONSTANTS_TMS_HMS_H
+
+#define FOREACH_TM(F) \
+    F(FOCUS_BLAST) \
+    F(DRAGON_PULSE) \
+    F(SCALD) \
+    F(CALM_MIND) \
+    F(ELECTROWEB) \
+    F(TOXIC) \
+    F(HAIL) \
+    F(DRAIN_PUNCH) \
+    F(BULLET_SEED) \
+    F(X_SCISSOR) \
+    F(SUNNY_DAY) \
+    F(TAUNT) \
+    F(ICE_BEAM) \
+    F(BLIZZARD) \
+    F(SKITTER_SMACK) \
+    F(LIGHT_SCREEN) \
+    F(PROTECT) \
+    F(RAIN_DANCE) \
+    F(GIGA_DRAIN) \
+    F(SAFEGUARD) \
+    F(WILD_CHARGE) \
+    F(SOLAR_BEAM) \
+    F(IRON_TAIL) \
+    F(THUNDERBOLT) \
+    F(THUNDER) \
+    F(EARTHQUAKE) \
+    F(U_TURN) \
+    F(BULLDOZE) \
+    F(PSYCHIC) \
+    F(SHADOW_BALL) \
+    F(BRICK_BREAK) \
+    F(TRICK_ROOM) \
+    F(REFLECT) \
+    F(VOLT_SWITCH) \
+    F(FLAMETHROWER) \
+    F(SLUDGE_BOMB) \
+    F(SANDSTORM) \
+    F(FIRE_BLAST) \
+    F(ROCK_TOMB) \
+    F(AERIAL_ACE) \
+    F(FLIP_TURN) \
+    F(FACADE) \
+    F(SECRET_POWER) \
+    F(REST) \
+    F(ATTRACT) \
+    F(DARK_PULSE) \
+    F(STEEL_WING) \
+    F(SKILL_SWAP) \
+    F(DAZZLING_GLEAM) \
+    F(HEAT_WAVE) \
+    F(FLASH_CANNON) \
+    F(ENERGY_BALL) \
+    F(SLUDGE_WAVE) \
+    F(STONE_EDGE) \
+    F(PSYSHOCK) \
+    F(GRASSY_TERRAIN) \
+    F(MISTY_TERRAIN) \
+    F(ELECTRIC_TERRAIN) \
+    F(PSYCHIC_TERRAIN) \
+    F(TERRAIN_PULSE) \
+
+#define FOREACH_HM(F) \
+    F(CUT) \
+    F(FLY) \
+    F(SURF) \
+    F(STRENGTH) \
+    F(FLASH) \
+    F(ROCK_SMASH) \
+    F(WATERFALL) \
+    F(DIVE)
+
+#define FOREACH_TMHM(F) \
+    FOREACH_TM(F) \
+    FOREACH_HM(F)
+
+#endif
