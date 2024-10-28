@@ -87,7 +87,7 @@ NavelRock_Bottom_EventScript_Ein::
 	msgbox NavelRock_Bottom_Text_EinIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_EIN_2, NavelRock_Bottom_Text_EinDeafeat
 	msgbox NavelRock_Bottom_Text_EinOutro, MSGBOX_DEFAULT
-	giveitem ITEM_AMPHAROSITE
+	giveitem ITEM_MANECTITE
 	waitmessage
 	fadescreen FADE_TO_BLACK
 	closemessage

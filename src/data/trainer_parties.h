@@ -14595,13 +14595,13 @@ static const struct TrainerMon sParty_Wattson5[] = {
     },
     {
     .lvl = 69,
-    .species = SPECIES_MANECTRIC,
+    .species = SPECIES_AMPHAROS,
     .ability = ABILITY_STATIC,
     .nature = NATURE_MODEST,
-    .heldItem = ITEM_MANECTITE,
+    .heldItem = ITEM_AMPHAROSITE,
     .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-    .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
-    .moves = {MOVE_RISING_VOLTAGE, MOVE_FLAMETHROWER, MOVE_SNARL, MOVE_DISCHARGE}
+    .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
+    .moves = {MOVE_RISING_VOLTAGE, MOVE_FOCUS_BLAST, MOVE_DRAGON_PULSE, MOVE_DAZZLING_GLEAM}
     },
     {   
     .lvl = 70,
@@ -17658,13 +17658,13 @@ static const struct TrainerMon sParty_Ein2[] = {
     },
     {
     .lvl = 78,
-    .species = SPECIES_AMPHAROS,
+    .species = SPECIES_MANECTRIC,
     .ability = ABILITY_STATIC,
     .nature = NATURE_MODEST,
-    .heldItem = ITEM_AMPHAROSITE,
+    .heldItem = ITEM_MANECTITE,
     .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-    .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
-    .moves = {MOVE_RISING_VOLTAGE, MOVE_FOCUS_BLAST, MOVE_DRAGON_PULSE, MOVE_DAZZLING_GLEAM}
+    .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
+    .moves = {MOVE_RISING_VOLTAGE, MOVE_FLAMETHROWER, MOVE_SNARL, MOVE_DISCHARGE}
     },
     {
     .lvl = 80,
