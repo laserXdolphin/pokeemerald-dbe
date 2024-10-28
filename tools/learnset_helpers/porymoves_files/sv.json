@@ -67521,7 +67521,10 @@
       "MOVE_SOLAR_BLADE",
       "MOVE_UPROAR",
       "MOVE_GRASSY_GLIDE",
-      "MOVE_ENDEAVOR"
+      "MOVE_ENDEAVOR",
+      "MOVE_CUT",
+      "MOVE_ROCK_SMASH",
+      "MOVE_STRENGTH"
     ],
     "EggMoves": [
       "MOVE_FAKE_OUT",
@@ -67623,7 +67626,10 @@
       "MOVE_UPROAR",
       "MOVE_GRASSY_GLIDE",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_ENDEAVOR"
+      "MOVE_ENDEAVOR",
+      "MOVE_CUT",
+      "MOVE_ROCK_SMASH",
+      "MOVE_STRENGTH"
     ],
     "EggMoves": [
       "MOVE_FAKE_OUT",
@@ -67758,7 +67764,10 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_GRASSY_GLIDE",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_ENDEAVOR"
+      "MOVE_ENDEAVOR",
+      "MOVE_CUT",
+      "MOVE_ROCK_SMASH",
+      "MOVE_STRENGTH"
     ],
     "EggMoves": [
       "MOVE_FAKE_OUT",
