@@ -1735,29 +1735,20 @@ bool32 TrainerIsMatchCallRegistered(s32 i)
 #if FREE_MATCH_CALL == FALSE
 static bool32 UpdateRandomTrainerRematches(const struct RematchTrainer *table, u16 mapGroup, u16 mapNum)
 {
-    s32 i;
-
     if (CheckBagHasItem(ITEM_VS_SEEKER, 1) && I_VS_SEEKER_CHARGING != 0)
         return FALSE;
-
-    for (i = 0; i <= REMATCH_SPECIAL_TRAINER_START; i++)
+        
+    s32 i = Random() % REMATCH_SPECIAL_TRAINER_START;
+    if (gSaveBlock1Ptr->trainerRematches[i] != 0)
     {
-        if (DoesCurrentMapMatchRematchTrainerMap(i,table,mapGroup,mapNum) && !IsRematchForbidden(i))
-            continue;
-
-        if (gSaveBlock1Ptr->trainerRematches[i] != 0)
-        {
-            // Trainer already wants a rematch. Don't bother updating it.
-            return TRUE;
-        }
-        else if (TrainerIsMatchCallRegistered(i) && ((Random() % 100) <= 50))
-            // 31% chance of getting a rematch.
-        {
-            SetRematchIdForTrainer(table, i);
-            return TRUE;
-        }
+        // Trainer already wants a rematch. Don't bother updating it.
+        return TRUE;
     }
-
+    else if (TrainerIsMatchCallRegistered(i))
+    {
+        SetRematchIdForTrainer(table, i);
+        return TRUE;
+    }
     return FALSE;
 }
 #endif //FREE_MATCH_CALL
