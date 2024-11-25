@@ -62,4 +62,3 @@ ArtisanCave_1F_Text_MoxanDefeat:
 
 ArtisanCave_1F_Text_MoxanOutro:
 	.string "Hmph! Until next time.$"
-	
