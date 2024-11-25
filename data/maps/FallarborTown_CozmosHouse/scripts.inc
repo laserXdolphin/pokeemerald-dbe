@@ -18,8 +18,7 @@ FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite::
 	msgbox FallarborTown_CozmosHouse_Text_PleaseUseThisTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM_SAFEGUARD
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setvar VAR_0x8004, ITEM_METEORITE
-	call Common_EventScript_PlayerHandedOverTheItem
+	msgbox FallarborTown_CozmosHouse_Text_ShowMeteorite, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_RETURN
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
 	release
@@ -79,7 +78,7 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "Could it be?\p"
 	.string "Is it the METEORITE that TEAM MAGMA\n"
 	.string "took from METEOR FALLS?\p"
-	.string "Please, may I have it?\p"
+	.string "Please, may I see it?\p"
 	.string "I'm not asking for it for free.\n"
 	.string "How about in exchange for this TM?$"
 
@@ -98,7 +97,7 @@ FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
 	.string "I'm crushed with disappointment…$"
 
 FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
-	.string "PROF. COZMO: Please, may I have that\n"
+	.string "PROF. COZMO: Please, may I see that\n"
 	.string "METEORITE?\p"
 	.string "I'm not asking for it for free.\n"
 	.string "How about in exchange for this TM?$"
@@ -116,3 +115,6 @@ FallarborTown_CozmosHouse_Text_CozmoIsSoHappy:
 	.string "Look at PROF. COZMO…\n"
 	.string "He's so happy! I think it's cute.$"
 
+FallarborTown_CozmosHouse_Text_ShowMeteorite:
+	.string "{PLAYER} showed PROF. COZMO the\n"
+	.string "Meteorite.$"
