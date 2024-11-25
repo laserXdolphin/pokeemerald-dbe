@@ -85,7 +85,7 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_STARLY"
+                "species": "SPECIES_LILLIPUP"
               },
               {
                 "min_level": 2,
@@ -115,12 +115,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_STARLY"
+                "species": "SPECIES_POOCHYENA"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_STARLY"
+                "species": "SPECIES_LILLIPUP"
               },
               {
                 "min_level": 2,
@@ -368,16 +368,11 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 22,
                 "max_level": 24,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 22,
-                "max_level": 24,
                 "species": "SPECIES_WINGULL"
               },
               {
@@ -386,14 +381,19 @@
                 "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 25,
+                "min_level": 22,
+                "max_level": 24,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_WINGULL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_WINGULL"
               }
             ]
           },
@@ -1648,32 +1648,32 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 24,
                 "max_level": 27,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 24,
                 "max_level": 27,
-                "species": "SPECIES_WATTREL"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 24,
                 "max_level": 27,
-                "species": "SPECIES_WATTREL"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 25,
                 "max_level": 27,
-                "species": "SPECIES_KILOWATTREL"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 25,
                 "max_level": 27,
-                "species": "SPECIES_KILOWATTREL"
+                "species": "SPECIES_CLAUNCHER"
               }
             ]
           },
@@ -8684,22 +8684,22 @@
               {
                 "min_level": 22,
                 "max_level": 24,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_TENTACOOL"
               },
               {
                 "min_level": 22,
                 "max_level": 24,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_TENTACOOL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_TENTACOOL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_TENTACOOL"
               }
             ]
           },
@@ -9030,7 +9030,7 @@
           "map": "MAP_PETALBURG_CITY",
           "base_label": "gPetalburgCity",
           "water_mons": {
-            "encounter_rate": 1,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 22,
