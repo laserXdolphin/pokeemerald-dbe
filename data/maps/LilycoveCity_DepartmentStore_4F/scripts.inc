@@ -25,8 +25,8 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
+	.2byte ITEM_TM_FOCUS_BLAST
 	.2byte ITEM_TM_X_SCISSOR
-	.2byte ITEM_TM_BRICK_BREAK
 	.2byte ITEM_TM_STONE_EDGE
 	.2byte ITEM_NONE
 	release

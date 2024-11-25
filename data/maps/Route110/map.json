@@ -481,7 +481,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_LIGHT_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_ELECTRIC_SEED",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_110_ELIXIR"
     },
@@ -742,7 +742,7 @@
       "x": 4,
       "y": 35,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_LIGHT_BALL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_POKE_BALL"
     },
     {
