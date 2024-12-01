@@ -761,7 +761,7 @@ static const struct TrainerMon sParty_Leah[] = {
 static const struct TrainerMon sParty_Daisy[] = {
     {
     .lvl = 15,
-    .species = SPECIES_BOUNSWEET,
+    .species = SPECIES_CHERUBI,
     .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 128, 0, 0),
     },
@@ -1560,8 +1560,8 @@ static const struct TrainerMon sParty_Samuel[] = {
     },
     {
     .lvl = 45,
-    .species = SPECIES_SABLEYE,
-    .ability = ABILITY_PRANKSTER,
+    .species = SPECIES_DUSCLOPS,
+    .ability = ABILITY_PRESSURE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(252, 0, 4, 0, 0, 252),
     },
@@ -1615,7 +1615,7 @@ static const struct TrainerMon sParty_Owen[] = {
     },
     {
     .lvl = 45,
-    .species = SPECIES_GIGALITH,
+    .species = SPECIES_HIPPOWDON,
     .ability = ABILITY_SAND_STREAM,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
@@ -1955,8 +1955,8 @@ static const struct TrainerMon sParty_Caroline[] = {
 static const struct TrainerMon sParty_Julie[] = {
     {
     .lvl = 45,
-    .species = SPECIES_GOLEM_ALOLA,
-    .ability = ABILITY_GALVANIZE,
+    .species = SPECIES_TANGROWTH,
+    .ability = ABILITY_CHLOROPHYLL,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
     },
@@ -7577,7 +7577,7 @@ static const struct TrainerMon sParty_Presley[] = {
     },
     {
     .lvl = 34,
-    .species = SPECIES_STARAVIA,
+    .species = SPECIES_TOGETIC,
     .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
     .ev = TRAINER_PARTY_EVS(0, 132, 0, 252, 0, 0),
     }
