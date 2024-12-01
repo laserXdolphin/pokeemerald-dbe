@@ -5412,12 +5412,12 @@
               {
                 "min_level": 31,
                 "max_level": 35,
-                "species": "SPECIES_QWILFISH"
+                "species": "SPECIES_SEADRA"
               },
               {
                 "min_level": 32,
                 "max_level": 35,
-                "species": "SPECIES_SEADRA"
+                "species": "SPECIES_WAILORD"
               },
               {
                 "min_level": 40,
@@ -5496,17 +5496,17 @@
               {
                 "min_level": 31,
                 "max_level": 35,
-                "species": "SPECIES_TENTACRUEL"
+                "species": "SPECIES_WAILORD"
               },
               {
-                "min_level": 31,
-                "max_level": 35,
-                "species": "SPECIES_QWILFISH"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_WAILORD"
               },
               {
-                "min_level": 32,
-                "max_level": 35,
-                "species": "SPECIES_SEADRA"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_WAILORD"
               },
               {
                 "min_level": 40,
