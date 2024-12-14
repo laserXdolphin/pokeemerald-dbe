@@ -6133,8 +6133,7 @@ static const u16 sTaurosTeachableLearnset[] = {
 
 #if P_PALDEAN_FORMS
 static const u16 sTaurosPaldeaCombatTeachableLearnset[] = {
-    MOVE_BULK_UP,
-    MOVE_DIG,
+    MOVE_BULLDOZE,
     MOVE_EARTHQUAKE,
     MOVE_FACADE,
     MOVE_PROTECT,
@@ -6156,8 +6155,7 @@ static const u16 sTaurosPaldeaCombatTeachableLearnset[] = {
 };
 
 static const u16 sTaurosPaldeaBlazeTeachableLearnset[] = {
-    MOVE_BULK_UP,
-    MOVE_DIG,
+    MOVE_BULLDOZE,
     MOVE_EARTHQUAKE,
     MOVE_FACADE,
     MOVE_FIRE_BLAST,
@@ -6181,8 +6179,7 @@ static const u16 sTaurosPaldeaBlazeTeachableLearnset[] = {
 };
 
 static const u16 sTaurosPaldeaAquaTeachableLearnset[] = {
-    MOVE_BULK_UP,
-    MOVE_DIG,
+    MOVE_BULLDOZE,
     MOVE_EARTHQUAKE,
     MOVE_FACADE,
     MOVE_PROTECT,
@@ -8638,7 +8635,7 @@ static const u16 sQuagsireTeachableLearnset[] = {
 
 #if P_PALDEAN_FORMS
 static const u16 sWooperPaldeaTeachableLearnset[] = {
-    MOVE_DIG,
+    MOVE_BULLDOZE,
     MOVE_EARTHQUAKE,
     MOVE_FACADE,
     MOVE_PROTECT,
@@ -29879,6 +29876,7 @@ static const u16 sCalyrexIceTeachableLearnset[] = {
 };
 
 static const u16 sCalyrexShadowTeachableLearnset[] = {
+    MOVE_BULLDOZE,
     MOVE_BULLET_SEED,
     MOVE_CALM_MIND,
     MOVE_DARK_PULSE,

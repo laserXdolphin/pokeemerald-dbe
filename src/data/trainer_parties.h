@@ -1853,7 +1853,7 @@ static const struct TrainerMon sParty_Brooke1[] = {
     },
     {
     .lvl = 20,
-    .species = SPECIES_SHELLOS_WEST_SEA,
+    .species = SPECIES_SHELLOS_WEST,
     .ability = ABILITY_SAND_FORCE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 192, 0),
@@ -1993,7 +1993,7 @@ static const struct TrainerMon sParty_Brooke2[] = {
     },
     {
     .lvl = 26,
-    .species = SPECIES_SHELLOS_WEST_SEA,
+    .species = SPECIES_SHELLOS_WEST,
     .ability = ABILITY_SAND_FORCE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(252, 0, 64, 0, 0, 0),
@@ -2017,7 +2017,7 @@ static const struct TrainerMon sParty_Brooke3[] = {
     },
     {
     .lvl = 30,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_SAND_FORCE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(252, 0, 128, 0, 0, 0),
@@ -2041,7 +2041,7 @@ static const struct TrainerMon sParty_Brooke4[] = {
     },
     {
     .lvl = 32,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_SAND_FORCE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(252, 0, 192, 0, 0, 0),
@@ -2065,7 +2065,7 @@ static const struct TrainerMon sParty_Brooke5[] = {
     },
     {
     .lvl = 34,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_SAND_FORCE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 4),
@@ -2501,7 +2501,7 @@ static const struct TrainerMon sParty_Bridget[] = {
     },
     {
     .lvl = 42,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 196, 0),
     }
@@ -5304,7 +5304,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     },
     {
     .lvl = 48,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STICKY_HOLD,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -5543,7 +5543,7 @@ static const struct TrainerMon sParty_Karen5[] = {
 static const struct TrainerMon sParty_KateAndJoy[] = {
     {
     .lvl = 30,
-    .species = SPECIES_INDEEDEE_FEMALE,
+    .species = SPECIES_INDEEDEE_F,
     .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 132, 0),
     },
@@ -9647,7 +9647,7 @@ static const struct TrainerMon sParty_RivalRoute103[] = {
 static const struct TrainerMon sParty_RivalRoute110[] = {
     {
     .lvl = 20,
-    .species = SPECIES_SHELLOS_WEST_SEA,
+    .species = SPECIES_SHELLOS_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_MODEST,
     .heldItem = ITEM_SITRUS_BERRY,
@@ -9689,7 +9689,7 @@ static const struct TrainerMon sParty_RivalRoute110[] = {
 static const struct TrainerMon sParty_RivalRoute119[] = {
     {
     .lvl = 33,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_CALM,
     .heldItem = ITEM_ROCKY_HELMET,
@@ -10990,7 +10990,7 @@ static const struct TrainerMon sParty_Jonathan[] = {
 static const struct TrainerMon sParty_MaxieMagmaHideout[] = {
     {
     .lvl = 39,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -11043,7 +11043,7 @@ static const struct TrainerMon sParty_MaxieMtChimney[] = {
     },
     {
     .lvl = 30,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -11096,7 +11096,7 @@ static const struct TrainerMon sParty_MaxieTerraCave[] = {
     },
     {
     .lvl = 69,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -12161,7 +12161,7 @@ static const struct TrainerMon sParty_WallyVR2[] = {
 static const struct TrainerMon sParty_RivalLilycove[] = {
     {
     .lvl = 39,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_CALM,
     .heldItem = ITEM_ROCKY_HELMET,
@@ -12224,7 +12224,7 @@ static const struct TrainerMon sParty_RivalLilycove[] = {
 static const struct TrainerMon sParty_RivalEverGrande[] = {
     {
     .lvl = 58,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_ASSAULT_VEST,
@@ -13357,7 +13357,7 @@ static const struct TrainerMon sParty_Darcy[] = {
 static const struct TrainerMon sParty_MaxieMossdeep[] = {
     {
     .lvl = 44,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STORM_DRAIN,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -13522,7 +13522,7 @@ static const struct TrainerMon sParty_Elijah[] = {
 static const struct TrainerMon sParty_Celia[] = {
     {
     .lvl = 22,
-    .species = SPECIES_SHELLOS_WEST_SEA,
+    .species = SPECIES_SHELLOS_WEST,
     .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
     .ev = TRAINER_PARTY_EVS(252, 0, 4, 0, 0, 0),
     },
@@ -15556,7 +15556,7 @@ static const struct TrainerMon sParty_Juan2[] = {
     },
     {
     .lvl = 49,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STICKY_HOLD,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -15609,7 +15609,7 @@ static const struct TrainerMon sParty_Juan3[] = {
     },
     {
     .lvl = 50,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STICKY_HOLD,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -15672,7 +15672,7 @@ static const struct TrainerMon sParty_Juan4[] = {
     },
     {
     .lvl = 53,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STICKY_HOLD,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -15735,7 +15735,7 @@ static const struct TrainerMon sParty_Juan5[] = {
     },
     {
     .lvl = 67,
-    .species = SPECIES_GASTRODON_WEST_SEA,
+    .species = SPECIES_GASTRODON_WEST,
     .ability = ABILITY_STICKY_HOLD,
     .nature = NATURE_BOLD,
     .heldItem = ITEM_RINDO_BERRY,
@@ -17137,7 +17137,7 @@ static const struct TrainerMon sParty_Mariela[] = {
     },
     {
     .lvl = 41,
-    .species = SPECIES_INDEEDEE_FEMALE,
+    .species = SPECIES_INDEEDEE_F,
     .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
     .ev = TRAINER_PARTY_EVS(4, 0, 0, 252, 252, 0),
     }
