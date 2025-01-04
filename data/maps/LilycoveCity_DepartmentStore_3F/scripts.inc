@@ -25,9 +25,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins:
 	.2byte ITEM_POWER_ANKLET
 	.2byte ITEM_POWER_LENS
 	.2byte ITEM_POWER_BAND
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
 	lock
@@ -51,9 +49,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
 	.2byte ITEM_DUSK_STONE
 	.2byte ITEM_DAWN_STONE
 	.2byte ITEM_ICE_STONE
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
 	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC

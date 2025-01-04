@@ -55,9 +55,7 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_TM_THUNDERBOLT
 	.2byte ITEM_TM_FLAMETHROWER
 	.2byte ITEM_TM_EARTHQUAKE
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 @ The door guards only check for FLAG_BADGE06_GET because Winonas badge is the only one that can be skipped
 @ Its assumed the player has the remaining badges

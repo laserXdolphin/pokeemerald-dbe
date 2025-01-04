@@ -21,9 +21,7 @@ LavaridgeTown_HerbShop_Pokemart:
 	.2byte ITEM_WHITE_HERB
 	.2byte ITEM_POWER_HERB
 	.2byte ITEM_MIRROR_HERB
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LavaridgeTown_HerbShop_EventScript_ExpertM::
 	msgbox LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike, MSGBOX_NPC

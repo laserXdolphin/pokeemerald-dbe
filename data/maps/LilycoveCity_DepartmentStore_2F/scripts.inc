@@ -36,9 +36,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_FLUFFY_TAIL
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
 	lock
@@ -70,9 +68,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart2:
 	.2byte ITEM_FAST_BALL
 	.2byte ITEM_MOON_BALL
 	.2byte ITEM_LURE_BALL
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:
 	.string "Learn to use items properly.\n"

@@ -141,44 +141,20 @@ SlateportCity_EventScript_EnergyGuru::
 	faceplayer
 	message SlateportCity_Text_EnergyGuruSellWhatYouNeed
 	waitmessage
-	goto_if_unset FLAG_BADGE05_GET, SlateportCity_EventScript_EnergyGuruSmallMart
-	goto_if_set FLAG_BADGE05_GET, SlateportCity_EventScript_EnergyGuruBigMart
-	end
-	
-
-SlateportCity_EventScript_EnergyGuruSmallMart:
-	pokemart SlateportCity_Pokemart_EnergyGuruSmall
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-SlateportCity_EventScript_EnergyGuruBigMart:
-	pokemart SlateportCity_Pokemart_EnergyGuruBig
+	pokemart SlateportCity_Pokemart_EnergyGuru
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-SlateportCity_Pokemart_EnergyGuruSmall:
+SlateportCity_Pokemart_EnergyGuru:
 	.2byte ITEM_PROTEIN
 	.2byte ITEM_IRON
 	.2byte ITEM_CARBOS
 	.2byte ITEM_ZINC
 	.2byte ITEM_CALCIUM
-	.2byte ITEM_NONE	
-	release
-	end
-	
-	.align 2
-SlateportCity_Pokemart_EnergyGuruBig:
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_IRON
-	.2byte ITEM_CARBOS
-	.2byte ITEM_ZINC
-	.2byte ITEM_CALCIUM
-	.2byte ITEM_NONE	
-	release
-	end
+	.2byte ITEM_HP_UP
+	pokemartlistend
 
 SlateportCity_EventScript_EffortRibbonWoman::
 	lock
@@ -542,9 +518,7 @@ SlateportCity_PokemartDecor_Dolls:
 	.2byte ITEM_ROSE_INCENSE
 	.2byte ITEM_SEA_INCENSE
 	.2byte ITEM_WAVE_INCENSE
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 SlateportCity_EventScript_ComeBackWithSecretPower::
 	msgbox gText_ComeBackWithSecretPower, MSGBOX_DEFAULT
@@ -581,9 +555,7 @@ SlateportCity_PokemartDecor:
 	.2byte DECOR_AZURILL_DOLL
 	.2byte DECOR_MARILL_DOLL
 	.2byte DECOR_SKITTY_DOLL
-	.2byte DECOR_NONE
-	release
-	end
+	pokemartlistend
 
 SlateportCity_EventScript_PowerTMClerk::
 	lock
@@ -602,9 +574,7 @@ SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_TM58
 	.2byte ITEM_TM59
 	.2byte ITEM_TM60
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
